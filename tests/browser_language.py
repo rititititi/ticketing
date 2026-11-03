@@ -40,6 +40,7 @@ with sync_playwright() as p:
     page.locator('#ticket-dialog .close').click()
     page.select_option('#language','zh')
     page.reload()
+    expect(page.locator('.ticket-card').first).to_be_visible()
     expect(page.locator('#language')).to_have_value('zh')
     expect(page.locator('#tickets-title')).to_have_text('全部区域')
     page.locator('[data-view="sources"]').click()
