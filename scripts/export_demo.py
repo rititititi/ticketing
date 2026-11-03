@@ -16,11 +16,14 @@ def export_demo():
     html=html.replace('</body>', '<script id="catalog-data" type="application/json">'+data+'</script><script>'+js+'</script></body>')
     dest=ROOT/'artifacts';dest.mkdir(exist_ok=True)
     (dest/'index.html').write_text(html)
-    with zipfile.ZipFile(dest/'concert-atlas-demo.zip','w',zipfile.ZIP_DEFLATED) as z:
+    with zipfile.ZipFile(dest/'concert-atlas-draft2.zip','w',zipfile.ZIP_DEFLATED) as z:
         z.writestr('concert-atlas/index.html',html)
         z.writestr('concert-atlas/START HERE.txt','Open index.html in your browser. No installation is needed. Keep the source-images folder next to index.html. This is private draft supplier evidence, not confirmed inventory or customer prices.\n')
+        for name in ['coverage.csv','coverage.json','ticket-options.csv','provenance.json']:
+            z.write(ROOT/'data/draft2'/name,'concert-atlas/reports/'+name)
+        z.write(ROOT/'data/draft2/REPORT.md','concert-atlas/reports/REPORT.md')
         for p in sorted((ROOT/'static/sources').glob('*.jpg')):
             z.write(p,'concert-atlas/source-images/'+p.name)
-    print('Exported artifacts/concert-atlas-demo.zip — unzip and open index.html.')
+    print('Exported artifacts/concert-atlas-draft2.zip — unzip and open index.html.')
 
 if __name__=='__main__':export_demo()

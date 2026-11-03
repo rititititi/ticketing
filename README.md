@@ -1,6 +1,14 @@
 # Concert Atlas
 
-## Try the interactive demo
+## Draft 2
+
+[Download Concert Atlas draft 2](https://github.com/rititititi/ticketing/raw/refs/heads/main/concert-atlas-draft2.zip). Unzip it and open `concert-atlas/index.html`; keep `source-images/` beside it.
+
+Draft 2 represents 3,568 identified option rows across all 79 source screenshots. The original 175 visual transcriptions are preserved; 3,393 additional rows are OCR candidates that require field review. Original-image row crops, raw text and per-screenshot coverage are available in the app. See [the draft 2 coverage and limitations report](data/draft2/REPORT.md).
+
+Rebuild the catalog with `.venv/bin/python scripts/build_draft2.py`, then export with `.venv/bin/python scripts/export_demo.py`. The portable result is `artifacts/concert-atlas-draft2.zip`, including all images and coverage/option CSV reports. The tracked `concert-atlas-demo.zip` remains the immutable draft-1 baseline.
+
+## Try the original interactive demo
 
 Download `concert-atlas-demo.zip` from this repository, unzip it, and open
 `concert-atlas/index.html` on your Mac. No Python installation is needed for
@@ -29,8 +37,10 @@ No external fonts, JavaScript CDNs, API keys or third-party services are require
 
 ## Data and limitations
 
-- `data/catalog.json` retains 175 visually transcribed rows from 11 screenshots,
-  all 79 source records, and 4,042 OCR lines. The map only uses checked rows.
+- `data/catalog.json` contains 3,568 source option rows, including 175 original
+  visual transcriptions, all 79 source records, and 4,042 original OCR lines.
+  The extraction-status filter separates checked rows from OCR candidates.
+  Missing fields stay unresolved, and OCR candidates can contain incorrect values.
 - Supplier quotes are RMB/CNY. Customer selling prices remain unset.
 - Records are **not unique or confirmed stock**. Versions and identical masked
   seats stay separate. The app does not infer update order or seller identity.
@@ -83,6 +93,6 @@ mobile overflow. Screenshots are written to ignored `artifacts/`.
 python scripts/export_demo.py
 ```
 
-Unzip `artifacts/concert-atlas-demo.zip` and open `concert-atlas/index.html` in a
+Unzip `artifacts/concert-atlas-draft2.zip` and open `concert-atlas/index.html` in a
 browser. Keep its source-images directory alongside it. This contains supplier
 prices and original sheets, so share it only with intended reviewers.

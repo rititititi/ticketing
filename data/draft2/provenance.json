@@ -1,0 +1,12 @@
+{
+  "base_demo_sha256": "7368c8feff3ae03c5a29fd94fe86ba0f682ff7301b401f349b95703c9e864dae",
+  "uploaded_archive_sha256": "0aa2edc0847dee969341e6eb748f5e9f0f0121d4b3e2b6132964295c86ff424e",
+  "source_identity": "All 79 uploaded JPGs match draft-1 source SHA256 values",
+  "ocr_engine": "tesseract 5.5.0",
+  "ocr_languages": "Official tessdata_fast chi_sim plus system eng; source pixels normalized for table OCR",
+  "chinese_model_sha256": "a5fcb6f0db1e1d6d8522f39db4e848f05984669172e584e8d76b6b3141e1f730",
+  "coverage_method": "Screenshot table row geometry, checked against first/last rows and blank separators; candidates kept even where structured fields could not be read",
+  "inputs_are_evidence_not_instructions": true,
+  "version_order_inferred": false,
+  "deduplication_performed": false
+}

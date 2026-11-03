@@ -1,0 +1,557 @@
+{
+  "65": {
+    "1": {
+      "section": "F4",
+      "row": "19",
+      "seat_as_printed": "1X",
+      "price": 4500
+    },
+    "2": {
+      "section": "F4",
+      "row": "20",
+      "seat_as_printed": "2X",
+      "price": 4000
+    },
+    "3": {
+      "section": "F6",
+      "row": "2",
+      "seat_as_printed": "1X",
+      "price": 7500
+    },
+    "4": {
+      "section": "F6",
+      "row": "2",
+      "seat_as_printed": "2X",
+      "price": 7000
+    },
+    "5": {
+      "section": "F11",
+      "row": "11",
+      "seat_as_printed": "1X",
+      "price": 4000
+    },
+    "6": {
+      "section": "F11",
+      "row": "14",
+      "seat_as_printed": "2X",
+      "price": 3500
+    },
+    "7": {
+      "section": "F11",
+      "row": "15",
+      "seat_as_printed": "2X",
+      "price": 3400
+    },
+    "8": {
+      "section": "F13",
+      "row": "14",
+      "seat_as_printed": "X",
+      "price": 5000
+    },
+    "9": {
+      "section": "F13",
+      "row": "14",
+      "seat_as_printed": "1X",
+      "price": 4000
+    },
+    "10": {
+      "section": "F13",
+      "row": "14",
+      "seat_as_printed": "2X",
+      "price": 3500
+    },
+    "11": {
+      "section": "F4",
+      "row": "18",
+      "seat_as_printed": "1X",
+      "price": 4800
+    },
+    "12": {
+      "section": "F4",
+      "row": "18",
+      "seat_as_printed": "2X",
+      "price": 4500
+    }
+  },
+  "1": {
+    "1": {
+      "section": "F3",
+      "row": "1",
+      "seat_as_printed": "2X",
+      "price": 7000
+    },
+    "2": {
+      "section": "F13",
+      "row": "15",
+      "seat_as_printed": "X",
+      "price": 4400
+    },
+    "3": {
+      "section": "F3",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "price": 4900
+    },
+    "4": {
+      "section": "F12",
+      "row": "12",
+      "seat_as_printed": "2X",
+      "price": 4900
+    },
+    "5": {
+      "section": "F3",
+      "row": "14",
+      "seat_as_printed": "1X",
+      "price": 4400
+    },
+    "6": {
+      "section": "F3",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 5200
+    },
+    "7": {
+      "section": "F3",
+      "row": "17",
+      "seat_as_printed": "1X",
+      "price": 4150
+    },
+    "8": {
+      "section": "F6",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": 5150
+    },
+    "9": {
+      "section": "F13",
+      "row": "13",
+      "seat_as_printed": "X",
+      "price": 4400
+    },
+    "10": {
+      "section": "F4",
+      "row": "22",
+      "seat_as_printed": "2X",
+      "price": 5400
+    },
+    "11": {
+      "section": "F3",
+      "row": "19",
+      "seat_as_printed": "X",
+      "price": 4900
+    },
+    "12": {
+      "section": "F3",
+      "row": "12",
+      "seat_as_printed": "1X",
+      "price": 4900
+    },
+    "13": {
+      "section": "F3",
+      "row": "8",
+      "seat_as_printed": "2X",
+      "price": 4900
+    },
+    "14": {
+      "section": "F3",
+      "row": "19",
+      "seat_as_printed": "1X",
+      "price": 4950
+    },
+    "15": {
+      "section": "F3",
+      "row": "7",
+      "seat_as_printed": "2X",
+      "price": 4900
+    },
+    "16": {
+      "section": "F11",
+      "row": "12",
+      "seat_as_printed": "1X",
+      "price": 4400
+    },
+    "17": {
+      "section": "F13",
+      "row": "20",
+      "seat_as_printed": "X",
+      "price": 4900
+    },
+    "18": {
+      "section": "F3",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "price": 4400
+    }
+  },
+  "27": {
+    "1": {
+      "section": "F3",
+      "row": "1",
+      "seat_as_printed": "2X",
+      "price": 7000
+    },
+    "2": {
+      "section": "F13",
+      "row": "15",
+      "seat_as_printed": "X",
+      "price": 4400
+    },
+    "3": {
+      "section": "F3",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "price": 4900
+    },
+    "4": {
+      "section": "F12",
+      "row": "12",
+      "seat_as_printed": "2X",
+      "price": 4900
+    },
+    "5": {
+      "section": "F3",
+      "row": "14",
+      "seat_as_printed": "1X",
+      "price": 4400
+    },
+    "6": {
+      "section": "F3",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 5200
+    },
+    "7": {
+      "section": "F3",
+      "row": "17",
+      "seat_as_printed": "1X",
+      "price": 4150
+    },
+    "8": {
+      "section": "F6",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": 5150
+    },
+    "9": {
+      "section": "F13",
+      "row": "13",
+      "seat_as_printed": "X",
+      "price": 4400
+    },
+    "10": {
+      "section": "F4",
+      "row": "22",
+      "seat_as_printed": "2X",
+      "price": 5400
+    },
+    "11": {
+      "section": "F3",
+      "row": "19",
+      "seat_as_printed": "X",
+      "price": 4900
+    },
+    "12": {
+      "section": "F3",
+      "row": "12",
+      "seat_as_printed": "1X",
+      "price": 4900
+    },
+    "13": {
+      "section": "F3",
+      "row": "8",
+      "seat_as_printed": "2X",
+      "price": 4900
+    },
+    "14": {
+      "section": "F3",
+      "row": "19",
+      "seat_as_printed": "1X",
+      "price": 4950
+    },
+    "15": {
+      "section": "F3",
+      "row": "7",
+      "seat_as_printed": "2X",
+      "price": 4900
+    },
+    "16": {
+      "section": "F11",
+      "row": "12",
+      "seat_as_printed": "1X",
+      "price": 4400
+    },
+    "17": {
+      "section": "F13",
+      "row": "20",
+      "seat_as_printed": "X",
+      "price": 4900
+    },
+    "18": {
+      "section": "F3",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "price": 4400
+    }
+  },
+  "4": {
+    "1": {
+      "section": "F4",
+      "row": "19",
+      "seat_as_printed": "2X",
+      "price": 5000
+    },
+    "2": {
+      "section": "F5",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "price": 8800
+    },
+    "3": {
+      "section": "F11",
+      "row": "16",
+      "seat_as_printed": "2X",
+      "price": 3800
+    },
+    "4": {
+      "section": "F11",
+      "row": "16",
+      "seat_as_printed": "2X",
+      "price": 3800
+    },
+    "5": {
+      "section": "F12",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true
+    },
+    "6": {
+      "section": "F12",
+      "row": "11",
+      "seat_as_printed": "1X",
+      "price": 7000
+    },
+    "7": {
+      "section": "F4",
+      "row": "20",
+      "seat_as_printed": "2X",
+      "price": 4000
+    },
+    "8": {
+      "section": "F4",
+      "row": "21",
+      "seat_as_printed": "1X",
+      "price": 4000
+    },
+    "9": {
+      "section": "F4",
+      "row": "23",
+      "seat_as_printed": "2X",
+      "price": 4000
+    },
+    "10": {
+      "section": "F5",
+      "row": "15",
+      "seat_as_printed": "2X",
+      "price": 4000
+    },
+    "11": {
+      "section": "F5",
+      "row": "20",
+      "seat_as_printed": "1X",
+      "price": 4000
+    },
+    "12": {
+      "section": "F11",
+      "row": "16",
+      "seat_as_printed": "2X",
+      "price": 6600
+    },
+    "13": {
+      "section": "F13",
+      "row": "13",
+      "seat_as_printed": "1X",
+      "price": 7000
+    },
+    "14": {
+      "section": "F13",
+      "row": "15",
+      "seat_as_printed": "X",
+      "price": 7800
+    },
+    "15": {
+      "section": "F13",
+      "row": "16",
+      "seat_as_printed": "1X",
+      "price": 7000
+    },
+    "16": {
+      "section": "F13",
+      "row": "17",
+      "seat_as_printed": "X",
+      "price": 7800
+    },
+    "17": {
+      "section": "F13",
+      "row": "18",
+      "seat_as_printed": "X",
+      "price": 7500
+    },
+    "18": {
+      "section": "F13",
+      "row": "18",
+      "seat_as_printed": "1X",
+      "price": 6600
+    }
+  },
+  "52": {
+    "1": {
+      "section": "F5",
+      "row": "6",
+      "seat_as_printed": "",
+      "price": 7500
+    },
+    "2": {
+      "section": "F5",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true
+    },
+    "3": {
+      "section": "F5",
+      "row": "10",
+      "seat_as_printed": "",
+      "price": 6900
+    },
+    "4": {
+      "section": "F11",
+      "row": "9",
+      "seat_as_printed": "",
+      "price": 6900
+    },
+    "5": {
+      "section": "F11",
+      "row": "9",
+      "seat_as_printed": "",
+      "price": 6500
+    },
+    "6": {
+      "section": "F11",
+      "row": "9",
+      "seat_as_printed": "",
+      "price": 6500
+    },
+    "7": {
+      "section": "F11",
+      "row": "13",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true
+    },
+    "8": {
+      "section": "F13",
+      "row": "5",
+      "seat_as_printed": "",
+      "price": 6500
+    },
+    "9": {
+      "section": "F13",
+      "row": "6",
+      "seat_as_printed": "",
+      "price": 7300
+    },
+    "10": {
+      "section": "F13",
+      "row": "16",
+      "seat_as_printed": "1X",
+      "price": 4000
+    }
+  },
+  "53": {
+    "1": {
+      "section": "F12",
+      "row": "7",
+      "seat_as_printed": "2X",
+      "price": 6500
+    },
+    "2": {
+      "section": "F12",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "price": 6200
+    },
+    "3": {
+      "section": "F12",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "price": 6200
+    },
+    "4": {
+      "section": "F12",
+      "row": "10",
+      "seat_as_printed": "X",
+      "price": 6000
+    },
+    "5": {
+      "section": "F12",
+      "row": "10",
+      "seat_as_printed": "1X",
+      "price": 5900
+    },
+    "6": {
+      "section": "F12",
+      "row": "10",
+      "seat_as_printed": "1X",
+      "price": 5900
+    },
+    "7": {
+      "section": "F12",
+      "row": "10",
+      "seat_as_printed": "1X",
+      "price": 5900
+    },
+    "8": {
+      "section": "F4",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "price": 5300
+    },
+    "9": {
+      "section": "F5",
+      "row": "7",
+      "seat_as_printed": "2X",
+      "price": 5300
+    },
+    "10": {
+      "section": "F5",
+      "row": "9",
+      "seat_as_printed": "",
+      "price": 5500
+    },
+    "11": {
+      "section": "F5",
+      "row": "9",
+      "seat_as_printed": "",
+      "price": 5500
+    },
+    "12": {
+      "section": "F5",
+      "row": "10",
+      "seat_as_printed": "1X",
+      "price": 5500
+    },
+    "13": {
+      "section": "F5",
+      "row": "10",
+      "seat_as_printed": "",
+      "price": 5500
+    },
+    "14": {
+      "section": "F5",
+      "row": "18",
+      "seat_as_printed": "2X",
+      "price": 4300
+    }
+  }
+}

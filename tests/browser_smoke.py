@@ -10,6 +10,13 @@ with sync_playwright() as p:
     response=page.goto('http://127.0.0.1:5000')
     assert response.status==200
     page.wait_for_selector('.ticket-card')
+    assert '3,568' in page.locator('#draft-summary').inner_text()
+    page.locator('[data-view="sources"]').click()
+    assert page.locator('#coverage-body tr').count()==79
+    assert page.locator('.source-card').count()==79
+    page.locator('[data-view="explorer"]').click()
+    page.select_option('#review-filter','checked')
+    page.select_option('#date','2027-01-15')
     assert page.locator('.section-group').count()==107
     page.locator('path[data-name="F4"]').click()
     assert page.locator('#tickets-title').inner_text()=='Section F4'
@@ -56,6 +63,21 @@ with sync_playwright() as p:
     assert page.locator('#ticket-dialog').is_visible()
     page.locator('#ticket-dialog .close').click()
     page.screenshot(path=str(ROOT/'artifacts/mobile.png'),full_page=True)
+    # Exercise the new OCR review queue and original row evidence.
+    page.select_option('#review-filter','review')
+    page.select_option('#date','all')
+    page.locator('#clear-section').click()
+    page.fill('#search','1761793624261')
+    assert page.locator('.ticket-card').count()==17  # One explicitly sold row hidden.
+    page.locator('.ticket-card').first.click()
+    assert page.locator('.row-evidence svg').count()==1
+    assert 'OCR candidate' in page.locator('#detail-content').inner_text()
+    page.locator('#view-original').click()
+    assert page.locator('#source-content .row-evidence').count()==1
+    assert page.locator('#source-content [data-row-id]').count()==18
+    page.locator('#source-dialog .close').click()
+    page.locator('#ticket-dialog .close').click()
+    assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth')
     assert not errors,errors
     print('Browser passed: section clicks, keyboard selection, dates, sold records, details, source images, source search, CSV download, mobile layout; no JS errors.')
     browser.close()
