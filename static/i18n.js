@@ -1,0 +1,258 @@
+/* Interface translations only. Original catalog values and OCR evidence are never rewritten. */
+'use strict';
+(() => {
+ const zh = {
+ "Language": "语言",
+ "Language preference": "语言偏好",
+ "uu scout home": "uu scout 首页",
+ "Main navigation": "主导航",
+ "Concert explorer": "票务地图",
+ "Supplier library": "票源图库",
+ "FAN TICKET EXPLORER": "粉丝票务指南",
+ "SEOUL, SOUTH KOREA": "韩国首尔",
+ "LIVE MUSIC": "现场音乐",
+ "Explore the view. Find your section.": "了解场地，找到心仪区域。",
+ "Gocheok Sky Dome": "高尺天空巨蛋",
+ "IN SEOUL": "首尔站",
+ "THE CONCERT COLLECTION / 01": "演唱会票源合集 / 01",
+ "Explore ticket options.": "探索票源选项。",
+ "Prices are supplier quotes in RMB, not customer selling prices.": "价格为票源方的人民币报价，并非面向买家的最终售价。",
+ "Loading draft 2 coverage…": "正在加载第 2 版覆盖情况…",
+ "PERFORMANCE": "演出场次",
+ "All source dates": "全部原始日期",
+ "15 Jan 2027 · Friday": "2027 年 1 月 15 日 · 星期五",
+ "16 Jan 2027 · Saturday": "2027 年 1 月 16 日 · 星期六",
+ "15 Jan 2026 · Date conflict": "2026 年 1 月 15 日 · 日期存在冲突",
+ "16 Jan 2026 · Date conflict": "2026 年 1 月 16 日 · 日期存在冲突",
+ "Date / year needs review": "日期／年份待核实",
+ "Include sold-out records": "显示原图中已售出的记录",
+ "Show all sections ↗": "显示全部区域 ↗",
+ "FIND YOUR SPOT": "找到你的位置",
+ "Every section, a new perspective.": "不同区域，不同视角。",
+ "INTERACTIVE MAP": "互动座位图",
+ "Zoom out": "缩小",
+ "Zoom in": "放大",
+ "Reset": "重置",
+ "Click a section to explore": "点击区域查看票源",
+ "Interactive Gocheok seating sections": "高尺巨蛋互动座位区域",
+ "Quoted options": "有报价的票源",
+ "Selected section": "已选区域",
+ "No matching records": "暂无匹配记录",
+ "Schematic based on your chart. Section positions are approximate; masked seat numbers do not locate individual seats.": "示意图根据原始座位图绘制，区域位置仅供参考；隐藏部分数字的座位号无法定位具体座位。",
+ "Or choose a section": "也可选择区域",
+ "All sections": "全部区域",
+ "YOUR NEXT GREAT NIGHT": "期待下一场精彩演出",
+ "Search section, row, seat or notes": "搜索区域、排号、座位或备注",
+ "Search ticket records": "搜索票源记录",
+ "Extraction status": "资料核对状态",
+ "All draft options": "全部票源选项",
+ "Visually transcribed (draft 1)": "第 1 版人工核对记录",
+ "OCR / unreadable · needs review": "OCR／无法识别 · 待核实",
+ "Sort tickets": "票源排序",
+ "Price: low to high": "价格从低到高",
+ "Price: high to low": "价格从高到低",
+ "Row number": "按排号排序",
+ "Export CSV ↓": "导出 CSV ↓",
+ "Loading your supplier collection…": "正在加载票源合集…",
+ "Each card is an option row, sometimes a grouped offer. OCR candidates require field review. Similar rows remain separate.": "每张卡片对应原图的一行选项，可能是组合报价。OCR 记录需核实各项信息；相似记录仍分别保留。",
+ "EVERY SOURCE, IN ONE PLACE": "汇集每一份原始资料",
+ "Your supplier library": "你的票源图库",
+ "All 79 screenshots, their option rows and original text. OCR candidates are provisional; compare with the original row before use.": "收录全部 79 张截图、票源行和原始文字。OCR 记录仅供参考，使用前请对照原图核实。",
+ "Search OCR, filename or sheet family": "搜索 OCR、文件名或表格分组",
+ "Search source library": "搜索票源图库",
+ "Coverage by screenshot · all 79 sources": "逐图覆盖情况 · 全部 79 张截图",
+ "Counts refer to identified physical option rows, including colored and uncertain rows. They do not certify transcription accuracy, unique seats, stock or seller identity.": "统计的是已识别的原始选项行，包括有颜色标记及不确定的行；不代表文字准确性、独立座位数量、现货状态或卖家身份已获确认。",
+ "Download coverage CSV ↓": "下载覆盖报告 CSV ↓",
+ "Source": "来源",
+ "Screenshot": "截图",
+ "Identified rows": "已识别行数",
+ "Represented": "已收录行数",
+ "Visually transcribed": "已人工核对",
+ "OCR candidates": "OCR 待核实记录",
+ "Unreadable": "无法识别",
+ "A fan-made guide to your next concert.": "粉丝制作的演唱会票源指南。",
+ "Draft data · No checkout or payment collected": "资料仍需核实 · 本站不收款、不提供结账服务",
+ "TICKET RECORD / SUPPLIER DETAILS": "票源记录／详细资料",
+ "Close ticket details": "关闭票源详情",
+ "ORIGINAL SUPPLIER SOURCE": "原始票源资料",
+ "Close source details": "关闭原始资料",
+ "STAGE": "舞台",
+ "FLOOR": "内场",
+ "CONSOLE": "控台",
+ "UNRESOLVED": "待核实区域",
+ "No numeric quote": "暂无明确报价",
+ "No active quoted options": "暂无未售出的明确报价",
+ "Sold in source": "原图标记已售出",
+ "OCR · review required": "OCR · 待核实",
+ "needs review": "待核实",
+ "not captured": "未提取",
+ "Individual ticket record": "独立票源记录",
+ "Sold": "已售出",
+ "Historical source record": "原始历史记录",
+ "RMB · source quote; grouping needs review": "人民币 · 票源报价；组合方式待核实",
+ "No matching records here.": "暂无匹配记录。",
+ "Try another section or date, clear your search, or include sold-out records.": "请尝试其他区域或日期、清除搜索，或显示原图中的已售记录。",
+ "Clear section and search ↗": "清除区域与搜索 ↗",
+ "Extraction": "提取方式",
+ "Visually transcribed in draft 1": "第 1 版人工核对记录",
+ "OCR candidate · fields need checking": "OCR 记录 · 各项信息待核实",
+ "Physical row": "原图行号",
+ "Performance": "演出场次",
+ "Section / row": "区域／排号",
+ "Masked seat": "隐藏部分数字的座位号",
+ "Quantity": "数量说明",
+ "Seating notes": "座位备注",
+ "None stated": "未说明",
+ "Delivery": "交付方式",
+ "Not stated": "未说明",
+ "Supplier": "票源方",
+ "Unknown · not identified by screenshot": "未知 · 无法通过截图确认身份",
+ "Verification": "核实状态",
+ "Sold in this source": "本张原图标记已售出",
+ "RMB · supplier quote": "人民币 · 票源报价",
+ "Row text · OCR may be wrong": "原行文字 · OCR 可能有误",
+ "No readable OCR; inspect original row": "OCR 无法识别，请查看原图",
+ "View original screenshot ↗": "查看原始截图 ↗",
+ "Customer selling price not set. Confirm availability with the supplier before requesting payment.": "尚未设置面向买家的最终售价。付款前请先向票源方确认是否仍有票。",
+ "Original screenshot row": "原始截图中的对应行",
+ "Seller and update order unknown. OCR text is unverified and may split or merge rows.": "卖家身份和更新顺序未知。OCR 文字未经核实，可能拆分或合并原始行。",
+ "Open full-resolution image ↗": "打开原尺寸图片 ↗",
+ "Every option row in this screenshot": "本张截图中的全部选项行",
+ "Unreadable — original row retained": "无法识别 · 已保留原始行",
+ "Draft 1 OCR · needs review": "第 1 版 OCR · 待核实",
+ "ocr_candidate": "OCR 待核实记录",
+ "visually_transcribed_draft1": "第 1 版人工核对记录",
+ "unreadable_row": "无法识别的行",
+ "Could not load the supplier collection. Please restart the app and try again.": "无法加载票源合集，请刷新页面后重试。",
+ "Machine extracted draft; not visually verified": "机器提取资料；尚未人工核实",
+ "Visually transcribed; not supplier-confirmed": "已人工核对文字；未经票源方确认",
+ "Draft 1 convention: one per source row, not confirmed; grouped offers remain grouped": "沿用第 1 版：暂按每行一张，尚未确认；组合选项保持原样",
+ "User default: one per row; confirm grouped notes": "暂按每行一张，组合说明需另行确认",
+ "Explicit 1张": "原图明确注明 1 张",
+ "Not independently verified; consult source": "未经独立核实，请对照原图",
+ "OCR candidate: verify fields against the highlighted source row": "OCR 记录：请对照原图对应行核实各项信息",
+ "Seller and version order unknown; availability requires supplier confirmation": "卖家身份及版本顺序未知；有票与否需向票源方确认",
+ "Year/date unresolved; no year inferred": "年份／日期待核实；未推测年份",
+ "Date unreadable or not captured": "日期无法识别或未提取",
+ "Section unreadable; retained in review queue": "区域无法识别；保留在待核实列表",
+ "Row unreadable or range; consult original": "排号无法识别或为范围；请查看原图",
+ "Seat not captured; no exact seat inferred": "座位号未提取；未推测具体座位",
+ "Numeric quote unresolved": "明确报价待核实",
+ "Low OCR confidence": "OCR 识别置信度较低",
+ "2026 printed in source retained; conflicts with 2027 sheets": "保留原图中的 2026 年；与标注 2027 年的表格存在冲突",
+ "OCR passes disagree on quote; numeric quote withheld": "两次 OCR 报价识别不一致；暂不显示数值报价",
+ "Seller and version order unknown; quote is not your customer price": "卖家身份及版本顺序未知；此报价并非面向买家的最终售价",
+ "No OCR text: original row retained for manual transcription": "无 OCR 文字：已保留原始行以供人工核对",
+ "availability meaning not inferred": "未推测其对应的售卖状态",
+ "Green = 已付款 / paid in source legend; not confirmed available": "原图图例中绿色表示已付款；不代表已确认可售",
+ "Yellow = 已锁定 / locked in source legend; not confirmed available": "原图图例中黄色表示已锁定；不代表已确认可售",
+ "red": "红色",
+ "green": "绿色",
+ "yellow": "黄色",
+ "Black Gocheok tour — possible duplicate": "黑色高尺巡演表 · 可能重复",
+ "Black VIP": "黑色 VIP 表",
+ "Blue 197-series long sheet": "蓝色 197 系列长表",
+ "Blue NW-series": "蓝色 NW 系列表",
+ "Blue VIP sheet": "蓝色 VIP 表",
+ "Blue WISH — possible updates": "蓝色 WISH 表 · 可能为更新版本",
+ "Blue bear — possible price updates": "蓝色小熊表 · 可能有价格更新",
+ "Blue pink dated November 3": "蓝粉色表 · 标注 11 月 3 日",
+ "Bright blue WISH-series": "亮蓝色 WISH 系列表",
+ "Bright blue numbered": "亮蓝色编号表",
+ "Green NCTWISH-series — parts or versions": "绿色 NCTWISH 系列 · 可能为分表或不同版本",
+ "Green flower — literal November dates": "绿色小花表 · 原图写明 11 月日期",
+ "Green numbered": "绿色编号表",
+ "Lavender long sheet": "淡紫色长表",
+ "Magenta NCT WISH": "品红色 NCT WISH 表",
+ "Mint blue 197-series": "薄荷蓝色 197 系列表",
+ "Mint numbered — possible availability updates": "薄荷色编号表 · 可能有售卖状态更新",
+ "Mint small sheet": "薄荷色小表",
+ "Mint wish long sheet": "薄荷色 WISH 长表",
+ "Orange second concert": "橙色第二次演唱会表",
+ "Pale yellow — possible overlap with purple transfer": "浅黄色表 · 可能与紫色过户表重叠",
+ "Pink GLOBAL PAYMENTS — parts and possible updates": "粉色 GLOBAL PAYMENTS 表 · 分表及可能的更新版本",
+ "Pink VIP household": "粉色 VIP 表",
+ "Pink dated 2026-11-03 — performance year conflict": "粉色表 · 更新日期为 2026-11-03，演出年份存在冲突",
+ "Pink wish table 1": "粉色 WISH 表 1",
+ "Pink wish table 4 — possible duplicate": "粉色 WISH 表 4 · 可能重复",
+ "Pink wish tables 2 and 3 — different parts": "粉色 WISH 表 2、3 · 不同分表",
+ "Purple WISH long sheets — parts or versions": "紫色 WISH 长表 · 分表或不同版本",
+ "Purple WISH-series": "紫色 WISH 系列表",
+ "Purple face value sheet": "紫色票面价格表",
+ "Purple top electronic": "紫色表头电子票表",
+ "Purple transfer tickets": "紫色过户票表",
+ "Red electronic": "红色电子票表",
+ "White bilingual": "白色双语表",
+ "White long numbered red rows": "白色编号长表 · 带红色行标记",
+ "White mascot": "白色吉祥物表",
+ "White tour heading": "白色巡演标题表",
+ "Yellow NCTWISH numbered": "黄色 NCTWISH 编号表",
+ "Yellow Seoul": "黄色首尔表",
+ "Yellow Seoul 40 rows": "黄色首尔表 · 40 行",
+ "Yellow VIP long sheets — possibly separate parts": "黄色 VIP 长表 · 可能为不同分表",
+ "Yellow stand seats — sold markings": "黄色看台表 · 带已售标记"
+};
+ const originals = new WeakMap();
+ let language;
+ try { language=localStorage.getItem('uu-scout-language'); } catch (_) {}
+ if(!['en','zh'].includes(language))language=navigator.language.toLowerCase().startsWith('zh')?'zh':'en';
+ const phrases=Object.keys(zh).filter(k=>k.length>12).sort((a,b)=>b.length-a.length);
+ function translate(text) {
+  if(language==='en')return text;
+  const key=text.trim(); if(!key||!/[a-zA-Z]/.test(key))return text;
+  let value=zh[key];
+  if(value===undefined) {
+   const rules=[
+    [/^Section (.+)$/,m=>`区域 ${m[1]}`],
+    [/^Row (.*)$/,m=>`排号 ${translate(m[1])}`],
+    [/^Seat (.*)$/,m=>`座位 ${translate(m[1])}`],
+    [/^\/ Row (.*)$/,m=>`／排号 ${m[1]}`],
+    [/^(\d+) source records · (.+)$/,m=>`${m[1]} 条原始记录 · ${translate(m[2])}`],
+    [/^Section (.+)\. (\d+) matching source records\. (.+)\. Select to browse\.$/,m=>`区域 ${m[1]}，${m[2]} 条匹配记录。${translate(m[3])}。点击查看。`],
+    [/^Source (\d+) \/ row (.+) · (.*)$/,m=>`来源 ${m[1]}／原行 ${m[2]} · ${m[3]}`],
+    [/^Source (\d+) · physical row (\d+) · original pixels$/,m=>`来源 ${m[1]} · 原图第 ${m[2]} 行 · 原始像素`],
+    [/^Source (\d+)$/,m=>`来源 ${m[1]}`],
+    [/^SOURCE (\d+) · (.+)$/,m=>`来源 ${m[1]} · ${m[2]}`],
+    [/^(?:Original supplier sheet|Supplier screenshot) (\d+)$/,m=>`原始票源截图 ${m[1]}`],
+    [/^(.*) · year\/date unresolved$/,m=>`${m[1]} · 年份／日期待核实`],
+    [/^(\d+) of (\d+) screenshots · visual families are provisional, not seller identities$/,m=>`显示 ${m[2]} 张截图中的 ${m[1]} 张 · 图片分组仅供参考，不代表卖家身份`],
+    [/^(\d+) \/ (\d+) identified rows represented$/,m=>`已收录 ${m[1]}／${m[2]} 行已识别记录`],
+    [/^(\d+) visually transcribed · (\d+) OCR candidates · (\d+) unreadable$/,m=>`${m[1]} 行人工核对 · ${m[2]} 行 OCR 待核实 · ${m[3]} 行无法识别`],
+    [/^(\d+) identified option rows · (\d+) visually transcribed · (\d+) OCR candidates · (\d+) unreadable rows$/,m=>`${m[1]} 行已识别选项 · ${m[2]} 行人工核对 · ${m[3]} 行 OCR 待核实 · ${m[4]} 行无法识别`],
+    [/^Draft 2: (.+) identified option rows across all (\d+) screenshots\. (\d+) visually transcribed in draft 1; (.+) OCR candidates and (\d+) unreadable rows need review\. Row coverage does not establish field accuracy\. Dates, versions and grouped offers remain separate\.$/,m=>`第 2 版：全部 ${m[2]} 张截图中共收录 ${m[1]} 行选项。第 1 版有 ${m[3]} 行人工核对记录；${m[4]} 行 OCR 记录及 ${m[5]} 行无法识别的记录仍需核实。覆盖行数不代表各项信息准确；日期、版本及组合报价分别保留。`],
+    [/^(\d+) other source record\(s\) share these masked section \/ row \/ seat attributes\. They may be separate tickets or versions and have not been merged\.$/,m=>`另有 ${m[1]} 条记录具有相同的区域、排号及隐藏座位号，可能是不同票或不同版本，尚未合并。`],
+    [/^Source color marking: (.+) \(availability meaning not inferred\)$/,m=>`原图颜色标记：${m[1].split(', ').map(translate).join('、')}（未推测其对应的售卖状态）`],
+    [/^(\d+) ticket per source row$/,m=>`每行暂按 ${m[1]} 张票`]
+   ];
+   // More specific patterns must precede the short "Section" / "Row" forms.
+   for(const [pattern,format] of rules.slice(4).concat(rules.slice(0,4))) {const match=key.match(pattern);if(match){value=format(match);break;}}
+  }
+  if(value===undefined&&key.includes('; '))value=key.split('; ').map(translate).join('；');
+  if(value===undefined){value=key;for(const phrase of phrases)if(value.includes(phrase))value=value.split(phrase).join(zh[phrase]);}
+  return text.replace(key,value);
+ }
+ function stored(node,key,current) {
+  let state=originals.get(node);if(!state){state={};originals.set(node,state);}
+  let entry=state[key];if(!entry||current!==entry.last)entry=state[key]={en:current,last:current};
+  const value=translate(entry.en);entry.last=value;return value;
+ }
+ function localize(root) {
+  if(root.nodeType===Node.TEXT_NODE) {
+   if(root.parentElement?.closest('script,style,pre,[data-original],.card-note,.source-rows small'))return;
+   const value=stored(root,'text',root.nodeValue);if(value!==root.nodeValue)root.nodeValue=value;return;
+  }
+  if(root.nodeType!==Node.ELEMENT_NODE&&root.nodeType!==Node.DOCUMENT_NODE)return;
+  if(root.matches?.('script,style,pre,[data-original],.card-note,.source-rows small'))return;
+  if(root.nodeType===Node.ELEMENT_NODE)for(const name of ['aria-label','placeholder','title','alt'])if(root.hasAttribute(name)){const current=root.getAttribute(name),value=stored(root,name,current);if(value!==current)root.setAttribute(name,value);}
+  for(const child of root.childNodes)localize(child);
+ }
+ function setLanguage(value) {
+  language=value;document.documentElement.lang=language==='zh'?'zh-Hans':'en';
+  document.getElementById('language').value=language;
+  try{localStorage.setItem('uu-scout-language',language);}catch(_){}
+  localize(document.body);
+ }
+ document.getElementById('language').addEventListener('change',e=>setLanguage(e.target.value));
+ setLanguage(language);
+ new MutationObserver(records=>{for(const record of records){if(record.type==='characterData')localize(record.target);else if(record.type==='attributes')localize(record.target);else for(const node of record.addedNodes)localize(node);}}).observe(document.body,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:['aria-label','placeholder','title','alt']});
+})();

@@ -8,7 +8,7 @@ class ExplorerTests(unittest.TestCase):
     def setUp(self):
         self.client=app.test_client()
     def test_page_and_assets(self):
-        for url in ['/', '/explore', '/static/explorer.css', '/static/explorer.js']:
+        for url in ['/', '/explore', '/static/explorer.css', '/static/explorer.js', '/static/i18n.js']:
             with self.client.get(url) as response:
                 self.assertEqual(response.status_code,200,url)
     def test_all_source_evidence_retained(self):

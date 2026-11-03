@@ -1,4 +1,9 @@
-# Concert Atlas
+# uu scout · NCT WISH Gocheok
+
+English / 简体中文 fan ticket explorer. [Download the latest uu scout ZIP](https://github.com/rititititi/ticketing/raw/refs/heads/main/uu-scout.zip).
+
+To make the website available to fans, follow [the bilingual GitHub Pages sharing guide](SHARING.md). The repository includes the **Publish uu scout** deployment workflow. The website URL after deployment is `https://rititititi.github.io/ticketing/`.
+
 
 ## Draft 2
 
@@ -6,7 +11,7 @@
 
 Draft 2 represents 3,568 identified option rows across all 79 source screenshots. The original 175 visual transcriptions are preserved; 3,393 additional rows are OCR candidates that require field review. Original-image row crops, raw text and per-screenshot coverage are available in the app. See [the draft 2 coverage and limitations report](data/draft2/REPORT.md).
 
-Rebuild the catalog with `.venv/bin/python scripts/build_draft2.py`, then export with `.venv/bin/python scripts/export_demo.py`. The portable result is `artifacts/concert-atlas-draft2.zip`, including all images and coverage/option CSV reports. The tracked `concert-atlas-demo.zip` remains the immutable draft-1 baseline.
+Rebuild the catalog with `.venv/bin/python scripts/build_draft2.py`, then export with `.venv/bin/python scripts/export_demo.py`. The portable result is `artifacts/uu-scout.zip`, including all images and coverage/option CSV reports. The tracked `concert-atlas-demo.zip` remains the immutable draft-1 baseline.
 
 ## Try the original interactive demo
 
@@ -32,7 +37,7 @@ python -m venv .venv
 ```
 
 The development server listens on port 5000 on the local machine. Open it using
-your development environment's supported app viewer. It is not deployed publicly.
+your development environment's supported app viewer. Public hosting uses the static GitHub Pages workflow in [SHARING.md](SHARING.md).
 No external fonts, JavaScript CDNs, API keys or third-party services are required.
 
 ## Data and limitations
@@ -50,8 +55,9 @@ No external fonts, JavaScript CDNs, API keys or third-party services are require
   are under “Date / year needs review”, not assigned to January 2027.
 - The SVG follows the supplied section layout approximately. It is not an official
   seat-level map. No individual seat position is inferred from a masked number.
-- This is a private local supplier workspace. It has no payment integration or
-  public customer storefront. Do not expose supplier data publicly.
+- This is a fan-facing, read-only ticket explorer. The GitHub Pages export has no
+  payment integration or checkout. Original source references and uncertainty
+  labels stay available to visitors.
 - The earlier booking/import server scaffold is not part of this explorer's
   verified workflow; its admin pages and checkout are not linked in this UI.
 
@@ -76,11 +82,12 @@ refresh the browser after changing data.
 node --check static/explorer.js
 ```
 
-Optional browser checks (host Python with Playwright and `/usr/bin/chromium`,
+Browser checks (host Python with Playwright and `/usr/bin/chromium`,
 with the app running):
 
 ```sh
 python tests/browser_smoke.py
+python tests/browser_language.py
 ```
 
 The browser checks exercise section clicks and keyboard selection, date and sold
@@ -93,6 +100,6 @@ mobile overflow. Screenshots are written to ignored `artifacts/`.
 python scripts/export_demo.py
 ```
 
-Unzip `artifacts/concert-atlas-draft2.zip` and open `concert-atlas/index.html` in a
-browser. Keep its source-images directory alongside it. This contains supplier
-prices and original sheets, so share it only with intended reviewers.
+Unzip `artifacts/uu-scout.zip` and open `uu-scout/index.html` in a
+browser. Keep its source-images directory alongside it. This includes the same source quotes, original screenshots, and uncertainty
+labels as the app. See [SHARING.md](SHARING.md) for publishing and sharing.
