@@ -2,6 +2,19 @@
 'use strict';
 (() => {
  const zh = {
+"Contact":"联系我",
+"LET’S KEEP IN TOUCH":"保持联系",
+"Contact & feedback":"联系与反馈",
+"Run into an issue? Have a question about the site or tickets? DM me with any feedback, inquiries or suggestions.":"遇到问题，或对网站、门票有疑问？欢迎私信我，提出反馈、咨询或建议。",
+"Instagram":"Instagram",
+"WeChat":"微信",
+"Rednote":"小红书",
+"DM me for feedback, site issues or ticket inquiries.":"网站问题、意见反馈或门票咨询，都欢迎私信我。",
+"Please mention uu scout in your friend request so I can approve you.":"添加微信时，请在好友申请备注中写上 uu scout，方便我通过申请。",
+"Search for my username on Rednote and send me a DM.":"在小红书搜索我的用户名，即可私信联系我。",
+"Join the WeChat updates group":"加入微信更新群",
+"Add me on WeChat and mention that you’d like to join the uu scout group I’m putting together. We’ll share site updates, collect feedback and discuss future improvements—including other concerts you’d like uu scout to cover.":"欢迎添加我的微信，并备注想加入正在筹建的 uu scout 微信群。我们会在群里分享网站更新、收集反馈、讨论未来改进，也欢迎告诉我你希望 uu scout 增加哪些演唱会。",
+
 "Admin review note":"管理员核对备注",
 "None stated":"未注明",
 "Loading updates…":"正在加载动态…",
