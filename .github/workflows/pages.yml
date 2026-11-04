@@ -34,6 +34,7 @@ jobs:
       - name: Build standalone bilingual site
         env:
           UU_SCOUT_ADMIN_URL: ${{ vars.UU_SCOUT_ADMIN_URL }}
+          UU_SCOUT_NOTIFICATIONS_URL: ${{ vars.UU_SCOUT_NOTIFICATIONS_URL }}
         run: |
           python3 scripts/export_demo.py
           python3 -m zipfile -e artifacts/uu-scout.zip artifacts/pages
@@ -46,3 +47,9 @@ jobs:
       - name: Publish site
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Notify opted-in email subscribers
+        env:
+          NOTIFICATIONS_URL: ${{ vars.UU_SCOUT_NOTIFICATIONS_URL }}
+          NOTIFICATIONS_PUBLISH_SECRET: ${{ secrets.NOTIFICATIONS_PUBLISH_SECRET }}
+        run: python3 scripts/notify_subscribers.py

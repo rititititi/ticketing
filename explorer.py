@@ -28,3 +28,11 @@ def upload_portal():
 def updates():
     from updates_feed import build_feed
     return jsonify(build_feed(json.loads(CATALOG.read_text())))
+
+@explorer.get('/api/notification-config')
+def notification_config():
+    from urllib.parse import urlparse
+    value=os.environ.get('UU_SCOUT_NOTIFICATIONS_URL','').strip()
+    parsed=urlparse(value)
+    if parsed.scheme!='https' or not parsed.hostname or parsed.username or parsed.password:value=''
+    return jsonify(api_url=value)

@@ -1,0 +1,27 @@
+name = "uu-scout-notifications"
+main = "worker.mjs"
+compatibility_date = "2026-01-01"
+workers_dev = true
+keep_vars = true
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+[vars]
+SITE_URL = "https://rititititi.github.io/ticketing/"
+FEED_URL = "https://raw.githubusercontent.com/rititititi/ticketing/main/data/site-updates.json"
+# Sending stays off until EMAIL_ENABLED=true is added in the Worker dashboard after sender verification.
+EMAIL_PROVIDER = "brevo"
+PUBLIC_URL = "https://uu-scout-notifications.rita-song08.workers.dev"
+DAILY_EMAIL_LIMIT = "250"
+MAX_SUBSCRIBERS = "100"
+# Configure FROM_EMAIL after verifying your sending domain with your email provider.
+# Secrets: BREVO_API_KEY (or RESEND_API_KEY if EMAIL_PROVIDER=resend), TOKEN_SECRET (32+ random characters), PUBLISH_SECRET (32+ random characters).
+[triggers]
+crons = ["*/5 * * * *"]
+# Create a free D1 database and add the binding below (or use Cloudflare's dashboard):
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "uu-scout-notifications"
+# database_id = "YOUR_D1_DATABASE_ID"
+# migrations_dir = "migrations"

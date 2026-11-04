@@ -5,11 +5,15 @@ English / 简体中文 fan ticket explorer. [Download the latest uu scout ZIP](h
 To make the website available to fans, follow [the bilingual GitHub Pages sharing guide](SHARING.md). The repository includes the **Publish uu scout** deployment workflow. The website URL after deployment is `https://rititititi.github.io/ticketing/`.
 
 
+## Email alerts
+
+Fans can use the **Email alerts** tab to choose a date, section, numeric row (±3), seat prefix and minimum discount. Email confirmation is required. Alerts follow matching new publications. Sending stays disabled until a private Cloudflare D1/Worker and verified Brevo sender are configured. See [setup and signup instructions](docs/NOTIFICATIONS.md). No subscriber data or keys are stored in this repo.
+
 ## November 4 update
 
 The latest site contains **4,770 option rows across 122 screenshots**, including preserved historical versions. The 45-file update is fully accounted for: 42 new images, one previously uploaded image, and two duplicate files. It adds **1,158 rows**. [Batch coverage and limitations](data/nov4/REPORT.md) · [Coverage CSV](data/nov4/coverage.csv).
 
-Use **Below comparable median** to find lower comparable quotes, or open a ticket for **Compare similar tickets**. Matching uses the same performance, section and seat prefix with rows within ±3. The **New updates** tab shows price-drop and cheaper-comparable alerts with read/unread state and source evidence. Email/Telegram notifications are not configured.
+Use **Below comparable median** to find lower comparable quotes, or open a ticket for **Compare similar tickets**. Matching uses the same performance, section and seat prefix with rows within ±3. The **New updates** tab shows price-drop and cheaper-comparable alerts with read/unread state and source evidence. Email signup and matching delivery are implemented behind a private service; live sending requires [notification setup](docs/NOTIFICATIONS.md). Telegram is not enabled.
 
 ## Screenshot uploads and row corrections
 
@@ -17,7 +21,7 @@ The Chinese/Korean parser now separates 区/区域, 排/排数 and 座位号 and
 
 The new **Admin uploads / 管理上传** section connects to the free Cloudflare Worker admin panel. It requires one-time activation and private Worker secrets: [bilingual setup and usage guide](docs/ADMIN_UPLOADS.md). The panel also has **Review existing tickets** for approving uncertain row/seat fields and sold-out status against the original row, with an audit trail. Uploads require review before publishing. Updated screenshots retain older versions, and sold status is explicit.
 
-[Price alert matching rules and a free Telegram implementation plan](docs/PRICE_ALERTS.md). On-site alerts, the comparison filter and ticket details are implemented; email/Telegram delivery and subscriber storage are not enabled.
+[Price alert matching rules and a free Telegram implementation plan](docs/PRICE_ALERTS.md). On-site alerts, the comparison filter and ticket details are implemented; email opt-in, confirmation, unsubscribe and private delivery are implemented but need [activation](docs/NOTIFICATIONS.md).
 
 ## Draft 2
 

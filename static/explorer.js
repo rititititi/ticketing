@@ -180,8 +180,8 @@ async function init() {
 }
 document.querySelectorAll('dialog').forEach(d=>{d.querySelector('.close').onclick=()=>d.close();d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}});});
 function showView(name){
- if(!['explorer','sources','updates','contact'].includes(name))name='explorer';
- for(const view of ['sources','explorer','updates','contact'])(view==='contact'?$('contact'):$(view+'-view')).hidden=name!==view;
+ if(!['explorer','sources','updates','contact','notifications'].includes(name))name='explorer';
+ for(const view of ['sources','explorer','updates','contact','notifications'])(view==='contact'?$('contact'):$(view+'-view')).hidden=name!==view;
  document.querySelectorAll('[data-view]').forEach(tab=>{const active=tab.dataset.view===name;tab.classList.toggle('active',active);tab.setAttribute('aria-pressed',String(active));if(active)tab.setAttribute('aria-current','page');else tab.removeAttribute('aria-current');});
 }
 document.querySelectorAll('[data-view]').forEach(tab=>tab.onclick=event=>{event.preventDefault();const hash='#'+tab.dataset.view;if(location.hash!==hash)history.pushState(null,'',hash);showView(tab.dataset.view);});

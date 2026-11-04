@@ -36,3 +36,7 @@ Before enabling alerts, decide: Telegram or another channel; percentage/RMB thre
 - Stable alert IDs preserve read state across reloads; changed quotes/benchmarks produce different IDs. Read state is stored only in `localStorage` on the current browser. This is not a private user account or email subscription.
 
 “最新动态”现已展示网页内提醒、未读数量及前后报价证据。提醒随发布更新，已读状态保存在本浏览器。未来可增加邮件或 Telegram 主动订阅、验证及退订，届时需私有订阅信息存储与发送服务；目前暂未启用。
+
+## Email subscription implementation
+
+The private email Worker and public signup tab are now implemented. Email confirmation, watchlist matching, publication-triggered delivery, retries and unsubscribe are covered by tests. Live sending remains off until sender verification and private service configuration are completed. See [NOTIFICATIONS.md](NOTIFICATIONS.md). Earlier descriptions of subscriber storage as unimplemented refer to the initial comparison-only version. Telegram remains a future option.

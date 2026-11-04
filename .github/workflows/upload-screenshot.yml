@@ -42,6 +42,7 @@ jobs:
         if: inputs.phase == 'publish'
         env:
           UU_SCOUT_ADMIN_URL: ${{ vars.UU_SCOUT_ADMIN_URL }}
+          UU_SCOUT_NOTIFICATIONS_URL: ${{ vars.UU_SCOUT_NOTIFICATIONS_URL }}
         run: |
           python scripts/export_demo.py
           cp artifacts/uu-scout.zip uu-scout.zip
