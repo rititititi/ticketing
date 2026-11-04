@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {DatabaseSync} from 'node:sqlite';
-import worker,{runNotifications} from '../notifications-worker/worker.mjs';
+import worker,{runNotifications,providerFailureReason} from '../notifications-worker/worker.mjs';
 import {validatePreferences,matches} from '../notifications-worker/preferences.mjs';
 class D1 {
  constructor(){this.db=new DatabaseSync(':memory:');for(const file of fs.readdirSync('notifications-worker/migrations').filter(f=>f.endsWith('.sql')).sort())this.db.exec(fs.readFileSync('notifications-worker/migrations/'+file,'utf8'));}
@@ -51,3 +51,12 @@ feed.events.push(event('e',{row:'12',percent:20}));clock+=100;providerNetworkErr
 assert.throws(()=>validatePreferences({...preferences,row:0}));assert.throws(()=>validatePreferences({...preferences,scope:'all'}));assert.throws(()=>validatePreferences({...preferences,section:'F99'}));assert.equal(matches(preferences,event('e',{seat_mask:'2X'})),false);assert.equal(matches(preferences,event('e',{percent:5})),false);
 const bad=new Request('https://alerts.test/api/subscribe',{method:'POST',headers:{Origin:'https://alerts.test','Content-Type':'application/json'},body:'x'.repeat(9000)});response=await worker.fetch(bad,env,ctx);assert.equal(response.status,413);
 console.log('Email Worker passed: private SQLite/D1 storage, consent, email confirmation, scanner-safe activation/unsubscribe, matching, old-alert baseline, concurrency/deduplication, provider retry/idempotency, pause-safe deletion, origin checks and bounded requests.');
+
+assert.equal(providerFailureReason(403,{code:'unauthorized',message:'You are using an unrecognised IP address 192.0.2.1 for secret-key-redacted'}),'ip_restriction');
+assert.equal(providerFailureReason(403,{code:'permission_denied',message:'Your SMTP account is not yet activated'}),'account_activation');
+assert.equal(providerFailureReason(400,{message:'Sender is not verified'}),'sender_verification');
+assert.equal(providerFailureReason(401,{message:'Key not found'}),'api_credentials');
+assert.equal(providerFailureReason(403,{}),'permission_denied');
+assert.equal(providerFailureReason(429,{}),'quota_or_rate_limit');
+assert.equal(providerFailureReason(503,{}),'provider_error');
+console.log('Provider diagnostics passed: fixed reason labels distinguish IP, sender, account, credentials and quota without exposing response text.');

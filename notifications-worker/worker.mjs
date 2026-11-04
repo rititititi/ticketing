@@ -12,13 +12,30 @@ function response(request,env,data,status=200){const headers={'Content-Type':'ap
 async function bodyJSON(request){const reader=request.body?.getReader();if(!reader)throw problem('Missing request');let size=0;const chunks=[];while(true){const {done,value}=await reader.read();if(done)break;size+=value.length;if(size>8192){await reader.cancel();throw problem('Request too large',413);}chunks.push(value);}const bytes=new Uint8Array(size);let at=0;for(const c of chunks){bytes.set(c,at);at+=c.length;}try{return JSON.parse(new TextDecoder().decode(bytes));}catch{throw problem('Invalid JSON');}}
 async function limit(env,key,maximum,period,now){const bucket=Math.floor(now/period);const result=await env.DB.prepare('INSERT INTO rate_limits(key,count,expires_at) VALUES(?,1,?) ON CONFLICT(key) DO UPDATE SET count=count+1 WHERE count<?').bind(key+':'+bucket,now+period,maximum).run();if(!result.meta.changes)throw problem('Too many requests. Please try again later / 请求过多，请稍后重试',429);}
 async function reserveMail(env,now){const day=new Date(now).toISOString().slice(0,10),max=Math.max(1,Math.min(10000,Number(env.DAILY_EMAIL_LIMIT)||90));const result=await env.DB.prepare('INSERT INTO mail_budget(day,count) VALUES(?,1) ON CONFLICT(day) DO UPDATE SET count=count+1 WHERE count<?').bind(day,max).run();if(!result.meta.changes)throw problem('Email sending limit reached; please try again tomorrow / 今日发送额度已用完，请明天再试',429);}
+export function providerFailureReason(status,body={}){
+ const text=(String(body?.code||'')+' '+String(body?.message||'')).toLowerCase();
+ if(/(?:ip|address).{0,100}(?:unauthori|unrecogni|not.?allowed|block|restrict)|(?:unrecogni|unauthori|block).{0,60}ip/.test(text))return 'ip_restriction';
+ if(/(?:sender|from|domain).{0,100}(?:verif|authenticat|invalid|not.?valid|not.?allowed|not.?exist|unrecogni)|(?:unverified|invalid).{0,30}sender/.test(text))return 'sender_verification';
+ if(/(?:account|smtp|transactional).{0,100}(?:not.{0,15}activat|suspend|block|review|validat|permission|not.{0,15}enabl)|activat.{0,30}(?:account|smtp)/.test(text))return 'account_activation';
+ if(status===401||/(?:api.?key|credential).{0,60}(?:invalid|missing|expired|revoked)/.test(text))return 'api_credentials';
+ if(status===429||/credit|quota|rate.?limit/.test(text))return 'quota_or_rate_limit';
+ if(status===403)return 'permission_denied';
+ if(status>=500)return 'provider_error';
+ return 'request_rejected';
+}
 async function sendEmail(env,payload,idempotency){
  await reserveMail(env,Date.now());
  const resend=env.EMAIL_PROVIDER==='resend',hash=await digest(idempotency),providerKey=hash.slice(0,8)+'-'+hash.slice(8,12)+'-4'+hash.slice(13,16)+'-a'+hash.slice(17,20)+'-'+hash.slice(20,32);let res;
  try{
   res=await fetch(resend?'https://api.resend.com/emails':'https://api.brevo.com/v3/smtp/email',{method:'POST',headers:resend?{'Authorization':'Bearer '+env.RESEND_API_KEY,'Content-Type':'application/json','Idempotency-Key':idempotency}:{'api-key':env.BREVO_API_KEY,'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(resend?{from:'uu scout <'+env.FROM_EMAIL+'>',...payload}:{sender:{name:'uu scout',email:env.FROM_EMAIL},to:payload.to.map(email=>({email})),subject:payload.subject,textContent:payload.text,htmlContent:payload.html,headers:{idempotencyKey:providerKey}}),signal:AbortSignal.timeout(10000)});
  }catch{throw Object.assign(problem('Email delivery could not be confirmed. Please try again later / 暂时无法确认邮件投递状态，请稍后再试',503),{ambiguous:true});}
- if(!res.ok){console.warn('Email provider response',env.EMAIL_PROVIDER||'brevo',res.status);throw problem('Email provider is temporarily unavailable; please retry later / 邮件服务暂时不可用，请稍后重试',503);}
+ if(!res.ok){
+  let details={};try{details=await res.json();}catch{}
+  // Only a fixed reason label is logged. Never log the raw provider body, which may contain credentials or addresses.
+  const reason=providerFailureReason(res.status,details);
+  console.warn('Email provider response',env.EMAIL_PROVIDER||'brevo',res.status,'reason='+reason);
+  throw problem(res.status<500&&res.status!==429?'Email service setup needs attention. Please contact uu scout / 邮件服务设置需要处理，请联系 uu scout':'Email provider is temporarily unavailable; please retry later / 邮件服务暂时不可用，请稍后重试',503);
+ }
 }
 async function unsubscribeToken(env,id){return id+'.'+await signature(env.TOKEN_SECRET,'unsubscribe:'+id);}
 async function tokenSubscriber(env,token){if(typeof token!=='string'||!/^([a-f0-9]{32})\.([a-f0-9]{64})$/.test(token))throw problem('Invalid unsubscribe link');const [id,sig]=token.split('.');if(!await equal(sig,await signature(env.TOKEN_SECRET,'unsubscribe:'+id)))throw problem('Invalid unsubscribe link');return id;}
