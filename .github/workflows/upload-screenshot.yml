@@ -40,6 +40,8 @@ jobs:
         run: python scripts/process_screenshot.py --job "$JOB_ID" --phase "$PHASE"
       - name: Refresh downloadable snapshot after publication
         if: inputs.phase == 'publish'
+        env:
+          UU_SCOUT_ADMIN_URL: ${{ vars.UU_SCOUT_ADMIN_URL }}
         run: |
           python scripts/export_demo.py
           cp artifacts/uu-scout.zip uu-scout.zip
@@ -50,6 +52,7 @@ jobs:
           git config user.name "uu scout uploads"
           git config user.email "actions@users.noreply.github.com"
           git add data/upload-jobs data/updates data/catalog.json data/draft2 static/sources uu-scout.zip
+          if test -d data/admin-review; then git add data/admin-review data/site-updates.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "Process reviewed screenshot ${JOB_ID}"
             git pull --rebase origin main

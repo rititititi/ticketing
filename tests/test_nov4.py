@@ -13,7 +13,9 @@ class Nov4Tests(unittest.TestCase):
             source=sources[record['source_index']]
             self.assertEqual(hashlib.sha256((ROOT/'static/sources'/source['source_file']).read_bytes()).hexdigest(),record['sha256'])
             self.assertEqual(source['physical_option_rows'],record['physical_option_rows'])
-        rows=[t for t in catalog['tickets'] if t.get('batch_id')=='2026-11-04']
+        # Original extraction evidence stays immutable when an admin later corrects fields.
+        rows=[t for p in (ROOT/'data/updates').glob('nov4-*.json') for t in json.loads(p.read_text())['tickets']]
+        self.assertTrue({t['id'] for t in rows}.issubset({t['id'] for t in catalog['tickets']}))
         self.assertEqual(len(rows),1202);self.assertEqual(sum(t['sold'] for t in rows),23)
         self.assertEqual(sum(not t['performance_date'] for t in rows),620)
         unknown=[t for t in rows if not t['row']];self.assertEqual([(t['source_index'],t['physical_row']) for t in unknown],[(121,15)])

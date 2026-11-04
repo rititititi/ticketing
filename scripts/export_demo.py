@@ -4,21 +4,27 @@ import zipfile
 import os,json
 from urllib.parse import urlparse
 ROOT=Path(__file__).resolve().parents[1]
+import sys
+sys.path.insert(0,str(ROOT))
 
 def export_demo():
     html=(ROOT/'templates/explorer.html').read_text()
     css=(ROOT/'static/explorer.css').read_text()
     js=(ROOT/'static/explorer.js').read_text()
     translations=(ROOT/'static/i18n.js').read_text()
-    data=(ROOT/'data/catalog.json').read_text().replace('<','\\u003c')
+    catalog=json.loads((ROOT/'data/catalog.json').read_text())
+    from updates_feed import write_derived
+    write_derived(catalog,ROOT)
+    data=json.dumps(catalog,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')
     html=html.replace('<link rel="stylesheet" href="{{ url_for(\'static\',filename=\'explorer.css\') }}">','<style>'+css+'</style>')
     html=html.replace('<script src="{{ url_for(\'static\',filename=\'explorer.js\') }}" defer></script>','')
     html=html.replace('<script src="{{ url_for(\'static\',filename=\'i18n.js\') }}" defer></script>','')
     html=html.replace('href="/"','href="index.html"').replace('href="/uploads/"','href="uploads/"')
     js=js.replace("const response=await fetch('/api/catalog');if(!response.ok)throw new Error('Catalog unavailable');catalog=await response.json();", "catalog=JSON.parse(document.getElementById('catalog-data').textContent);")
+    js=js.replace("const feedResponse=await fetch('/api/updates');if(!feedResponse.ok)throw new Error('Updates unavailable');updatesFeed=await feedResponse.json();","updatesFeed=JSON.parse(document.getElementById('updates-data').textContent);")
     js=js.replace('/static/sources/', 'source-images/')
     html=html.replace('href="/static/nov4-coverage.csv"','href="reports/nov4-coverage.csv"')
-    html=html.replace('</body>', '<script id="catalog-data" type="application/json">'+data+'</script><script>'+translations+'</script><script>'+js+'</script></body>')
+    html=html.replace('</body>', '<script id="updates-data" type="application/json">'+(ROOT/'data/site-updates.json').read_text().replace('<','\\u003c')+'</script><script id="catalog-data" type="application/json">'+data+'</script><script>'+translations+'</script><script>'+js+'</script></body>')
     dest=ROOT/'artifacts';dest.mkdir(exist_ok=True)
     (dest/'index.html').write_text(html)
     with zipfile.ZipFile(dest/'uu-scout.zip','w',zipfile.ZIP_DEFLATED) as z:

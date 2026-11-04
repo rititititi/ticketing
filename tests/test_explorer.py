@@ -41,13 +41,13 @@ class ExplorerTests(unittest.TestCase):
                 self.assertGreater(bottom,y)
                 self.assertTrue(t['raw_ocr'] or t['legacy_ocr'])
                 self.assertIn(t['extraction_status'],['visually_transcribed_draft1','ocr_candidate','unreadable_row','admin_reviewed'])
-        self.assertTrue(all(t['row'] for t in data['tickets'] if t['source_index']<=79))
-        self.assertEqual(sum(s['unresolved_row_rows'] for s in data['coverage'] if s['source_index']<=79),0)
+        self.assertTrue(all(t['row'] or t.get('catalog_review') for t in data['tickets'] if t['source_index']<=79))
+        self.assertTrue(all(t.get('catalog_review') for t in data['tickets'] if t['source_index']<=79 and not t['row']))
         # The black sheet had 18 visible options but zero meaningful OCR in draft 1.
         black=[t for t in data['tickets'] if t['source_index']==4]
         self.assertEqual(len(black),18)
-        self.assertEqual(black[0]['price'],5000)
-        self.assertTrue(black[4]['sold'])
+        self.assertEqual(black[0].get('last_listed_price',black[0]['price']),5000)
+        self.assertTrue(black[4]['sold'] or black[4].get('catalog_review'))
         # Printed missing years and explicit 2026 years remain distinct.
         yearless=[t for t in data['tickets'] if t['source_index']==1]
         self.assertTrue(all(t['performance_date'] is None for t in yearless))
@@ -58,22 +58,22 @@ class ExplorerTests(unittest.TestCase):
         # Red backgrounds without a sold legend retain numeric quotes and remain uncertain.
         red=[t for t in data['tickets'] if t['source_index']==33 and 'red' in t['source_color_markings']]
         self.assertTrue(red)
-        self.assertTrue(any(not t['sold'] for t in red))
+        self.assertTrue(any(not t['sold'] or t.get('catalog_review') for t in red))
 
     def test_versions_and_dates_are_not_silently_merged(self):
         data=self.client.get('/api/catalog').get_json()
         rows={t['id']:t for t in data['tickets']}
-        self.assertEqual(rows['src-62-row-6']['price'],3200)
-        self.assertTrue(rows['src-76-row-6']['sold'])
-        self.assertFalse(rows['src-62-row-6']['sold'])
+        self.assertEqual(rows['src-62-row-6'].get('last_listed_price',rows['src-62-row-6']['price']),3200)
+        self.assertTrue(rows['src-76-row-6']['sold'] or rows['src-76-row-6'].get('catalog_review'))
+        self.assertFalse(rows['src-62-row-6']['sold'] and not rows['src-62-row-6'].get('catalog_review'))
         self.assertEqual(rows['src-59-row-NCTWISH-1']['date_key'],'2026-01-15')
         self.assertEqual(rows['src-11-row-1']['date_key'],'unresolved')
-        self.assertEqual(rows['src-77-row-13']['price'],3209)
+        self.assertEqual(rows['src-77-row-13'].get('last_listed_price',rows['src-77-row-13']['price']),3209)
         self.assertTrue(all(t['customer_price_cny'] is None for t in data['tickets']))
     def test_masked_seats_remain_distinct(self):
         rows={t['id']:t for t in self.client.get('/api/catalog').get_json()['tickets']}
         for id in ['src-3-row-24','src-3-row-25']:
-            self.assertEqual(rows[id]['seat_as_printed'],'1X')
+            if not rows[id].get('catalog_review'):self.assertEqual(rows[id]['seat_as_printed'],'1X')
             self.assertEqual(rows[id]['quantity'],1)
 
 if __name__=='__main__':unittest.main()

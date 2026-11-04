@@ -142,7 +142,7 @@ def publish(root,job):
     if review.get('status')!='approved' or review.get('reviewed_all_rows') is not True:raise ValueError('Admin review and approval required')
     rows=validate_rows(review['rows']);catalog=json.loads((root/'data/catalog.json').read_text());index=max(s['source_index'] for s in catalog['sources'])+1
     filename=f'upload-{job}.{request["extension"]}'
-    source=dict(source_index=index,source_file=filename,width=review['width'],height=review['height'],sha256=request['sha256'],visual_family=f'UPLOAD-{job[:8]}',family_description='Admin-uploaded screenshot',seller='Unknown',image_link='source-images/'+filename,ocr_line_count=len(rows),coverage_status='All option rows checked and approved by admin',review_status='Admin-reviewed; availability still requires supplier confirmation',previous_source_index=request['base_source_index'])
+    source=dict(source_index=index,source_file=filename,width=review['width'],height=review['height'],sha256=request['sha256'],visual_family=f'UPLOAD-{job[:8]}',family_description='Admin-uploaded screenshot',seller='Unknown',image_link='source-images/'+filename,ocr_line_count=len(rows),coverage_status='All option rows checked and approved by admin',review_status='Admin-reviewed; availability still requires supplier confirmation',previous_source_index=request['base_source_index'],published_at=review.get('approved_at') or request.get('created_at') or '')
     tickets=[]
     for ordinal,row in enumerate(rows,1):
         tickets.append(dict(**{k:row[k] for k in ['section','row','seat_as_printed','sold','price','raw_ocr']},id=f'upload-{job}-{ordinal}',event_id=catalog.get('event_id','nct-wish-gocheok'),source_index=index,source_file=filename,source_row=f'physical-{ordinal}',physical_row=ordinal,source_bbox=None,performance_date=row['performance_date'] or None,date_key=row['performance_date'] or 'unresolved',date_as_printed=extract_text_fields(row['raw_ocr'])['date_as_printed'] or row['performance_date'] or 'Unresolved',seller='Unknown',concert=catalog['concert'],quantity=1,quantity_basis='One per option row is provisional; confirm grouped offers',currency='CNY',supplier_quote_cny=row['price'],customer_price_cny=None,price_as_printed=str(row['price']) if row['price'] is not None else '',availability='sold_out_in_source' if row['sold'] else 'listed_in_source_confirm_with_seller',status='Sold in source' if row['sold'] else 'Admin reviewed · supplier confirmation needed',seating_notes=row['notes'],delivery='See original screenshot',verification='Reviewed and approved by admin against source screenshot',review_flags='Admin-reviewed transcription; seller identity and current stock require confirmation',extraction_status='admin_reviewed',legacy_ocr='',ocr_line_numbers=[],source_color_markings=[]))
@@ -153,6 +153,8 @@ def publish(root,job):
     (root/'data/catalog.json').write_text(json.dumps(updated,ensure_ascii=False,separators=(',',':')))
     (root/'data/draft2/coverage.json').write_text(json.dumps(updated['coverage'],ensure_ascii=False,indent=2))
     write_reports(updated,root)
+    from updates_feed import write_derived
+    write_derived(updated,root)
     review.update(status='published',published_source_index=index);(folder/'review.json').write_text(json.dumps(review,ensure_ascii=False,indent=2))
 
 def main():

@@ -127,10 +127,14 @@ def build():
     base['event_id']='nct-wish-gocheok'
     for ticket in result:ticket['event_id']=base['event_id']
     from catalog_updates import apply_saved_updates
-    base=apply_saved_updates(base,ROOT/'data/updates');coverage=base['coverage'];result=base['tickets']
+    base=apply_saved_updates(base,ROOT/'data/updates')
+    from ticket_reviews import apply_saved_reviews
+    base=apply_saved_reviews(base,ROOT/'data/reviews');coverage=base['coverage'];result=base['tickets']
     (ROOT/'data/catalog.json').write_text(json.dumps(base,ensure_ascii=False,separators=(',',':')))
     (ROOT/'data/draft2/coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2))
     from catalog_updates import write_reports
     write_reports(base,ROOT)
+    from updates_feed import write_derived
+    write_derived(base,ROOT)
     print(json.dumps(base['extraction_summary'],indent=2))
 if __name__=='__main__':build()

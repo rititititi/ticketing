@@ -23,3 +23,8 @@ def upload_portal():
     if value and (urlparse(value).scheme!='https' or not urlparse(value).netloc):value=''
     html=(Path(__file__).parent/'templates/upload-admin.html').read_text()
     return Response(html.replace('__ADMIN_URL__',json.dumps(value).replace('<','\\u003c')),mimetype='text/html')
+
+@explorer.get("/api/updates")
+def updates():
+    from updates_feed import build_feed
+    return jsonify(build_feed(json.loads(CATALOG.read_text())))

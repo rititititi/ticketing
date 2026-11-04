@@ -10,6 +10,7 @@ def normalize_row(value):
     text=re.sub(r'(?:排|열)\s*$','',text).strip()
     if not re.fullmatch(ROW,text,re.I):return ''
     if re.fullmatch('[一二三四五六七八九十]+',text):
+        if not re.fullmatch(r'(?:[一二三四五六七八九]|[一二三四五六七八九]?十[一二三四五六七八九]?)',text):return ''
         digits={c:i for i,c in enumerate('零一二三四五六七八九')}
         if '十' in text:
             a,b=text.split('十');return str((digits.get(a,1)*10)+digits.get(b,0))

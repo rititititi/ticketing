@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import worker,{validateRows} from '../admin-worker/worker.mjs';
+import worker,{validateRows,validateCorrections} from '../admin-worker/worker.mjs';
 const env={ADMIN_PASSWORD:'test-only-long-password',SESSION_SECRET:'test-only-session-key-with-32-characters',GITHUB_TOKEN:'fake-test-token',GITHUB_OWNER:'owner',GITHUB_REPO:'repo',GITHUB_BRANCH:'main',SITE_URL:'https://site.test/',ASSETS:{fetch:async()=>new Response('Admin UI')}};
 const host='https://admin.test';let calls=[];const files=new Map([['data/draft2/coverage.json',{data:[{source_index:1,source_file:'old.jpg',sha256:'old-sha'}],sha:'old'}]]);
 globalThis.fetch=async(url,options={})=>{
@@ -32,3 +32,29 @@ const bad=new FormData();bad.set('image',new File(['<script>'],'fake.png',{type:
 for(let i=0;i<11;i++)response=await worker.fetch(request('/api/login',{method:'POST',headers:{Origin:host,'CF-Connecting-IP':'test-rate','Content-Type':'application/json'},body:JSON.stringify({password:'bad'})}),env);
 assert.equal(response.status,429);
 console.log('Worker checks passed: password sessions, HttpOnly/Secure cookies, origin and CSRF protection, upload validation, explicit review, GitHub dispatch, forged sessions, and login throttling.');
+
+// Existing-ticket review must retain the password/CSRF boundary and validate source revisions.
+const revision='e'.repeat(64),record={id:'src-2-physical-1',revision,row:'12',seat_as_printed:'1X',availability:'unknown',reasons:['availability_unknown']};
+files.set('data/admin-review/index.json',{sha:'index',data:{sources:[{source_index:2,source_file:'new.jpg',sha256:'source-hash',pages:1}],total_pending:1}});
+files.set('data/admin-review/source-2-0.json',{sha:'page',data:{source:{source_index:2,sha256:'source-hash',pages:1},page:0,rows:[record]}});
+response=await worker.fetch(request('/api/review/queue'),env);assert.equal(response.status,401);
+response=await worker.fetch(request('/api/review/queue',{headers:{Cookie:cookieHeader}}),env);assert.equal(response.status,200);
+response=await worker.fetch(request('/api/review/sources/2?page=0',{headers:{Cookie:cookieHeader}}),env);assert.equal((await response.json()).rows[0].id,record.id);
+response=await worker.fetch(request('/api/review/sources/2?page=-1',{headers:{Cookie:cookieHeader}}),env);assert.equal(response.status,400);
+const correction={id:record.id,revision,row:'13',seat_as_printed:'2X',availability:'sold',note:'Confirmed from original'};
+const postReview=(body,extra={})=>worker.fetch(request('/api/review/approve',{method:'POST',headers:{Origin:host,Cookie:cookieHeader,'X-CSRF-Token':csrf,'Content-Type':'application/json',...extra},body:JSON.stringify(body)}),env);
+response=await postReview({source_index:2,changes:[correction],confirmed:false});assert.equal(response.status,400);
+response=await postReview({source_index:2,changes:[correction],confirmed:true},{'X-CSRF-Token':''});assert.equal(response.status,403);
+response=await postReview({source_index:2,changes:[{...correction,revision:'a'.repeat(64)}],confirmed:true});assert.equal(response.status,409);
+response=await postReview({source_index:2,changes:[{...correction,id:'another-source'}],confirmed:true});assert.equal(response.status,409);
+response=await postReview({source_index:2,changes:[{...correction,row:'not a row'}],confirmed:true});assert.equal(response.status,400);
+response=await postReview({source_index:2,changes:[{...correction,price:1}],confirmed:true});assert.equal(response.status,202);
+const reviewJob=(await response.json()).id,approved=files.get(`data/review-jobs/${reviewJob}/request.json`).data;
+assert.equal(approved.source_sha256,'source-hash');assert.equal(approved.changes[0].availability,'sold');assert.equal(approved.changes[0].price,undefined);
+assert.ok(calls.some(c=>c.url.includes('review-tickets.yml/dispatches')));
+response=await worker.fetch(request(`/api/review/jobs/${reviewJob}`,{headers:{Cookie:cookieHeader}}),env);assert.equal((await response.json()).status,'processing');
+files.set(`data/review-jobs/${reviewJob}/result.json`,{sha:'result',data:{status:'published',reviewed_count:1}});
+response=await worker.fetch(request(`/api/review/jobs/${reviewJob}`,{headers:{Cookie:cookieHeader}}),env);assert.equal((await response.json()).status,'published');
+response=await worker.fetch(request(`/api/review/jobs/${reviewJob}/retry`,{method:'POST',headers:{Origin:host,Cookie:cookieHeader,'X-CSRF-Token':csrf}}),env);assert.equal(response.status,409);
+assert.throws(()=>validateCorrections([correction,correction]));assert.throws(()=>validateCorrections([{...correction,availability:'yes'}]));
+console.log('Catalog review Worker passed: auth, CSRF, bounded pages, explicit confirmation, stale/mismatched records, field allowlist, audit staging, workflow dispatch and job results.');

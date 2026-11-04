@@ -2,7 +2,7 @@
 
 The public site now has a **Below comparable median** filter and **Compare similar tickets** in each ticket's details. It compares current offers using the rules below and links to cheaper comparable source records. A below-median signal requires at least two distinct peer quotes. Identical row/mask/price observations are counted once in the benchmark. Browser comparisons use the complete catalog, independently of display filters.
 
-These are comparisons across offers, not historical drops for an identified physical ticket. OCR quotes and per-ticket versus bundle pricing still require confirmation. `pricing.py` contains the same tested eligibility/matching rules. No notification service, subscriber database or Telegram delivery is configured; no alerts have been sent.
+These are comparisons across offers, not historical drops for an identified physical ticket. OCR quotes and per-ticket versus bundle pricing still require confirmation. `pricing.py` contains the same tested eligibility/matching rules. The **New updates** section now shows on-site alerts with a read/unread badge, source evidence and previous-quote links. Read state stays in this browser. No email/Telegram delivery or subscriber database is configured; no external messages have been sent.
 
 网站现已提供“低于同类报价中位数”筛选，并在票源详情中显示“比较相近票源”。中位数提示至少需要两个不同的同类报价；相同排号、掩码和价格的重复记录只计一次。目前比较不同票源，不能确认同一张实体票降价；尚未启用订阅或自动通知。
 
@@ -25,3 +25,14 @@ Example: F4, row 12, 1X can be compared with F4, rows 9–15, 1X at the same per
 推荐免费组合：Telegram Bot + 私有 Cloudflare D1/KV 订阅信息 + 发布后的 GitHub Actions 比价任务。粉丝主动订阅并可退订；按“同区、±3 排、同掩码”的规则匹配，再按你选定的折扣／金额门槛提醒。不要将“与类似票源相比更便宜”直接当成“同一张实体票降价”。
 
 Before enabling alerts, decide: Telegram or another channel; percentage/RMB threshold; whether a comparison should use the median or the cheapest current comparable; and how supplier-confirmed listing IDs will be linked between versions. No notifications have been enabled or sent by this change.
+
+## New updates / 最新动态
+
+`updates_feed.py` produces the public feed whenever screenshots or admin reviews are published. The exporter embeds it in the standalone HTML, so GitHub Pages and downloaded ZIPs support the same section without a separate API or sign-up.
+
+- **Price drop in updated listing:** require an explicitly linked screenshot-version relationship, a nonempty explicit printed listing ID (or its retained leading ID/date OCR column), a unique match within each earlier source, and the same resolved date, section, printed numeric row and seat prefix. Compare with the lowest matching earlier quote so differing historical snapshots do not exaggerate a drop. Original and previous ticket links are shown. OCR and physical ticket identity still require supplier confirmation.
+- **Lower comparable offer:** require at least two distinct peer row/price observations under the existing ±3-row matching rules. Repeat observations do not multiply the benchmark, and repeat identical offer observations appear once in the feed. This is not described as a historical drop for the same physical ticket.
+- Sold, paid, locked, known older versions and unresolved dates/ranges/masks do not enter the feed. Records disappear from the current alerts if subsequent publication makes them ineligible.
+- Stable alert IDs preserve read state across reloads; changed quotes/benchmarks produce different IDs. Read state is stored only in `localStorage` on the current browser. This is not a private user account or email subscription.
+
+“最新动态”现已展示网页内提醒、未读数量及前后报价证据。提醒随发布更新，已读状态保存在本浏览器。未来可增加邮件或 Telegram 主动订阅、验证及退订，届时需私有订阅信息存储与发送服务；目前暂未启用。

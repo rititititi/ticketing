@@ -1,5 +1,6 @@
 """Comparable-ticket matching for a future opt-in alert service; no notifications are sent."""
 import re
+import math
 from datetime import date
 
 def seat_mask(value):
@@ -14,7 +15,7 @@ def comparable(left,right):
         try:date.fromisoformat(item.get('performance_date') or '')
         except ValueError:return False
         if not re.fullmatch(r'\d{1,2}',str(item.get('row',''))):return False
-        if not isinstance(item.get('price'),(int,float)) or isinstance(item['price'],bool) or item['price']<=0:return False
+        if not isinstance(item.get('price'),(int,float)) or isinstance(item['price'],bool) or not math.isfinite(item['price']) or item['price']<=0:return False
         if item.get('section') in [None,'','UNRESOLVED']:return False
     if any(left.get(key)!=right.get(key) for key in ['performance_date','section','currency']):return False
     if (left.get('event_id') or left.get('concert'))!=(right.get('event_id') or right.get('concert')):return False

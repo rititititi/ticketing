@@ -10,7 +10,7 @@ The implementation is in the repository and tested locally. It cannot accept liv
 
 代码已写入仓库并通过本地测试。须先部署 Worker 并配置机密信息，才能在线上传。密码和令牌只填入 Worker 的加密 Secrets，不能写进仓库、聊天或网站前端。
 
-1. In Cloudflare, open **Workers & Pages → Create application → Import a repository** (the wording may be “Connect Git”). Connect `rititititi/ticketing`. Set the **root directory to `admin-worker`** and the deploy command to **`npx wrangler deploy`**. The included `wrangler.toml` configures the admin assets and non-secret repository settings. Use Workers Free.
+1. In Cloudflare, open **Workers & Pages → Create application → Import a repository** (the wording may be “Connect Git”). Connect `rititititi/ticketing`. Leave the repository root as it is and set the deploy command to **`npx wrangler deploy --config admin-worker/wrangler.toml`**. No root-directory option is needed. The included `wrangler.toml` configures the admin assets and non-secret repository settings. Use Workers Free.
 2. In GitHub, create a **fine-grained personal access token**, scoped to **only `ticketing`**. Grant **Contents: Read and write**, **Actions: Read and write**, and the default **Metadata: Read**. This lets the Worker save screenshots and dispatch the included upload workflow. Set an expiration you can renew.
 3. In the Worker’s **Settings → Variables and Secrets**, add these as **Secrets**, then deploy the new version:
 
@@ -26,7 +26,7 @@ The implementation is in the repository and tested locally. It cannot accept liv
 
 中文版步骤：
 
-1. Cloudflare **Workers & Pages → 创建应用 → 导入仓库**，选择 `ticketing`，根目录填 **`admin-worker`**，部署命令填 **`npx wrangler deploy`**，选择免费方案。
+1. Cloudflare **Workers & Pages → 创建应用 → 导入仓库**，选择 `ticketing`，无需更改根目录，部署命令填 **`npx wrangler deploy --config admin-worker/wrangler.toml`**，选择免费方案。
 2. 在 GitHub 创建仅限此仓库的细粒度令牌，权限为 **Contents 读写、Actions 读写、Metadata 读取**。
 3. 在 Worker **Settings → Variables and Secrets** 中，将 `ADMIN_PASSWORD`、`SESSION_SECRET`、`GITHUB_TOKEN` 分别保存为加密 **Secret**，然后重新部署。前两项分别使用至少 16 位密码和至少 32 位独立随机字符串。
 4. 打开 Worker 的 HTTPS 地址，使用密码登录。
@@ -63,3 +63,19 @@ An exact duplicate image is rejected. A changed sheet becomes a **new version**:
 ## What was verified
 
 Local tests cover authentication, signed expiring cookies, cross-origin/CSRF rejection, upload file validation, explicit review, version history, exact-duplicate rejection, stale-version rejection, report generation, idempotent publication, and comparable-price rules. Real Chinese screenshot OCR was exercised. Cloudflare deployment and live GitHub upload processing are not verified until your account secrets are configured and you complete a real upload.
+
+## Review existing tickets / 核对现有票源
+
+The deployed admin panel now has **Review existing tickets / 核对现有票源**, beside Screenshot uploads. It uses the existing password and GitHub token; no additional service or secret is required. If Cloudflare is connected to this repository, its Git build should redeploy the changed Worker and assets. Otherwise open the existing Worker in Cloudflare, choose **Deployments → Retry deployment** for the latest Git commit, using the same deploy command above. Keep the **Publish admin ticket corrections** workflow enabled.
+
+1. Sign in and choose **Review existing tickets**. Choose a current screenshot, then **Needs review** or **All records on this page**. Large sheets have Previous/Next page controls (100 records per page).
+2. Click **View row** to inspect the original row pixels and retained OCR. You can also open the full screenshot. OCR text is evidence and may be incorrect.
+3. Edit the printed row and seat text without splitting ranges or inventing an exact seat. Set availability to **Unknown**, **Available**, **Sold out**, **Paid**, or **Locked**. Unknown and blank fields remain unresolved. Original quotes are preserved in the audit if a ticket is marked sold; marking an originally sold record available does not invent a missing quote.
+4. Select only the records you checked, add an optional public review note, tick the explicit confirmation, and choose **Approve selected records**. Corrections and notes are public repository data. This approves row/seat/stock fields only, not every OCR price or date.
+5. GitHub Actions validates revisions, records before/after values, refreshes coverage and the public updates feed, and deploys Pages. The panel shows publication status. If a record or screenshot changed meanwhile, reload it and review again; stale edits are rejected.
+
+After a browser refresh the same tab can resume a pending review job. The job ID is displayed for reference. Failed/transient workflow dispatches have a Retry publication button. Keep the tab open until the publication result appears; a failed job may need the GitHub Actions log checked.
+
+The original screenshots and `data/updates` patches remain unchanged. Approved corrections live in append-only `data/reviews/<job>.json` audit files. `build_draft2.py` replays these reviews after screenshot imports, so subsequent catalog rebuilds retain approved corrections. The queue's bounded source pages under `data/admin-review` avoid the GitHub Contents API's large-JSON limit.
+
+管理员登录后，选择“核对现有票源”，按原图检查选中的排号、座位及状态。确认后发布，系统保存核对前后值并重新生成网站。“未知”或留空不会变为已确认；只核对这些字段，不会自动确认价格和日期。若记录已被他人更新，旧核对请求将被拒绝，须重新加载。无需新增账户或密钥；若未看到新入口，请在 Cloudflare 对最新 Git 版本重新部署现有 Worker。

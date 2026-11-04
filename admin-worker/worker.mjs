@@ -25,6 +25,7 @@ const pathFor=path=>path.split('/').map(encodeURIComponent).join('/');
 async function getFile(env,path){const response=await github(env,`contents/${pathFor(path)}?ref=${encodeURIComponent(env.GITHUB_BRANCH)}`);const file=await response.json();if(!file.content)throw new Error('Repository file is too large or unavailable.');return {sha:file.sha,data:JSON.parse(new TextDecoder().decode(decode(file.content.replace(/\s/g,''))))};}
 async function putFile(env,path,bytes,message,sha){return github(env,`contents/${pathFor(path)}`,{method:'PUT',body:JSON.stringify({message,content:base64(bytes),branch:env.GITHUB_BRANCH,...(sha?{sha}:{})})});}
 async function putJSON(env,path,data,message,sha){return putFile(env,path,encoder.encode(JSON.stringify(data,null,2)),message,sha);}
+async function dispatchReview(env,id){await github(env,'actions/workflows/review-tickets.yml/dispatches',{method:'POST',body:JSON.stringify({ref:env.GITHUB_BRANCH,inputs:{job_id:id}})});}
 async function dispatch(env,id,phase){await github(env,'actions/workflows/upload-screenshot.yml/dispatches',{method:'POST',body:JSON.stringify({ref:env.GITHUB_BRANCH,inputs:{job_id:id,phase}})});}
 export function validateRows(rows){
  if(!Array.isArray(rows)||!rows.length||rows.length>1000)throw new Error('Review between 1 and 1000 option rows.');
@@ -37,6 +38,22 @@ export function validateRows(rows){
   return {...result,price:row.price,sold:row.sold};
  });
 }
+export function validateCorrections(changes){
+ if(!Array.isArray(changes)||changes.length<1||changes.length>100)throw Object.assign(new Error('Select 1–100 records / 请选择 1–100 条记录'),{status:400});
+ const seen=new Set();
+ return changes.map(item=>{
+  if(!item||typeof item!=='object')throw Object.assign(new Error('Invalid record'),{status:400});
+  const clean={};for(const [key,limit] of [['id',200],['revision',64],['row',80],['seat_as_printed',80],['availability',20],['note',500]]){
+   if(typeof(item[key]??'')!=='string'||(item[key]??'').length>limit)throw Object.assign(new Error('Invalid '+key),{status:400});clean[key]=(item[key]??'').trim();
+  }
+  if(!clean.id||seen.has(clean.id)||!/^([a-f0-9]{64})$/.test(clean.revision))throw Object.assign(new Error('Invalid or repeated record; reload the queue'),{status:400});seen.add(clean.id);
+  if(!['unknown','available','sold','paid','locked'].includes(clean.availability))throw Object.assign(new Error('Choose availability explicitly'),{status:400});
+  const row=clean.row.normalize('NFKC');
+  if(row&&!/^(?:\d{1,2}(?:\s*[/~\-至到]\s*\d{1,2})*|[A-Z](?:\(\d{1,2}\))?|[一二三四五六七八九十]{1,3})$/i.test(row))throw Object.assign(new Error('Use a printed row number, letter or range; leave unreadable rows blank / 请填写原图排号，无法识别请留空'),{status:400});
+  return clean;
+ });
+}
+async function reviewSource(env,index){const file=await getFile(env,'data/admin-review/index.json');const source=file.data.sources.find(s=>s.source_index===index);if(!source)throw Object.assign(new Error('Current source not found; reload the queue'),{status:409});return source;}
 export default {async fetch(request,env){
  const url=new URL(request.url);
  if(!url.pathname.startsWith('/api/'))return env.ASSETS.fetch(request);
@@ -56,6 +73,45 @@ export default {async fetch(request,env){
   if(url.pathname==='/api/session'&&request.method==='GET')return json({csrf:auth.csrf,site:env.SITE_URL});
   if(url.pathname==='/api/logout'&&request.method==='POST')return json({ok:true},200,{'Set-Cookie':'uu_session=; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=0'});
   if(url.pathname==='/api/sources'&&request.method==='GET'){const file=await getFile(env,'data/draft2/coverage.json');return json(file.data.filter(s=>!s.superseded_by).map(s=>({index:s.source_index,name:s.source_file,sha256:s.sha256})));}
+  if(url.pathname==='/api/review/queue'&&request.method==='GET')return json((await getFile(env,'data/admin-review/index.json')).data);
+  const reviewSourceMatch=url.pathname.match(/^\/api\/review\/sources\/(\d{1,6})(\/image)?$/);
+  if(reviewSourceMatch&&request.method==='GET'){
+   const index=Number(reviewSourceMatch[1]),source=await reviewSource(env,index);
+   if(reviewSourceMatch[2]){
+    const response=await github(env,`contents/${pathFor('static/sources/'+source.source_file)}?ref=${encodeURIComponent(env.GITHUB_BRANCH)}`,{headers:{Accept:'application/vnd.github.raw+json'}});
+    return new Response(response.body,{headers:{'Content-Type':source.source_file.toLowerCase().endsWith('.png')?'image/png':'image/jpeg','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
+   }
+   const page=Number(url.searchParams.get('page')||0);if(!Number.isSafeInteger(page)||page<0||page>=source.pages)return json({error:'Invalid page'},400);
+   return json((await getFile(env,`data/admin-review/source-${index}-${page}.json`)).data);
+  }
+  if(url.pathname==='/api/review/approve'&&request.method==='POST'){
+   const body=await readJSON(request,180000);
+   if(body.confirmed!==true)return json({error:'Confirm row, seat and availability against the original screenshot / 请确认已对照原图核对排号、座位及状态'},400);
+   if(!Number.isSafeInteger(body.source_index)||body.source_index<1)return json({error:'Invalid source'},400);
+   const changes=validateCorrections(body.changes),source=await reviewSource(env,body.source_index);
+   // Validate IDs and revisions against bounded source pages, not the multi-megabyte catalog.
+   const records=new Map();for(let page=0;page<source.pages;page++){
+    const file=await getFile(env,`data/admin-review/source-${source.source_index}-${page}.json`);for(const row of file.data.rows)records.set(row.id,row);
+   }
+   if(changes.some(c=>!records.has(c.id)||records.get(c.id).revision!==c.revision))return json({error:'A selected record changed; reload and review it again / 记录已更新，请重新加载核对'},409);
+   const id=crypto.randomUUID().replace(/-/g,''),approved_at=new Date().toISOString();
+   await putJSON(env,`data/review-jobs/${id}/request.json`,{id,source_index:source.source_index,source_sha256:source.sha256,changes,confirmed:true,approved_at},`Approve ticket fields ${id}`);
+   try{await dispatchReview(env,id);}catch(error){return json({id,status:'dispatch_failed',error:error.message},202);}
+   return json({id,status:'processing'},202);
+  }
+  const reviewJob=url.pathname.match(/^\/api\/review\/jobs\/([a-f0-9]{32})(\/retry)?$/);
+  if(reviewJob){
+   const id=reviewJob[1];
+   if(reviewJob[2]&&request.method==='POST'){
+    await getFile(env,`data/review-jobs/${id}/request.json`);
+    try{const result=(await getFile(env,`data/review-jobs/${id}/result.json`)).data;if(result.status==='published')return json({error:'Already published'},409);}catch(error){if(error.status!==404)throw error;}
+    await dispatchReview(env,id);return json({ok:true},202);
+   }
+   if(!reviewJob[2]&&request.method==='GET'){
+    await getFile(env,`data/review-jobs/${id}/request.json`);
+    try{return json((await getFile(env,`data/review-jobs/${id}/result.json`)).data);}catch(error){if(error.status===404)return json({id,status:'processing'});throw error;}
+   }
+  }
   if(url.pathname==='/api/upload'&&request.method==='POST'){
    const size=Number(request.headers.get('Content-Length'));if(size>MAX_IMAGE+16384)return json({error:'Use a JPG or PNG smaller than 3 MB / 请使用小于 3 MB 的 JPG 或 PNG'},413);
    const bounded=await boundedBytes(request,MAX_IMAGE+16384),form=await new Request(request.url,{method:'POST',headers:{'Content-Type':request.headers.get('Content-Type')||''},body:bounded}).formData(),file=form.get('image');if(!file||typeof file.arrayBuffer!=='function'||file.size>MAX_IMAGE||file.size===0)return json({error:'Select a JPG or PNG under 3 MB'},400);

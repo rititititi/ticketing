@@ -9,15 +9,15 @@ To make the website available to fans, follow [the bilingual GitHub Pages sharin
 
 The latest site contains **4,770 option rows across 122 screenshots**, including preserved historical versions. The 45-file update is fully accounted for: 42 new images, one previously uploaded image, and two duplicate files. It adds **1,158 rows**. [Batch coverage and limitations](data/nov4/REPORT.md) · [Coverage CSV](data/nov4/coverage.csv).
 
-Use **Below comparable median** to find lower comparable quotes, or open a ticket for **Compare similar tickets**. Matching uses the same performance, section and seat prefix with rows within ±3. These are comparisons across offers; automatic notifications are not configured.
+Use **Below comparable median** to find lower comparable quotes, or open a ticket for **Compare similar tickets**. Matching uses the same performance, section and seat prefix with rows within ±3. The **New updates** tab shows price-drop and cheaper-comparable alerts with read/unread state and source evidence. Email/Telegram notifications are not configured.
 
 ## Screenshot uploads and row corrections
 
 The Chinese/Korean parser now separates 区/区域, 排/排数 and 座位号 and supports letter rows and row alternatives. The original missing-row cases were visually rechecked; all 3,568 existing options now have a row value. Selected row/section corrections are recorded in `data/row-corrections.json`; remaining uncertain sections and other fields stay labelled.
 
-The new **Admin uploads / 管理上传** section connects to the free Cloudflare Worker admin panel. It requires one-time activation and private Worker secrets: [bilingual setup and usage guide](docs/ADMIN_UPLOADS.md). Uploads require review before publishing. Updated screenshots retain older versions, and sold status is explicit.
+The new **Admin uploads / 管理上传** section connects to the free Cloudflare Worker admin panel. It requires one-time activation and private Worker secrets: [bilingual setup and usage guide](docs/ADMIN_UPLOADS.md). The panel also has **Review existing tickets** for approving uncertain row/seat fields and sold-out status against the original row, with an audit trail. Uploads require review before publishing. Updated screenshots retain older versions, and sold status is explicit.
 
-[Price alert matching rules and a free Telegram implementation plan](docs/PRICE_ALERTS.md). The on-site comparison filter and ticket details are implemented and tested; subscriber storage and notifications are not enabled.
+[Price alert matching rules and a free Telegram implementation plan](docs/PRICE_ALERTS.md). On-site alerts, the comparison filter and ticket details are implemented; email/Telegram delivery and subscriber storage are not enabled.
 
 ## Draft 2
 
