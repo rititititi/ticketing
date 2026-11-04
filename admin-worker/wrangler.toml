@@ -1,0 +1,15 @@
+name = "uu-scout-admin"
+main = "worker.mjs"
+compatibility_date = "2026-01-01"
+workers_dev = true
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+[vars]
+GITHUB_OWNER = "rititititi"
+GITHUB_REPO = "ticketing"
+GITHUB_BRANCH = "main"
+SITE_URL = "https://rititititi.github.io/ticketing/"
+# Add ADMIN_PASSWORD (16+ characters), SESSION_SECRET (32+ random characters),
+# and GITHUB_TOKEN as encrypted Worker secrets, never as vars or source files.

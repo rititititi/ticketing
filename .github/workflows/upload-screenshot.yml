@@ -1,0 +1,62 @@
+name: Process admin screenshot
+on:
+  workflow_dispatch:
+    inputs:
+      job_id:
+        description: Upload job ID (32 hex characters)
+        required: true
+        type: string
+      phase:
+        description: Processing phase
+        required: true
+        type: choice
+        options: [extract, publish]
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: admin-screenshot-updates
+  cancel-in-progress: false
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free Chinese OCR
+        if: inputs.phase == 'extract'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-chi-sim
+          python -m pip install -r requirements-ocr.txt
+      - name: Process reviewed screenshot
+        env:
+          JOB_ID: ${{ inputs.job_id }}
+          PHASE: ${{ inputs.phase }}
+        run: python scripts/process_screenshot.py --job "$JOB_ID" --phase "$PHASE"
+      - name: Refresh downloadable snapshot after publication
+        if: inputs.phase == 'publish'
+        run: |
+          python scripts/export_demo.py
+          cp artifacts/uu-scout.zip uu-scout.zip
+      - name: Commit result without losing concurrent uploads
+        env:
+          JOB_ID: ${{ inputs.job_id }}
+        run: |
+          git config user.name "uu scout uploads"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/upload-jobs data/updates data/catalog.json data/draft2 static/sources uu-scout.zip
+          if ! git diff --cached --quiet; then
+            git commit -m "Process reviewed screenshot ${JOB_ID}"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Rebuild site after publication
+        if: inputs.phase == 'publish'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main

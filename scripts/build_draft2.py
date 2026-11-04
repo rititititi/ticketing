@@ -7,6 +7,9 @@ import argparse,csv,hashlib,io,json,re,zipfile
 from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+import sys
+sys.path.insert(0,str(ROOT))
+from ticket_fields import extract_text_fields, normalize_row
 
 def baseline():
     with zipfile.ZipFile(ROOT/'concert-atlas-demo.zip') as z:
@@ -20,21 +23,6 @@ def normalize_date(text):
     # No assumed year for 1.15, Jan 15, or literal November dates.
     return None
 
-def extract_text_fields(raw):
-    text=raw.replace('|',' ')
-    match=re.search(r'(?<![A-Z0-9])(?:F(?:20|1\d|[1-9])|T(?:0[1-7]|1[1-7]))(?!\d)',text,re.I)
-    if not match:match=re.search(r'(?<![A-Z0-9])(?:10[1-9]|11[0-4]|20[1-9]|210|3(?:0[1-9]|1\d|2[0-2])|4(?:0[1-9]|1\d|2[0-4]))(?![\d,])',text,re.I)
-    section=match[0].upper() if match else 'UNRESOLVED'
-    valid={str(n) for a,b in [(101,114),(201,210),(301,322),(401,424)] for n in range(a,b+1)}|{f'F{n}' for n in range(1,21)}|{f'T{n:02}' for n in list(range(1,8))+list(range(11,18))}
-    if section not in valid:section='UNRESOLVED'
-    tail=text[match.end():] if match else ''
-    rowmatch=re.match(r'\s*(?:区|구|區)?\s*([0-9]{1,2}(?:[/~-][0-9]{1,2})*|[A-P])(?=\s|排|열|$)',tail,re.I)
-    row=rowmatch[1] if rowmatch else ''
-    seatmatch=re.search(r'(?<!\d)(?:[12]\s*)?[xX](?:\s*/\s*(?:[12]\s*)?[xX])?',tail)
-    seat=re.sub(r'\s+','',seatmatch[0]).upper() if seatmatch else ''
-    date=re.search(r'202[67]\s*[-/.]?\s*0?1\s*[-/.]?\s*1[56](?!\d)',text)
-    if not date:date=re.search(r'(?<!\d)(?:0?1|11)\s*[./月]\s*1[56](?:\s*日)?',text)
-    return {'section':section,'row':row,'seat_as_printed':seat,'date_as_printed':date[0] if date else ''}
 
 def number(text):
     ns=re.findall(r'(?<!\d)(\d{1,2}[,，]\d{3}|\d{4,5})(?!\d)',text)
@@ -42,6 +30,7 @@ def number(text):
 
 def build():
     base=baseline();overrides=json.loads((ROOT/'data/draft2/field-review.json').read_text());layouts=json.loads((ROOT/'data/draft2/row-layouts.json').read_text())
+    row_reviews=json.loads((ROOT/'data/row-corrections.json').read_text())
     allwords=json.loads((ROOT/'data/draft2/ocr-words.json').read_text())
     result=[];coverage=[]
     for source in base['sources']:
@@ -64,7 +53,7 @@ def build():
                 if 'section' in cols:
                     candidate=extract_text_fields(cols['section'])['section']
                     fields['section']=candidate
-                if 'row' in cols:fields['row']=cols['row'].strip()
+                if 'row' in cols:fields['row']=normalize_row(cols['row'])
                 if 'seat' in cols:fields['seat_as_printed']=cols['seat'].strip()
                 if 'position' in cols:
                     pos=extract_text_fields(cols['position'])
@@ -92,7 +81,7 @@ def build():
             if price is not None and old_numbers and price!=old_numbers[-1]:
                 conflicts.append('OCR passes disagree on quote; numeric quote withheld')
                 price=None
-            reviewed=overrides.get(str(i),{}).get(str(ordinal),{})
+            reviewed={**overrides.get(str(i),{}).get(str(ordinal),{}),**row_reviews.get(str(i),{}).get(str(ordinal),{})}
             fields.update({k:v for k,v in reviewed.items() if k in fields})
             if 'price' in reviewed:price=reviewed['price']
             sold=bool(re.search(r'\bsold\b|已售|售出',price_text or '',re.I))
@@ -119,6 +108,7 @@ def build():
                 elif 'yellow' in t['source_color_markings']:t['availability']='locked_in_source';t['review_flags']+='; Yellow = 已锁定 / locked in source legend; not confirmed available'
             if reviewed.get('sold'):
                 t.update(sold=True,availability='sold_out_in_source',status='Sold in source',price=None,supplier_quote_cny=None)
+            if reviewed.get('basis'):t['row_review_basis']=reviewed['basis']
             if reviewed:t['field_review']='Selected fields visually checked in draft 2; remaining fields retain extraction status'
             if not raw: t['extraction_status']='unreadable_row';t['review_flags']+='; No OCR text: original row retained for manual transcription'
             result.append(t);counts[t['extraction_status']]+=1
@@ -134,11 +124,15 @@ def build():
         source.update(physical_option_rows=len(layout['bands']),extracted_rows=len(layout['bands']),ocr_candidate_rows=counts['ocr_candidate'],unreadable_rows=counts['unreadable_row'],coverage_status='All identified table rows represented; field verification pending' if counts['ocr_candidate']+counts['unreadable_row'] else 'All rows visually transcribed in draft 1; supplier confirmation pending',review_status='Field review required; physical row coverage is separate from transcription accuracy')
         coverage.append({k:source[k] for k in ['source_index','source_file','sha256','visual_family','physical_option_rows','extracted_rows','visually_transcribed_rows','ocr_candidate_rows','unreadable_rows','unresolved_section_rows','unresolved_row_rows','unresolved_seat_rows','unresolved_date_rows','unresolved_quote_rows','coverage_status']})
     base.update(tickets=result,draft_version=2,coverage=coverage,extraction_summary=dict(total_source_images=len(coverage),total_option_rows=len(result),visually_transcribed_rows=sum(c['visually_transcribed_rows'] for c in coverage),ocr_candidate_rows=sum(c['ocr_candidate_rows'] for c in coverage),unreadable_rows=sum(c['unreadable_rows'] for c in coverage),note='Physical row coverage does not establish field accuracy. OCR candidates are not verified inventory.'))
+    base['event_id']='nct-wish-gocheok'
+    for ticket in result:ticket['event_id']=base['event_id']
+    from catalog_updates import apply_saved_updates
+    base=apply_saved_updates(base,ROOT/'data/updates');coverage=base['coverage'];result=base['tickets']
     (ROOT/'data/catalog.json').write_text(json.dumps(base,ensure_ascii=False,separators=(',',':')))
     (ROOT/'data/draft2/coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2))
     for name,rows in [('coverage',coverage),('ticket-options',result)]:
         keys=list(rows[0]) if name=='coverage' else ['id','source_index','source_file','physical_row','source_row','extraction_status','date_as_printed','performance_date','section','row','seat_as_printed','quantity','quantity_basis','price_as_printed','supplier_quote_cny','availability','seating_notes','delivery','verification','review_flags','source_bbox','source_color_markings','printed_identifier','ocr_line_numbers','raw_ocr','legacy_ocr']
-        stream=io.StringIO();writer=csv.DictWriter(stream,fieldnames=keys,extrasaction='ignore');writer.writeheader();writer.writerows(rows)
+        stream=io.StringIO();writer=csv.DictWriter(stream,fieldnames=keys,extrasaction='ignore',lineterminator='\n');writer.writeheader();writer.writerows(rows)
         (ROOT/f'data/draft2/{name}.csv').write_text('\ufeff'+stream.getvalue())
     print(json.dumps(base['extraction_summary'],indent=2))
 if __name__=='__main__':build()

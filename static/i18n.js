@@ -2,6 +2,13 @@
 'use strict';
 (() => {
  const zh = {
+ "Reviewed records":"已核对记录",
+ "Include older versions":"显示旧版本",
+ "Older screenshot version":"旧版本截图",
+ "Admin reviewed":"管理员已核对",
+ "Admin-uploaded screenshot":"管理员上传的截图",
+ "All screenshots, their option rows and original text. OCR candidates are provisional; compare with the original row before use.":"收录全部截图、票源行和原始文字。OCR 记录仅供参考，使用前请对照原图核实。",
+ "Coverage by screenshot · all sources":"逐图覆盖情况 · 全部来源",
  "Language": "语言",
  "Language preference": "语言偏好",
  "uu scout home": "uu scout 首页",
@@ -203,6 +210,7 @@
   let value=zh[key];
   if(value===undefined) {
    const rules=[
+    [/^(\d+) admin-reviewed uploaded rows\.$/,m=>`另有 ${m[1]} 行管理员核对的上传记录。`],
     [/^Section (.+)$/,m=>`区域 ${m[1]}`],
     [/^Row (.*)$/,m=>`排号 ${translate(m[1])}`],
     [/^Seat (.*)$/,m=>`座位 ${translate(m[1])}`],

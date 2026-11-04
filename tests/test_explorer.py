@@ -8,7 +8,7 @@ class ExplorerTests(unittest.TestCase):
     def setUp(self):
         self.client=app.test_client()
     def test_page_and_assets(self):
-        for url in ['/', '/explore', '/static/explorer.css', '/static/explorer.js', '/static/i18n.js']:
+        for url in ['/', '/explore', '/uploads/', '/static/explorer.css', '/static/explorer.js', '/static/i18n.js']:
             with self.client.get(url) as response:
                 self.assertEqual(response.status_code,200,url)
     def test_all_source_evidence_retained(self):
@@ -39,6 +39,8 @@ class ExplorerTests(unittest.TestCase):
                 self.assertGreater(bottom,y)
                 self.assertTrue(t['raw_ocr'] or t['legacy_ocr'])
                 self.assertIn(t['extraction_status'],['visually_transcribed_draft1','ocr_candidate','unreadable_row'])
+        self.assertTrue(all(t['row'] for t in data['tickets']))
+        self.assertEqual(sum(s['unresolved_row_rows'] for s in data['coverage']),0)
         # The black sheet had 18 visible options but zero meaningful OCR in draft 1.
         black=[t for t in data['tickets'] if t['source_index']==4]
         self.assertEqual(len(black),18)

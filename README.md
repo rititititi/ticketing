@@ -5,6 +5,14 @@ English / 简体中文 fan ticket explorer. [Download the latest uu scout ZIP](h
 To make the website available to fans, follow [the bilingual GitHub Pages sharing guide](SHARING.md). The repository includes the **Publish uu scout** deployment workflow. The website URL after deployment is `https://rititititi.github.io/ticketing/`.
 
 
+## Screenshot uploads and row corrections
+
+The Chinese/Korean parser now separates 区/区域, 排/排数 and 座位号 and supports letter rows and row alternatives. The original missing-row cases were visually rechecked; all 3,568 existing options now have a row value. Selected row/section corrections are recorded in `data/row-corrections.json`; remaining uncertain sections and other fields stay labelled.
+
+The new **Admin uploads / 管理上传** section connects to the free Cloudflare Worker admin panel. It requires one-time activation and private Worker secrets: [bilingual setup and usage guide](docs/ADMIN_UPLOADS.md). Uploads require review before publishing. Updated screenshots retain older versions, and sold status is explicit.
+
+[Price alert matching rules and a free Telegram implementation plan](docs/PRICE_ALERTS.md). The matcher is implemented and tested; subscriber storage and notifications are not enabled.
+
 ## Draft 2
 
 [Download Concert Atlas draft 2](https://github.com/rititititi/ticketing/raw/refs/heads/main/concert-atlas-draft2.zip). Unzip it and open `concert-atlas/index.html`; keep `source-images/` beside it.

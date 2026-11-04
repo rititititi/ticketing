@@ -1,0 +1,2070 @@
+{
+  "5": {
+    "1": {
+      "section": "T01",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "21内"
+    },
+    "2": {
+      "section": "T01",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "22内"
+    },
+    "3": {
+      "section": "T03",
+      "row": "A",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "10内"
+    },
+    "4": {
+      "section": "T03",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "12内"
+    },
+    "5": {
+      "section": "T03",
+      "row": "A",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "7内"
+    },
+    "6": {
+      "section": "T03",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "11内"
+    },
+    "7": {
+      "section": "T03",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "18内"
+    },
+    "8": {
+      "section": "T05",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "3内"
+    },
+    "9": {
+      "section": "T07",
+      "row": "A",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "12内"
+    },
+    "10": {
+      "section": "T07",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2内"
+    },
+    "12": {
+      "section": "T07",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "7内"
+    },
+    "13": {
+      "section": "108",
+      "row": "F",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1内"
+    },
+    "16": {
+      "section": "T01",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "18内"
+    },
+    "17": {
+      "section": "T01",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "21内"
+    },
+    "19": {
+      "section": "T03",
+      "row": "A",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "8内"
+    },
+    "20": {
+      "section": "T03",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "13内"
+    },
+    "21": {
+      "section": "T03",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "20内"
+    },
+    "22": {
+      "section": "T03",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "8内"
+    },
+    "26": {
+      "section": "T05",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "9内"
+    },
+    "27": {
+      "section": "T05",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "11内"
+    },
+    "28": {
+      "section": "T07",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "3内"
+    },
+    "29": {
+      "section": "T07",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "11内"
+    },
+    "30": {
+      "section": "T07",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2内"
+    },
+    "31": {
+      "section": "T07",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "3内"
+    },
+    "18": {
+      "section": "T03",
+      "row": "A",
+      "basis": "Visually rechecked against original screenshot row crop",
+      "seat_as_printed": "17内"
+    }
+  },
+  "6": {
+    "1": {
+      "section": "F11",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "2": {
+      "section": "F11",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "sold": true
+    },
+    "3": {
+      "section": "F11",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "4": {
+      "section": "F11",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "5": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "6": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "7": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "8": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "9": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "10": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "11": {
+      "section": "F11",
+      "row": "14",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "12": {
+      "section": "F11",
+      "row": "18",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "13": {
+      "section": "F11",
+      "row": "19",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "14": {
+      "section": "F11",
+      "row": "10",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "15": {
+      "section": "F13",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "sold": true
+    },
+    "16": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "17": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "18": {
+      "section": "F13",
+      "row": "10",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "sold": true
+    }
+  },
+  "54": {
+    "1": {
+      "section": "F11",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "2": {
+      "section": "F11",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "sold": true
+    },
+    "3": {
+      "section": "F11",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "sold": true
+    },
+    "4": {
+      "section": "F11",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "5": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "6": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "7": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "8": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "9": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "10": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "11": {
+      "section": "F11",
+      "row": "14",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "12": {
+      "section": "F11",
+      "row": "18",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "13": {
+      "section": "F11",
+      "row": "19",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "14": {
+      "section": "F11",
+      "row": "10",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "sold": true
+    },
+    "15": {
+      "section": "F13",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "sold": true
+    },
+    "16": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "17": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "18": {
+      "section": "F13",
+      "row": "10",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "sold": true
+    }
+  },
+  "10": {
+    "53": {
+      "section": "101",
+      "row": "O",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "54": {
+      "section": "114",
+      "row": "P",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "56": {
+      "section": "F14",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "58": {
+      "section": "F2",
+      "row": "14",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "59": {
+      "section": "F5",
+      "row": "23",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "63": {
+      "section": "F10",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "75": {
+      "section": "114",
+      "row": "O",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "14": {
+    "11": {
+      "section": "F11",
+      "row": "3",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "18": {
+    "24": {
+      "section": "F3",
+      "row": "13",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "25": {
+      "section": "F3",
+      "row": "22",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "26": {
+      "section": "F3",
+      "row": "23",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "20": {
+    "1": {
+      "section": "F11",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "2": {
+      "section": "F12",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "3": {
+      "section": "F12",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "4": {
+      "section": "F12",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "5": {
+      "section": "F12",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "6": {
+      "section": "F12",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "7": {
+      "section": "F12",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "8": {
+      "section": "F12",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "9": {
+      "section": "F13",
+      "row": "4",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "10": {
+      "section": "F13",
+      "row": "4",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "11": {
+      "section": "F13",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "12": {
+      "section": "F13",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "13": {
+      "section": "F13",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "14": {
+      "section": "F13",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "15": {
+      "section": "F13",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "16": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "17": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "18": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "19": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "20": {
+      "section": "F5",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "21": {
+      "section": "F5",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "22": {
+      "section": "F12",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "23": {
+      "section": "F4",
+      "row": "6",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "24": {
+      "section": "F4",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "25": {
+      "section": "F5",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    }
+  },
+  "72": {
+    "1": {
+      "section": "F11",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "2": {
+      "section": "F12",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "3": {
+      "section": "F12",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "4": {
+      "section": "F12",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "5": {
+      "section": "F12",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "6": {
+      "section": "F13",
+      "row": "4",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "7": {
+      "section": "F13",
+      "row": "4",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "8": {
+      "section": "F13",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "9": {
+      "section": "F13",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "10": {
+      "section": "F13",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "11": {
+      "section": "F13",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "12": {
+      "section": "F13",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "13": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "14": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "15": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "16": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "17": {
+      "section": "F5",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "18": {
+      "section": "F5",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "19": {
+      "section": "F12",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "20": {
+      "section": "F4",
+      "row": "6",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "21": {
+      "section": "F4",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "22": {
+      "section": "F5",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    }
+  },
+  "75": {
+    "1": {
+      "section": "F11",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "2": {
+      "section": "F12",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "3": {
+      "section": "F12",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "4": {
+      "section": "F12",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "5": {
+      "section": "F12",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "6": {
+      "section": "F13",
+      "row": "4",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "7": {
+      "section": "F13",
+      "row": "4",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "8": {
+      "section": "F13",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "9": {
+      "section": "F13",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "10": {
+      "section": "F13",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "11": {
+      "section": "F13",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "12": {
+      "section": "F13",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "13": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "14": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "15": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "16": {
+      "section": "F13",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "17": {
+      "section": "F5",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "18": {
+      "section": "F5",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "19": {
+      "section": "F12",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "20": {
+      "section": "F4",
+      "row": "6",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "21": {
+      "section": "F4",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "22": {
+      "section": "F5",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    }
+  },
+  "22": {
+    "4": {
+      "section": "F11",
+      "row": "14",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "22": {
+      "section": "F11",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "24": {
+    "46": {
+      "section": "T07",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "25": {
+    "29": {
+      "section": "F11",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "31": {
+      "section": "F11",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "26": {
+    "1": {
+      "section": "F1",
+      "row": "14",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "2": {
+      "section": "F1",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "3": {
+      "section": "F1",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "4": {
+      "section": "F2",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "5": {
+      "section": "F2",
+      "row": "14",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "6": {
+      "section": "F3",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "7": {
+      "section": "F4",
+      "row": "18",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "8": {
+      "section": "F5",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "9": {
+      "section": "F5",
+      "row": "23",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "10": {
+      "section": "F5",
+      "row": "23",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "11": {
+      "section": "F6",
+      "row": "22",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "12": {
+      "section": "F7",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "13": {
+      "section": "F8",
+      "row": "16",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "14": {
+      "section": "F10",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "15": {
+      "section": "F10",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "16": {
+      "section": "F10",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "17": {
+      "section": "F11",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "18": {
+      "section": "F11",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "19": {
+      "section": "F11",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "20": {
+      "section": "F13",
+      "row": "14",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "21": {
+      "section": "F13",
+      "row": "15",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "22": {
+      "section": "F13",
+      "row": "18",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "23": {
+      "section": "F14",
+      "row": "10",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "24": {
+      "section": "F14",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "25": {
+      "section": "F14",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "26": {
+      "section": "F14",
+      "row": "16",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "27": {
+      "section": "F14",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "28": {
+      "section": "F14",
+      "row": "18",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "29": {
+      "section": "F14",
+      "row": "19",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "30": {
+      "section": "F14",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "31": {
+      "section": "F14",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "32": {
+      "section": "F14",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "33": {
+      "section": "F14",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "34": {
+      "section": "F19",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "35": {
+      "section": "104",
+      "row": "F",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "36": {
+      "section": "104",
+      "row": "G",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    }
+  },
+  "44": {
+    "1": {
+      "section": "F1",
+      "row": "14",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "2": {
+      "section": "F1",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "3": {
+      "section": "F1",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "4": {
+      "section": "F2",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "5": {
+      "section": "F2",
+      "row": "14",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "6": {
+      "section": "F4",
+      "row": "18",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "7": {
+      "section": "F5",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "8": {
+      "section": "F6",
+      "row": "22",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "9": {
+      "section": "F7",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "10": {
+      "section": "F8",
+      "row": "16",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "11": {
+      "section": "F10",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "12": {
+      "section": "F10",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "13": {
+      "section": "F10",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "14": {
+      "section": "F10",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "15": {
+      "section": "F11",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "16": {
+      "section": "F11",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "17": {
+      "section": "F11",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "18": {
+      "section": "F13",
+      "row": "15",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "19": {
+      "section": "F13",
+      "row": "18",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "20": {
+      "section": "F14",
+      "row": "10",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "21": {
+      "section": "F14",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "22": {
+      "section": "F14",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "23": {
+      "section": "F14",
+      "row": "16",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "24": {
+      "section": "F14",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "25": {
+      "section": "F14",
+      "row": "18",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "26": {
+      "section": "F14",
+      "row": "19",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "27": {
+      "section": "F14",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "28": {
+      "section": "F14",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "29": {
+      "section": "F14",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "30": {
+      "section": "F19",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "31": {
+      "section": "104",
+      "row": "F",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "32": {
+      "section": "104",
+      "row": "G",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    }
+  },
+  "55": {
+    "1": {
+      "section": "F1",
+      "row": "14",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "2": {
+      "section": "F2",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "3": {
+      "section": "F2",
+      "row": "14",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "4": {
+      "section": "F5",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "5": {
+      "section": "F6",
+      "row": "22",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "6": {
+      "section": "F7",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "7": {
+      "section": "F8",
+      "row": "16",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "8": {
+      "section": "F10",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "9": {
+      "section": "F10",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "10": {
+      "section": "F10",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "11": {
+      "section": "F11",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "12": {
+      "section": "F11",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "13": {
+      "section": "F11",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "14": {
+      "section": "F13",
+      "row": "15",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "15": {
+      "section": "F13",
+      "row": "18",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "16": {
+      "section": "F14",
+      "row": "10",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "17": {
+      "section": "F14",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "18": {
+      "section": "F14",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "19": {
+      "section": "F14",
+      "row": "16",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "20": {
+      "section": "F14",
+      "row": "17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "21": {
+      "section": "F14",
+      "row": "18",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "22": {
+      "section": "F14",
+      "row": "19",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "23": {
+      "section": "F14",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "24": {
+      "section": "F14",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    },
+    "25": {
+      "section": "F14",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "26": {
+      "section": "F19",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "1X"
+    },
+    "27": {
+      "section": "104",
+      "row": "G",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    }
+  },
+  "32": {
+    "3": {
+      "section": "105",
+      "row": "M(9)",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "4": {
+      "section": "105",
+      "row": "E(1)",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "5": {
+      "section": "105",
+      "row": "G(3)",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "6": {
+      "section": "106",
+      "row": "I",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "9": {
+      "section": "T13",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "13": {
+      "section": "T17",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "36": {
+    "3": {
+      "section": "105",
+      "row": "M(9)",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "4": {
+      "section": "105",
+      "row": "E(1)",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "5": {
+      "section": "105",
+      "row": "G(3)",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "6": {
+      "section": "106",
+      "row": "I",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "9": {
+      "section": "T13",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "13": {
+      "section": "T17",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "40": {
+    "3": {
+      "section": "105",
+      "row": "M(9)",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "4": {
+      "section": "105",
+      "row": "E(1)",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "5": {
+      "section": "105",
+      "row": "G(3)",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "6": {
+      "section": "106",
+      "row": "I",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "9": {
+      "section": "T13",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "13": {
+      "section": "T17",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "35": {
+    "2": {
+      "section": "F6",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "3": {
+      "section": "F5",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "43": {
+    "1": {
+      "section": "F2",
+      "row": "3",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "X"
+    }
+  },
+  "45": {
+    "3": {
+      "section": "F5",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "36": {
+      "section": "F5",
+      "row": "22",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "49": {
+    "31": {
+      "section": "F11",
+      "row": "19",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns",
+      "seat_as_printed": "2X"
+    },
+    "5": {
+      "section": "F11",
+      "row": "9",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "10": {
+      "section": "F11",
+      "row": "13",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "34": {
+      "section": "F12",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "36": {
+      "section": "F12",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "38": {
+      "section": "F12",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "49": {
+      "section": "F13",
+      "row": "10",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "86": {
+      "section": "F4",
+      "row": "13",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "90": {
+      "section": "F4",
+      "row": "14",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "95": {
+      "section": "F4",
+      "row": "16",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "115": {
+      "section": "F5",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "116": {
+      "section": "F5",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "119": {
+      "section": "F5",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "122": {
+      "section": "F5",
+      "row": "13",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "123": {
+      "section": "F5",
+      "row": "13",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "164": {
+      "section": "F5",
+      "row": "23",
+      "basis": "Visually rechecked against original screenshot row crop"
+    }
+  },
+  "51": {
+    "10": {
+      "section": "T03",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "14": {
+      "section": "T03",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "46": {
+      "section": "T05",
+      "row": "A",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "49": {
+      "section": "T05",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "53": {
+      "section": "F11",
+      "row": "19",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "66": {
+    "1": {
+      "section": "T01",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "2": {
+      "section": "T01",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "3": {
+      "section": "T03",
+      "row": "A",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "5": {
+      "section": "T03",
+      "row": "A",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "8": {
+      "section": "T07",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "13": {
+      "section": "T03",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "14": {
+      "section": "T03",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "15": {
+      "section": "T05",
+      "row": "A",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "17": {
+      "section": "T05",
+      "row": "C",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "67": {
+    "8": {
+      "section": "F12",
+      "row": "2",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "10": {
+      "section": "F12",
+      "row": "3",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "15": {
+      "section": "F12",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "38": {
+      "section": "F12",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "40": {
+      "section": "F12",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "68": {
+    "15": {
+      "section": "F4",
+      "row": "15/16/17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "16": {
+      "section": "F4",
+      "row": "18/19/20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "18": {
+      "section": "F4",
+      "row": "8/9",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "19": {
+      "section": "F4",
+      "row": "11/12/14/15",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "21": {
+      "section": "F4",
+      "row": "12/13",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "35": {
+      "section": "F5",
+      "row": "10/12/13",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "69": {
+    "14": {
+      "section": "F4",
+      "row": "15/16/17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "15": {
+      "section": "F4",
+      "row": "18/19/20",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "18": {
+      "section": "F4",
+      "row": "11/12/15",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "34": {
+      "section": "F5",
+      "row": "10/12/13",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "35": {
+      "section": "F5",
+      "row": "14/15/17",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "39": {
+      "section": "F5",
+      "row": "11/13/15",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "70": {
+    "1": {
+      "section": "F11",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "3": {
+      "section": "F11",
+      "row": "3",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "12": {
+      "section": "F11",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "18": {
+      "section": "F11",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "23": {
+      "section": "F11",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "26": {
+      "section": "F11",
+      "row": "15",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "28": {
+      "section": "F13",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "41": {
+      "section": "F13",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "42": {
+      "section": "F13",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "71": {
+    "1": {
+      "section": "F11",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "21": {
+      "section": "F11",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "22": {
+      "section": "F11",
+      "row": "15",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "24": {
+      "section": "F13",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "34": {
+      "section": "F13",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "36": {
+      "section": "F13",
+      "row": "10",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "73": {
+    "9": {
+      "section": "F11",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "15": {
+      "section": "T11",
+      "row": "A",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "16": {
+      "section": "T11",
+      "row": "A",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "17": {
+      "section": "T11",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    },
+    "18": {
+      "section": "T11",
+      "row": "B",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "74": {
+    "43": {
+      "section": "F5",
+      "row": "6",
+      "basis": "Visually rechecked against original screenshot, Chinese/Korean row and section columns"
+    }
+  },
+  "39": {
+    "1": {
+      "section": "T01",
+      "row": "B",
+      "basis": "Visually rechecked in original screenshot"
+    },
+    "2": {
+      "section": "T01",
+      "row": "B",
+      "basis": "Visually rechecked in original screenshot"
+    },
+    "6": {
+      "section": "T05",
+      "row": "B",
+      "basis": "Visually rechecked in original screenshot"
+    },
+    "9": {
+      "section": "T01",
+      "row": "C",
+      "basis": "Visually rechecked in original screenshot"
+    },
+    "14": {
+      "section": "T03",
+      "row": "C",
+      "basis": "Visually rechecked in original screenshot"
+    },
+    "15": {
+      "section": "T05",
+      "row": "A",
+      "basis": "Visually rechecked in original screenshot"
+    },
+    "16": {
+      "section": "T05",
+      "row": "A",
+      "basis": "Visually rechecked in original screenshot"
+    },
+    "17": {
+      "section": "T05",
+      "row": "C",
+      "basis": "Visually rechecked in original screenshot"
+    },
+    "18": {
+      "section": "T07",
+      "row": "C",
+      "basis": "Visually rechecked in original screenshot"
+    }
+  },
+  "15": {
+    "1": {
+      "section": "F12",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "27": {
+      "section": "F12",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "29": {
+      "section": "F12",
+      "row": "8",
+      "basis": "Visually rechecked against original screenshot row crop"
+    }
+  },
+  "56": {
+    "1": {
+      "section": "F12",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot row crop"
+    }
+  },
+  "58": {
+    "1": {
+      "section": "F12",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot row crop"
+    }
+  },
+  "50": {
+    "23": {
+      "section": "F11",
+      "row": "20",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "31": {
+      "section": "F12",
+      "row": "5",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "46": {
+      "section": "F13",
+      "row": "4",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "47": {
+      "section": "F13",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "55": {
+      "section": "F13",
+      "row": "13",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "111": {
+      "section": "F5",
+      "row": "10",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "116": {
+      "section": "F5",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "131": {
+      "section": "F5",
+      "row": "18",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "132": {
+      "section": "F5",
+      "row": "19",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "133": {
+      "section": "F5",
+      "row": "19",
+      "basis": "Visually rechecked against original screenshot row crop"
+    }
+  },
+  "61": {
+    "39": {
+      "section": "F13",
+      "row": "7",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "43": {
+      "section": "F13",
+      "row": "12",
+      "basis": "Visually rechecked against original screenshot row crop"
+    },
+    "47": {
+      "section": "F11",
+      "row": "11",
+      "basis": "Visually rechecked against original screenshot row crop"
+    }
+  }
+}

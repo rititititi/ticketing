@@ -1,5 +1,7 @@
 # Concert Atlas · Draft 2
 
+Baseline report for the original 79 screenshots. After admin uploads, the website and coverage CSV/JSON show the current full catalog, including newer versions; the counts in this baseline report remain historical.
+
 The execution workspace was checked before extraction: the existing four unit tests passed, Python 3.12 and the Flask environment worked, and the checkout had no changes. The repository's `concert-atlas-demo.zip` is the immutable draft-1 baseline. All 79 JPGs in the uploaded `nct wish gocheok.zip` match its source references by SHA-256. Attached screenshot text is treated as supplier evidence, not instructions.
 
 ## What this draft contains
@@ -10,11 +12,11 @@ Coverage means every *identified table row* is represented. It does **not** mean
 
 ## Unresolved fields
 
-- Section not parsed: **292 rows**.
-- Row not parsed: **320 rows**.
-- Seat not parsed / not supplied: **361 rows**.
+- Section not parsed: **122 rows**.
+- Row not parsed: **0 rows**.
+- Seat not parsed / not supplied: **276 rows**.
 - Year or date unresolved: **1,167 rows**.
-- Numeric quote unresolved (excluding explicitly sold rows): **20 rows**.
+- Numeric quote unresolved (excluding explicitly sold rows): **12 rows**.
 
 These counts measure explicit gaps, not all possible OCR errors. Yearless January dates remain unresolved; literal November dates are retained. Printed 2026 dates remain 2026 even when other sheets show 2027. No year is inferred from a screenshot filename or update date. Original masked seat strings are retained; `2X` is not a quantity of two. The inherited one-per-row convention is provisional, and grouped offers require confirmation.
 
@@ -33,6 +35,10 @@ Reports included beside the app:
 ## Reproduce
 
 From `/workspace/ticketing`, run `.venv/bin/python scripts/build_draft2.py`, then `.venv/bin/python scripts/export_demo.py`. The compiler uses the original demo plus retained `data/draft2/row-layouts.json`, `ocr-words.json` and `field-review.json`. It does not require OCR packages to rebuild. The source images and immutable draft-1 demo must stay in place. Rebuilding is deterministic.
+
+## Row corrections and upload support
+
+The missing-row cases were visually rechecked against the originals, including 区/区域, 排/排数, 座位号 and Korean 구역/열. All 3,568 existing options now have a row value; letter rows and alternatives remain intact. `data/row-corrections.json` records 359 selected row/section reviews, and the parser now separates printed listing IDs from seating columns. Remaining uncertain sections and other fields are still labelled. Admin screenshot uploads require one-time free Cloudflare Worker setup; see `docs/ADMIN_UPLOADS.md` in the repository.
 
 ## Validation
 

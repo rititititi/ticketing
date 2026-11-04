@@ -1,5 +1,6 @@
 """Run with the host Python that provides Playwright and system Chromium."""
 from pathlib import Path
+import sys
 from playwright.sync_api import sync_playwright
 ROOT=Path(__file__).resolve().parents[1]
 with sync_playwright() as p:
@@ -7,7 +8,7 @@ with sync_playwright() as p:
     page=browser.new_page(viewport={'width':1440,'height':1100},device_scale_factor=1)
     errors=[]
     page.on('pageerror',lambda error:errors.append(str(error)))
-    response=page.goto('http://127.0.0.1:5000')
+    response=page.goto(sys.argv[1] if len(sys.argv)>1 else 'http://127.0.0.1:5000')
     assert response.status==200
     page.wait_for_selector('.ticket-card')
     assert '3,568' in page.locator('#draft-summary').inner_text()

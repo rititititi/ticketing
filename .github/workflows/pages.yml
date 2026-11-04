@@ -6,6 +6,7 @@ on:
     paths:
       - 'static/**'
       - 'templates/explorer.html'
+      - 'templates/upload-admin.html'
       - 'scripts/export_demo.py'
       - 'data/catalog.json'
       - 'data/draft2/**'
@@ -27,6 +28,8 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
       - name: Build standalone bilingual site
+        env:
+          UU_SCOUT_ADMIN_URL: ${{ vars.UU_SCOUT_ADMIN_URL }}
         run: |
           python3 scripts/export_demo.py
           python3 -m zipfile -e artifacts/uu-scout.zip artifacts/pages
