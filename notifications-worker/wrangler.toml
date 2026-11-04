@@ -19,9 +19,8 @@ MAX_SUBSCRIBERS = "100"
 # Secrets: BREVO_API_KEY (or RESEND_API_KEY if EMAIL_PROVIDER=resend), TOKEN_SECRET (32+ random characters), PUBLISH_SECRET (32+ random characters).
 [triggers]
 crons = ["*/5 * * * *"]
-# Create a free D1 database and add the binding below (or use Cloudflare's dashboard):
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "uu-scout-notifications"
-# database_id = "YOUR_D1_DATABASE_ID"
-# migrations_dir = "migrations"
+[[d1_databases]]
+binding = "DB"
+database_name = "uu-scout-notifications"
+database_id = "fb51fd5f-aa06-4d92-a458-be918dec7b27"
+migrations_dir = "migrations"
