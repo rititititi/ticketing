@@ -1,447 +1,449 @@
 {
-  "status": "review",
+  "status": "approved",
   "rows": [
     {
       "section": "F12",
       "row": "1",
       "seat_as_printed": "",
-      "price": 15000.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 1 | 排 | 5-10 | 一 | 一 | 15000"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 1 | 排 | 5-10 | 一 | 一 | 15000",
+      "price": 15000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "1",
       "seat_as_printed": "",
-      "price": 15000.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 1 | 排 | 15-20 | 一 | 一 | 15000"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 1 | 排 | 15-20 | 一 | 一 | 15000",
+      "price": 15000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "1",
       "seat_as_printed": "2X",
-      "price": 13000.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | Ati | F12 | 区 | 1 | 排 | 2X | 一 | 一 | 13000"
+      "raw_ocr": "20270115 | Ati | F12 | 区 | 1 | 排 | 2X | 一 | 一 | 13000",
+      "price": 13000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "2",
       "seat_as_printed": "",
-      "price": 14000.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 2 | 排 | 10-15 | 一 | 一 | 14000"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 2 | 排 | 10-15 | 一 | 一 | 14000",
+      "price": 14000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "2",
       "seat_as_printed": "",
-      "price": 13000.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 2 | 排 | 5-10 | 一 | 一 | 13000"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 2 | 排 | 5-10 | 一 | 一 | 13000",
+      "price": 13000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "2",
       "seat_as_printed": "",
-      "price": 13000.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 2 | 排 | 15-20 | 一 | 一 | 13000"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 2 | 排 | 15-20 | 一 | 一 | 13000",
+      "price": 13000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "X/2X",
-      "price": 11000.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 2HE | X/2X | 可 | 选 | 11000"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 2HE | X/2X | 可 | 选 | 11000",
+      "price": 11000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "3",
       "seat_as_printed": "",
-      "price": 12000.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 3 | 排 | 10-15 | 一 | 一 | 12000"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 3 | 排 | 10-15 | 一 | 一 | 12000",
+      "price": 12000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "3",
       "seat_as_printed": "",
-      "price": 11000.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 3 | 排 | 15-20 | 一 | 一 | 11000"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 3 | 排 | 15-20 | 一 | 一 | 11000",
+      "price": 11000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "",
-      "price": 9800.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 3HEX | 2 | 连 | 9800"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 3HEX | 2 | 连 | 9800",
+      "price": 9800,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "4",
       "seat_as_printed": "",
-      "price": 9800.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 4 | 排 | 10-15 | 2 | 连 | 9800"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 4 | 排 | 10-15 | 2 | 连 | 9800",
+      "price": 9800,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "4",
       "seat_as_printed": "",
-      "price": 8800.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 4 | 排 | XA2X | Biz | 8800"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 4 | 排 | XA2X | Biz | 8800",
+      "price": 8800,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "5",
       "seat_as_printed": "",
-      "price": 8500.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 5 | 排 | 5-10 | 2 | 连 | 8500"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 5 | 排 | 5-10 | 2 | 连 | 8500",
+      "price": 8500,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "2X",
-      "price": 7900.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | SHE | 2X | 2 | 连 | 7900"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | SHE | 2X | 2 | 连 | 7900",
+      "price": 7900,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "6",
       "seat_as_printed": "1X",
-      "price": 7800.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 6 | 排 | 1X | 2 | 张 | 不 | 连 | 7800"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 6 | 排 | 1X | 2 | 张 | 不 | 连 | 7800",
+      "price": 7800,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "6",
       "seat_as_printed": "",
-      "price": 7000.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 6 | 排 | XA2X | 可 | 选 | 7000"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 6 | 排 | XA2X | 可 | 选 | 7000",
+      "price": 7000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "1X",
-      "price": 7500.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 7HE | 1X | 一 | 一 | 7500"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 7HE | 1X | 一 | 一 | 7500",
+      "price": 7500,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "",
-      "price": 6500.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 7HEX | 2 | 连 | 6500"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 7HEX | 2 | 连 | 6500",
+      "price": 6500,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "1X",
-      "price": 6500.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | SHE | 1X | 2 | 连 | 6500"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | SHE | 1X | 2 | 连 | 6500",
+      "price": 6500,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "X/2X",
-      "price": 5800.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | SHE | X/2X | 可 | 选 | 5800"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | SHE | X/2X | 可 | 选 | 5800",
+      "price": 5800,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "1X",
-      "price": 5900.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | SHE | 1X | 2 | 连 | 5900"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | SHE | 1X | 2 | 连 | 5900",
+      "price": 5900,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "9",
       "seat_as_printed": "X/2X",
-      "price": 5300.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 9 | 排 | X/2X | 可 | 选 | 5300"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 9 | 排 | X/2X | 可 | 选 | 5300",
+      "price": 5300,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "1X",
-      "price": 5500.0,
-      "sold": false,
       "performance_date": "2027-01-15",
       "notes": "",
-      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 10HE | 1X | 一 | 一 | 5500"
+      "raw_ocr": "20270115 | 内 | 场 | F12 | 区 | 10HE | 1X | 一 | 一 | 5500",
+      "price": 5500,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "1",
       "seat_as_printed": "2X",
-      "price": 13000.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 1 | 排 | 2X | 一 | 一 | 13000"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 1 | 排 | 2X | 一 | 一 | 13000",
+      "price": 13000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "2",
       "seat_as_printed": "",
-      "price": 14000.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 2 | 排 | 10-15 | 一 | 一 | 14000"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 2 | 排 | 10-15 | 一 | 一 | 14000",
+      "price": 14000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "2",
       "seat_as_printed": "",
-      "price": 13000.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 2 | 排 | 5-10 | 一 | 一 | 13000"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 2 | 排 | 5-10 | 一 | 一 | 13000",
+      "price": 13000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "2",
       "seat_as_printed": "",
-      "price": 13000.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 2 | 排 | 15-20 | 一 | 一 | 13000"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 2 | 排 | 15-20 | 一 | 一 | 13000",
+      "price": 13000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "X",
-      "price": 11000.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 2HE | X | 一 | 一 | 11000"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 2HE | X | 一 | 一 | 11000",
+      "price": 11000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "3",
       "seat_as_printed": "",
-      "price": 12000.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 3 | 排 | 10-15 | 一 | 一 | 12000"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 3 | 排 | 10-15 | 一 | 一 | 12000",
+      "price": 12000,
+      "sold": false
     },
     {
       "section": "UNRESOLVED",
       "row": "",
       "seat_as_printed": "",
-      "price": 9800.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F122 | 3HE | X/2x | Biz | 9800"
+      "raw_ocr": "20270116 | 内 | 场 | F122 | 3HE | X/2x | Biz | 9800",
+      "price": 9800,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "4",
       "seat_as_printed": "",
-      "price": 9800.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 4 | 排 | 10-15 | 2 | 连 | 9800"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 4 | 排 | 10-15 | 2 | 连 | 9800",
+      "price": 9800,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "4",
       "seat_as_printed": "",
-      "price": 9500.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 4 | 排 | 5-10 | 2 | 连 | 9500"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 4 | 排 | 5-10 | 2 | 连 | 9500",
+      "price": 9500,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "4",
       "seat_as_printed": "X/2X",
-      "price": 9000.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 4 | 排 | X/2X | 可 | 选 | 9000"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 4 | 排 | X/2X | 可 | 选 | 9000",
+      "price": 9000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "5",
       "seat_as_printed": "",
-      "price": 9500.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 5 | 排 | 10-15 | 一 | 一 | 9500"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 5 | 排 | 10-15 | 一 | 一 | 9500",
+      "price": 9500,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "5",
       "seat_as_printed": "",
-      "price": 8500.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 5 | 排 | 5-10 | 2 | 连 | 8500"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 5 | 排 | 5-10 | 2 | 连 | 8500",
+      "price": 8500,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "5",
       "seat_as_printed": "",
-      "price": 8500.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 5 | 排 | 15-20 | 2 | 连 | 8500"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 5 | 排 | 15-20 | 2 | 连 | 8500",
+      "price": 8500,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "2X",
-      "price": 8000.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | SHE | 2X | 2 | 连 | 8000"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | SHE | 2X | 2 | 连 | 8000",
+      "price": 8000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "6",
       "seat_as_printed": "1X",
-      "price": 7800.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 6 | 排 | 1X | 2 | 连 | 7800"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 6 | 排 | 1X | 2 | 连 | 7800",
+      "price": 7800,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "X",
-      "price": 7000.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | GHEE | X | 一 | 一 | 7000"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | GHEE | X | 一 | 一 | 7000",
+      "price": 7000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "7",
       "seat_as_printed": "",
-      "price": 6500.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 7 | 排 | XA2X | 可 | 选 | 6500"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 7 | 排 | XA2X | 可 | 选 | 6500",
+      "price": 6500,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "1X",
-      "price": 6900.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | SHE | 1X | 一 | 一 | 6900"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | SHE | 1X | 一 | 一 | 6900",
+      "price": 6900,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "X",
-      "price": 6000.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | SHE | X | 一 | 一 | 6000"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | SHE | X | 一 | 一 | 6000",
+      "price": 6000,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "9",
       "seat_as_printed": "1X",
-      "price": 6500.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 9 | 排 | 1X | 2 | 连 | 6500"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | 9 | 排 | 1X | 2 | 连 | 6500",
+      "price": 6500,
+      "sold": false
     },
     {
       "section": "F12",
       "row": "",
       "seat_as_printed": "X",
-      "price": 6000.0,
-      "sold": false,
       "performance_date": "2027-01-16",
       "notes": "",
-      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | OH | X | 一 | 一 | 6000"
+      "raw_ocr": "20270116 | 内 | 场 | F12 | 区 | OH | X | 一 | 一 | 6000",
+      "price": 6000,
+      "sold": false
     }
   ],
   "width": 709,
-  "height": 1507
+  "height": 1507,
+  "reviewed_all_rows": true,
+  "approved_at": "2026-11-04T08:15:56.525Z"
 }
