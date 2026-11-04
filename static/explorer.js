@@ -179,5 +179,13 @@ async function init() {
  }catch(error){$('tickets').textContent='Could not load the supplier collection. Please restart the app and try again.';console.error(error);}
 }
 document.querySelectorAll('dialog').forEach(d=>{d.querySelector('.close').onclick=()=>d.close();d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}});});
-document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{for(const view of ['sources','explorer','updates'])$(view+'-view').hidden=b.dataset.view!==view;document.querySelectorAll('[data-view]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});});
+function showView(name){
+ if(!['explorer','sources','updates','contact'].includes(name))name='explorer';
+ for(const view of ['sources','explorer','updates','contact'])(view==='contact'?$('contact'):$(view+'-view')).hidden=name!==view;
+ document.querySelectorAll('[data-view]').forEach(tab=>{const active=tab.dataset.view===name;tab.classList.toggle('active',active);tab.setAttribute('aria-pressed',String(active));if(active)tab.setAttribute('aria-current','page');else tab.removeAttribute('aria-current');});
+}
+document.querySelectorAll('[data-view]').forEach(tab=>tab.onclick=event=>{event.preventDefault();const hash='#'+tab.dataset.view;if(location.hash!==hash)history.pushState(null,'',hash);showView(tab.dataset.view);});
+window.addEventListener('hashchange',()=>showView(location.hash.slice(1)));
+window.addEventListener('popstate',()=>showView(location.hash.slice(1)));
+showView(location.hash.slice(1));
 init();

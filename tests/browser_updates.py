@@ -15,7 +15,7 @@ with sync_playwright() as p:
     assert int(page.locator('#update-count').inner_text())==initial-1
     page.select_option('#language','zh');expect(page.locator('#updates-title')).to_have_text('最新动态');expect(page.locator('.update-card').first).to_contain_text('更新票源中的降价')
     page.locator('#updates-read-all').click();expect(page.locator('#update-count')).to_have_text('0');page.check('#updates-unread');expect(page.locator('#updates-list')).to_contain_text('暂无匹配动态')
-    page.reload();expect(page.locator('.ticket-card').first).to_be_visible();page.locator('[data-view="updates"]').click();page.uncheck('#updates-unread');expect(page.locator('.update-card').first).to_be_visible();expect(page.locator('#update-count')).to_have_text('0')
+    page.reload();expect(page.locator('#updates-view')).to_be_visible();assert page.url.endswith('#updates');page.uncheck('#updates-unread');expect(page.locator('.update-card').first).to_be_visible();expect(page.locator('#update-count')).to_have_text('0')
     page.set_viewport_size({'width':390,'height':844});assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
     page.screenshot(path=str(Path(__file__).resolve().parents[1]/'artifacts/updates-mobile.png'),full_page=True)
     assert not errors,errors
