@@ -1,5 +1,5 @@
 {
-  "status": "approved",
+  "status": "published",
   "rows": [
     {
       "section": "F12",
@@ -445,5 +445,6 @@
   "width": 709,
   "height": 1507,
   "reviewed_all_rows": true,
-  "approved_at": "2026-11-04T08:15:56.525Z"
+  "approved_at": "2026-11-04T08:15:56.525Z",
+  "published_source_index": 80
 }
