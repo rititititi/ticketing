@@ -112,7 +112,14 @@ export default {
   const url=new URL(request.url);
   if(request.method==='OPTIONS')return new Response(null,{status:204,headers:originAllowed(request,env)?{'Access-Control-Allow-Origin':request.headers.get('Origin'),'Access-Control-Allow-Methods':'GET,POST,OPTIONS','Access-Control-Allow-Headers':'Content-Type','Vary':'Origin'}:{}});
   if(!url.pathname.startsWith('/api/')){
-   if(url.pathname==='/confirm'||url.pathname==='/unsubscribe')return env.ASSETS.fetch(new Request(url.origin+'/action.html',request));
+   if(url.pathname==='/confirm'||url.pathname==='/unsubscribe'){
+    // Use the canonical asset path internally: /action.html redirects to /action,
+    // which would discard the email token and the confirmation/unsubscribe mode.
+    const assetUrl=new URL(request.url);assetUrl.pathname='/action';
+    const asset=await env.ASSETS.fetch(new Request(assetUrl,request));
+    const headers=new Headers(asset.headers);headers.set('Cache-Control','no-store');headers.set('Referrer-Policy','no-referrer');
+    return new Response(asset.body,{status:asset.status,headers});
+   }
    return env.ASSETS.fetch(request);
   }
   if(url.pathname==='/api/config'&&request.method==='GET')return response(request,env,{ready:!!await ready(env),channel:'email',site:env.SITE_URL});

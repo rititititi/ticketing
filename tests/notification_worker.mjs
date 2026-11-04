@@ -19,7 +19,7 @@ globalThis.fetch=async(url,options={})=>{
  }
  throw new Error('Unexpected external request '+url);
 };
-const env={DB:new D1(),EMAIL_ENABLED:'true',EMAIL_PROVIDER:'brevo',BREVO_API_KEY:'fake-provider-key',TOKEN_SECRET:'fake-token-secret-with-more-than-32-characters',PUBLISH_SECRET:'fake-publish-secret-with-more-than-32-characters',FROM_EMAIL:'verified@example.com',PUBLIC_URL:'https://alerts.test',SITE_URL:'https://rititititi.github.io/ticketing/',FEED_URL:'https://feed.test/updates.json',DAILY_EMAIL_LIMIT:'250',MAX_SUBSCRIBERS:'100',ASSETS:{fetch:async()=>new Response('Confirmation page')}};
+const env={DB:new D1(),EMAIL_ENABLED:'true',EMAIL_PROVIDER:'brevo',BREVO_API_KEY:'fake-provider-key',TOKEN_SECRET:'fake-token-secret-with-more-than-32-characters',PUBLISH_SECRET:'fake-publish-secret-with-more-than-32-characters',FROM_EMAIL:'verified@example.com',PUBLIC_URL:'https://alerts.test',SITE_URL:'https://rititititi.github.io/ticketing/',FEED_URL:'https://feed.test/updates.json',DAILY_EMAIL_LIMIT:'250',MAX_SUBSCRIBERS:'100',ASSETS:{fetch:async request=>{const url=new URL(request.url);assert.equal(url.pathname,'/action','Email action pages must use the canonical asset URL without redirecting');assert.ok(url.searchParams.get('t'),'Preserve email token during internal asset routing');return new Response('Confirmation page');}}};
 const pending=[];const ctx={waitUntil:p=>pending.push(p)};
 const request=(path,body,options={})=>new Request('https://alerts.test'+path,{method:body?'POST':'GET',headers:{Origin:'https://rititititi.github.io','Content-Type':'application/json',...options},...(body?{body:JSON.stringify(body)}:{})});
 const call=(path,body,options)=>worker.fetch(request(path,body,options),env,ctx);
@@ -28,7 +28,7 @@ response=await call('/api/subscribe',{email:'fan@example.com',preferences,consen
 response=await call('/api/subscribe',{email:'fan@example.com',preferences,consent:true},{Origin:'https://evil.test'});assert.equal(response.status,403);
 response=await call('/api/subscribe',{email:'fan@example.com',preferences,consent:true});assert.equal(response.status,200);assert.equal(sent.length,1);assert.equal((await env.DB.prepare('SELECT COUNT(*) AS n FROM subscribers').first()).n,0);
 const token=sent[0].textContent.match(/confirm\?t=([a-f0-9]{64})/)[1];
-response=await call('/confirm?t='+token);assert.equal(response.status,200);assert.equal((await env.DB.prepare('SELECT COUNT(*) AS n FROM subscribers').first()).n,0);
+response=await call('/confirm?t='+token);assert.equal(response.status,200);assert.equal(response.headers.get('Location'),null);assert.equal(response.headers.get('Cache-Control'),'no-store');assert.equal((await env.DB.prepare('SELECT COUNT(*) AS n FROM subscribers').first()).n,0);
 response=await call('/api/confirm',{token,confirmed:false});assert.equal(response.status,400);
 response=await call('/api/confirm',{token,confirmed:true});assert.equal(response.status,200);assert.equal((await env.DB.prepare('SELECT COUNT(*) AS n FROM subscribers').first()).n,1);
 clock+=100;const beforeWrites=env.DB.db.prepare('SELECT total_changes() AS n').get().n;await runNotifications(env);assert.ok(env.DB.db.prepare('SELECT total_changes() AS n').get().n-beforeWrites<5,'Unchanged checks must not rewrite every feed event or subscriber');assert.equal(sent.length,1,'Existing feed is not delivered as a new alert');
