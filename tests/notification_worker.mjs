@@ -4,7 +4,7 @@ import {DatabaseSync} from 'node:sqlite';
 import worker,{runNotifications} from '../notifications-worker/worker.mjs';
 import {validatePreferences,matches} from '../notifications-worker/preferences.mjs';
 class D1 {
- constructor(){this.db=new DatabaseSync(':memory:');this.db.exec(fs.readFileSync('notifications-worker/migrations/0001_subscriptions.sql','utf8'));}
+ constructor(){this.db=new DatabaseSync(':memory:');for(const file of fs.readdirSync('notifications-worker/migrations').filter(f=>f.endsWith('.sql')).sort())this.db.exec(fs.readFileSync('notifications-worker/migrations/'+file,'utf8'));}
  prepare(sql){const db=this.db;let values=[];const statement={bind(...v){values=v;return statement;},_run(){const r=db.prepare(sql).run(...values);return {success:true,meta:{changes:Number(r.changes)}};},async run(){return statement._run();},async first(){return db.prepare(sql).get(...values)||null;},async all(){return {results:db.prepare(sql).all(...values)};}};return statement;}
  async batch(statements){this.db.exec('BEGIN');try{const results=statements.map(s=>s._run());this.db.exec('COMMIT');return results;}catch(e){this.db.exec('ROLLBACK');throw e;}}
 }
@@ -31,7 +31,7 @@ const token=sent[0].textContent.match(/confirm\?t=([a-f0-9]{64})/)[1];
 response=await call('/confirm?t='+token);assert.equal(response.status,200);assert.equal((await env.DB.prepare('SELECT COUNT(*) AS n FROM subscribers').first()).n,0);
 response=await call('/api/confirm',{token,confirmed:false});assert.equal(response.status,400);
 response=await call('/api/confirm',{token,confirmed:true});assert.equal(response.status,200);assert.equal((await env.DB.prepare('SELECT COUNT(*) AS n FROM subscribers').first()).n,1);
-clock+=100;await runNotifications(env);assert.equal(sent.length,1,'Existing feed is not delivered as a new alert');
+clock+=100;const beforeWrites=env.DB.db.prepare('SELECT total_changes() AS n').get().n;await runNotifications(env);assert.ok(env.DB.db.prepare('SELECT total_changes() AS n').get().n-beforeWrites<5,'Unchanged checks must not rewrite every feed event or subscriber');assert.equal(sent.length,1,'Existing feed is not delivered as a new alert');
 feed.events.push(event('b',{row:'16'}));clock+=100;await runNotifications(env);assert.equal(sent.length,1,'Row outside ±3 must not match');
 feed.events.push(event('c',{row:'15',kind:'listing_drop',percent:12,previous_price:3500}));clock+=100;
 response=await call('/api/internal/publish',{}, {Authorization:'Bearer wrong'});assert.equal(response.status,401);

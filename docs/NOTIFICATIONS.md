@@ -26,7 +26,7 @@ The website remains on free GitHub Pages. A separate **uu-scout-notifications** 
 
 ### 2. Create the private database
 
-In Cloudflare, create a free D1 database named `uu-scout-notifications`. Apply the SQL in [0001_subscriptions.sql](../notifications-worker/migrations/0001_subscriptions.sql), either through its Console or Wrangler.
+In Cloudflare, create a free D1 database named `uu-scout-notifications`. Apply both SQL migrations in order, either through its Console or Wrangler: [0001_subscriptions.sql](../notifications-worker/migrations/0001_subscriptions.sql), then [0002_feed_watermarks.sql](../notifications-worker/migrations/0002_feed_watermarks.sql).
 
 The CLI version, using your existing Cloudflare login:
 
@@ -95,7 +95,7 @@ The website never stores the email in browser storage or in the public GitHub ca
 
 The private publication endpoint requires `PUBLISH_SECRET`; it cannot be used anonymously to send campaigns. Signup has per-IP and per-recipient rate limits, bounded requests, consent, a honeypot, and confirmation. Unsubscribe uses a signed token and works without the sender API being available.
 
-Per-subscriber leases, durable event claims and a private outbox prevent concurrent runs from mailing the same event twice. Provider calls carry stable idempotency keys. Known failures are retried with backoff; an uncertain delivery is not retried after the provider's deduplication window, preventing accidental duplicate mail. `uncertain`/`failed` outbox rows need operator inspection if delivery troubleshooting is required. Long runs stop within the Worker execution window; remaining work is picked up by the retry schedule. Free-provider quotas can delay or stop delivery.
+Feed checksums and subscriber publication watermarks avoid repeatedly writing unchanged alerts or checking every user on each cron. Per-subscriber leases, durable event claims and a private outbox prevent concurrent runs from mailing the same event twice. Provider calls carry stable idempotency keys. Known failures are retried with backoff; an uncertain delivery is not retried after the provider's deduplication window, preventing accidental duplicate mail. `uncertain`/`failed` outbox rows need operator inspection if delivery troubleshooting is required. Long runs stop within the Worker execution window; remaining work is picked up by the retry schedule. Free-provider quotas can delay or stop delivery.
 
 Unconfirmed signups expire after 24 hours and are cleaned up on a delivery run. Sent/failed outbox content is removed after 30 days; provider logs are governed separately. Unsubscribe immediately deletes the subscriber and cascades its outbox/delivery claims.
 

@@ -6,7 +6,7 @@ async function signature(secret,text){const key=await crypto.subtle.importKey('r
 async function equal(a,b){return await digest(a)===await digest(b);}
 function problem(message,status=400){return Object.assign(new Error(message),{status});}
 function configured(env){return env.EMAIL_ENABLED==='true'&&env.DB&&(env.EMAIL_PROVIDER==='resend'?env.RESEND_API_KEY:env.BREVO_API_KEY)&&typeof env.PUBLIC_URL==='string'&&env.PUBLIC_URL.startsWith('https://')&&env.TOKEN_SECRET?.length>=32&&typeof env.FROM_EMAIL==='string'&&/^[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+$/.test(env.FROM_EMAIL);}
-async function ready(env){if(!configured(env))return false;try{await env.DB.prepare('SELECT id FROM subscribers LIMIT 1').first();return true;}catch{return false;}}
+async function ready(env){if(!configured(env))return false;try{await env.DB.prepare('SELECT last_checked_at FROM subscribers LIMIT 1').first();await env.DB.prepare("SELECT value FROM service_state WHERE key='feed_hash'").first();return true;}catch{return false;}}
 function originAllowed(request,env){const origin=request.headers.get('Origin');return origin===new URL(request.url).origin||origin===new URL(env.SITE_URL).origin;}
 function response(request,env,data,status=200){const headers={'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Vary':'Origin'};if(originAllowed(request,env))headers['Access-Control-Allow-Origin']=request.headers.get('Origin');return new Response(JSON.stringify(data),{status,headers});}
 async function bodyJSON(request){const reader=request.body?.getReader();if(!reader)throw problem('Missing request');let size=0;const chunks=[];while(true){const {done,value}=await reader.read();if(done)break;size+=value.length;if(size>8192){await reader.cancel();throw problem('Request too large',413);}chunks.push(value);}const bytes=new Uint8Array(size);let at=0;for(const c of chunks){bytes.set(c,at);at+=c.length;}try{return JSON.parse(new TextDecoder().decode(bytes));}catch{throw problem('Invalid JSON');}}
@@ -25,10 +25,13 @@ async function tokenSubscriber(env,token){if(typeof token!=='string'||!/^([a-f0-
 export async function syncFeed(env){
  const res=await fetch(env.FEED_URL,{headers:{Accept:'application/json','Cache-Control':'no-cache'},signal:AbortSignal.timeout(15000)});if(!res.ok)throw problem('Ticket updates are temporarily unavailable',503);
  const text=await res.text();if(text.length>2000000)throw problem('Unexpected updates payload',503);const data=JSON.parse(text);if(!Array.isArray(data.events)||data.events.length>3000)throw problem('Invalid updates feed',503);
- const now=Date.now(),events=data.events.filter(e=>/^[a-f0-9]{24}$/.test(e.id)&&['listing_drop','below_median'].includes(e.kind)&&typeof e.price==='number'&&Number.isFinite(e.price)&&e.price>0&&e.currency==='CNY');
+ const now=Date.now(),checksum=await digest(text),previous=await env.DB.prepare("SELECT value FROM service_state WHERE key='feed_hash'").first();
+ if(previous?.value===checksum)return now;
+ const events=data.events.filter(e=>/^[a-f0-9]{24}$/.test(e.id)&&['listing_drop','below_median'].includes(e.kind)&&typeof e.price==='number'&&Number.isFinite(e.price)&&e.price>0&&e.currency==='CNY');
  // D1 caps a batch's statements; upserts are chunked while retaining first-seen time.
  await env.DB.prepare('UPDATE alert_events SET active=0').run();
  for(let i=0;i<events.length;i+=80)await env.DB.batch(events.slice(i,i+80).map(e=>env.DB.prepare('INSERT INTO alert_events(id,payload,first_seen_at,last_seen_at,active) VALUES(?,?,?,?,1) ON CONFLICT(id) DO UPDATE SET payload=excluded.payload,last_seen_at=excluded.last_seen_at,active=1').bind(e.id,JSON.stringify(e),now,now)));
+ await env.DB.prepare("INSERT INTO service_state(key,value) VALUES('feed_hash',?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(checksum).run();
  return now;
 }
 async function subscribe(request,env,base){
@@ -69,18 +72,19 @@ async function deliverOutbox(env,outbox){
 export async function runNotifications(env){
  const deadline=Date.now()+18000;
  if(!await ready(env))return;
- await syncFeed(env);const now=Date.now(),subscribers=(await env.DB.prepare('SELECT * FROM subscribers ORDER BY last_sent_at,id LIMIT 100').all()).results;
+ await syncFeed(env);const now=Date.now(),watermark=(await env.DB.prepare('SELECT MAX(first_seen_at) AS latest FROM alert_events WHERE active=1').first()).latest||0;
+ const subscribers=(await env.DB.prepare("SELECT * FROM subscribers s WHERE EXISTS(SELECT 1 FROM mail_outbox o WHERE o.subscriber_id=s.id AND o.status='pending' AND o.next_attempt_at<=?) OR (s.confirmed_at<? AND s.last_checked_at<? AND NOT EXISTS(SELECT 1 FROM mail_outbox o WHERE o.subscriber_id=s.id AND o.status='pending')) ORDER BY last_sent_at,id LIMIT 100").bind(now,watermark,watermark).all()).results;
  for(const subscriber of subscribers){
   if(Date.now()>deadline)break;
   const locked=await env.DB.prepare('INSERT INTO subscriber_locks(id,locked_until) VALUES(?,?) ON CONFLICT(id) DO UPDATE SET locked_until=excluded.locked_until WHERE locked_until<?').bind(subscriber.id,Date.now()+90000,Date.now()).run();if(!locked.meta.changes)continue;
   try{
    const pending=await env.DB.prepare("SELECT * FROM mail_outbox WHERE subscriber_id=? AND status='pending' ORDER BY created_at LIMIT 1").bind(subscriber.id).first();if(pending){await deliverOutbox(env,pending);continue;}
    if(!isDue(subscriber,now))continue;
-   const events=(await env.DB.prepare('SELECT e.id,e.payload FROM alert_events e WHERE e.active=1 AND e.first_seen_at>? AND NOT EXISTS(SELECT 1 FROM deliveries d WHERE d.subscriber_id=? AND d.event_id=e.id) ORDER BY e.first_seen_at,e.id LIMIT 1000').bind(subscriber.confirmed_at,subscriber.id).all()).results.map(row=>JSON.parse(row.payload)),preferences=JSON.parse(subscriber.preferences),matching=events.filter(e=>matches(preferences,e));if(!matching.length)continue;
+   const events=(await env.DB.prepare('SELECT e.id,e.payload FROM alert_events e WHERE e.active=1 AND e.first_seen_at>? AND NOT EXISTS(SELECT 1 FROM deliveries d WHERE d.subscriber_id=? AND d.event_id=e.id) ORDER BY e.first_seen_at,e.id LIMIT 1000').bind(Math.max(subscriber.confirmed_at,subscriber.last_checked_at||0),subscriber.id).all()).results.map(row=>JSON.parse(row.payload)),preferences=JSON.parse(subscriber.preferences),matching=events.filter(e=>matches(preferences,e));if(!matching.length){await env.DB.prepare('UPDATE subscribers SET last_checked_at=? WHERE id=?').bind(now,subscriber.id).run();continue;}
    const id=await digest(subscriber.id+':'+matching.map(e=>e.id).sort().join(',')),unsubscribe=env.PUBLIC_URL.replace(/\/$/,'')+'/unsubscribe?t='+await unsubscribeToken(env,subscriber.id),site=env.SITE_URL.replace(/#.*$/,'')+'#updates',items=matching.slice(0,10);
    const text=`uu scout · ${matching.length} matching ticket alert(s) / 条匹配提醒\n\n${items.map(eventText).join('\n\n')}\n\n${matching.length>10?'More matching alerts are on the website / 更多匹配提醒请查看网站\n':''}${site}\n\nOCR quotes and grouped prices need supplier confirmation. Comparable offers are not confirmed drops for the same physical ticket. / OCR 报价和组合票价格须向票源方确认；相近报价不等于同一张票降价。\n\nUnsubscribe / 退订：${unsubscribe}`;
    const payload={to:[subscriber.contact],subject:`uu scout: ${matching.length} matching ticket alert(s) / 匹配票源提醒`,text,html:'<div style="font:15px system-ui;line-height:1.7"><h2>uu scout · '+matching.length+' matching alerts / 条匹配提醒</h2>'+items.map(e=>'<p>'+esc(eventText(e)).replace(/\n/g,'<br>')+'</p>').join('')+'<p><a href="'+esc(site)+'">View updates and screenshot evidence / 查看动态及原图证据</a></p><p>Confirm OCR quotes, grouped prices and availability with the supplier. / 请向票源方确认 OCR 报价、组合票价格及有票状态。</p><p><a href="'+esc(unsubscribe)+'">Unsubscribe / 退订</a></p></div>'};
-   await env.DB.batch([env.DB.prepare("INSERT OR IGNORE INTO mail_outbox(id,subscriber_id,payload,created_at,next_attempt_at,status) VALUES(?,?,?,?,?,'pending')").bind(id,subscriber.id,JSON.stringify(payload),now,now),...matching.map(e=>env.DB.prepare('INSERT OR IGNORE INTO deliveries(subscriber_id,event_id,outbox_id) VALUES(?,?,?)').bind(subscriber.id,e.id,id))]);
+   await env.DB.batch([env.DB.prepare('UPDATE subscribers SET last_checked_at=? WHERE id=?').bind(now,subscriber.id),env.DB.prepare("INSERT OR IGNORE INTO mail_outbox(id,subscriber_id,payload,created_at,next_attempt_at,status) VALUES(?,?,?,?,?,'pending')").bind(id,subscriber.id,JSON.stringify(payload),now,now),...matching.map(e=>env.DB.prepare('INSERT OR IGNORE INTO deliveries(subscriber_id,event_id,outbox_id) VALUES(?,?,?)').bind(subscriber.id,e.id,id))]);
    await deliverOutbox(env,{id,subscriber_id:subscriber.id,payload:JSON.stringify(payload),status:'pending',attempts:0,next_attempt_at:0,created_at:now,ambiguous:0});
   }finally{await env.DB.prepare('DELETE FROM subscriber_locks WHERE id=?').bind(subscriber.id).run();}
  }
