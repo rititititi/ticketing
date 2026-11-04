@@ -11,7 +11,7 @@
    if(!config.api_url)return;
    const url=new URL(config.api_url);if(url.protocol!=='https:'||url.username||url.password)throw new Error('Invalid subscription address');apiURL=url.href.replace(/\/$/,'');
    const health=await fetch(apiURL+'/api/config'),state=await health.json();if(!health.ok||!state.ready)return;
-   $('notify-fields').disabled=false;$('notify-status').textContent='Choose your tickets below. We will send a confirmation email before activating alerts.';
+   $('notify-fields').disabled=false;$('notify-alternative').hidden=true;$('notify-status').textContent='Choose your tickets below. We will send a confirmation email before activating alerts.';
   }catch(_){$('notify-status').textContent='Email alerts are being set up. Sign-up will open after sender verification.';}
  }
  $('notify-form').onsubmit=async event=>{

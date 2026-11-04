@@ -2,6 +2,7 @@
 'use strict';
 (() => {
  const zh = {
+"For updates while email signup is being set up, join the WeChat group.":"邮件订阅准备期间，欢迎先加入微信群接收更新。",
 "Email delivery uses Cloudflare and our email provider.":"邮件服务由 Cloudflare 及邮件提供商协助处理。",
 "Email alerts":"邮件提醒",
 "FOLLOW YOUR TICKETS":"关注心仪票源",
