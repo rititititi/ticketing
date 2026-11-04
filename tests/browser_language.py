@@ -6,6 +6,8 @@ from playwright.sync_api import sync_playwright, expect
 
 url=sys.argv[1] if len(sys.argv)>1 else 'http://127.0.0.1:5000'
 root=Path(__file__).resolve().parents[1]
+expected=json.loads((root/'data/catalog.json').read_text())
+source_count=len(expected['sources'])
 with sync_playwright() as p:
     browser=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
     page=browser.new_page(viewport={'width':1440,'height':1000},locale='en-US')
@@ -46,7 +48,7 @@ with sync_playwright() as p:
     page.locator('[data-view="sources"]').click()
     page.locator('.coverage-panel summary').click()
     expect(page.locator('.coverage-panel summary')).to_contain_text('逐图覆盖情况')
-    assert page.locator('#coverage-body tr').count()==79
+    assert page.locator('#coverage-body tr').count()==source_count
     page.set_viewport_size({'width':390,'height':844})
     assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth')
     page.screenshot(path=str(root/'artifacts/uu-scout-zh-mobile.png'))

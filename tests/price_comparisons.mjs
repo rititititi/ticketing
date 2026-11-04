@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const source=fs.readFileSync('static/explorer.js','utf8');
+const code=source.slice(source.indexOf('// On-site comparison only.'),source.indexOf('function comparisonDetails'));
+const base={id:'a',event_id:'wish',performance_date:'2027-01-15',date_key:'2027-01-15',section:'F4',row:'12',seat_as_printed:'1X',price:3000,currency:'CNY',sold:false};
+const peer=(id,changes={})=>({...base,id,...changes});
+const context={catalog:{tickets:[]}};vm.createContext(context);vm.runInContext(code,context);
+assert.ok(context.comparableTickets(base,peer('b',{row:'15'})));
+for(const changes of [{row:'16'},{row:'A'},{row:'11/12'},{seat_as_printed:'X'},{seat_as_printed:'2X'},{seat_as_printed:'X/1X'},{sold:true},{superseded_by:90},{availability:'paid_in_source'},{performance_date:null},{performance_date:'2027-01-16'},{currency:'KRW'},{event_id:'other'},{section:'F5'},{price:null}])assert.equal(Boolean(context.comparableTickets(base,peer('b',changes))),false,JSON.stringify(changes));
+assert.ok(context.comparableTickets(base,peer('b',{seat_as_printed:'1X(3内)'})));
+context.catalog.tickets=[base,peer('b',{price:4000}),peer('copy',{price:4000}),peer('c',{row:'15',price:5000}),peer('old',{price:1000,superseded_by:80})];
+context.indexComparisons();const comparison=context.priceComparison(base);
+assert.equal(comparison.peers.length,2);assert.equal(comparison.median,4500);assert.equal(comparison.below,true);assert.equal(comparison.percent,33);
+context.catalog.tickets=[base,peer('b',{price:4000})];context.indexComparisons();assert.equal(context.priceComparison(base).below,false);
+console.log('Price comparisons passed: boundaries, masks, dates, unavailable/history exclusions, quote deduplication and median threshold.');

@@ -15,16 +15,16 @@ class ExplorerTests(unittest.TestCase):
         response=self.client.get('/api/catalog')
         self.assertEqual(response.status_code,200)
         data=response.get_json()
-        self.assertEqual(len(data['tickets']),3568)
+        self.assertEqual(len([t for t in data['tickets'] if t['source_index']<=79]),3568)
         self.assertEqual(data['draft_version'],2)
-        self.assertEqual(len(data['sources']),79)
+        self.assertGreaterEqual(len(data['sources']),122)
         self.assertEqual(len(data['ocr']),4042)
-        self.assertEqual(len({t['id'] for t in data['tickets']}),3568)
+        self.assertEqual(len({t['id'] for t in data['tickets']}),len(data['tickets']))
         for source in data['sources']:
             self.assertTrue((ROOT/'static/sources'/source['source_file']).is_file())
     def test_draft2_coverage_and_provenance(self):
         data=self.client.get('/api/catalog').get_json()
-        self.assertEqual(len(data['coverage']),79)
+        self.assertEqual(len(data['coverage']),len(data['sources']))
         self.assertEqual(sum(s['extracted_rows'] for s in data['coverage']),len(data['tickets']))
         self.assertEqual(sum(s['visually_transcribed_rows'] for s in data['coverage']),175)
         for s in data['sources']:
@@ -33,14 +33,16 @@ class ExplorerTests(unittest.TestCase):
             self.assertEqual([t['physical_row'] for t in rows],list(range(1,len(rows)+1)))
             for t in rows:
                 self.assertEqual(t['source_file'],s['source_file'])
+                if t['source_bbox'] is None:
+                    self.assertEqual(t['extraction_status'],'admin_reviewed');continue
                 x,y,w,bottom=t['source_bbox']
                 self.assertGreaterEqual(y,0)
                 self.assertLessEqual(bottom,s['height'])
                 self.assertGreater(bottom,y)
                 self.assertTrue(t['raw_ocr'] or t['legacy_ocr'])
-                self.assertIn(t['extraction_status'],['visually_transcribed_draft1','ocr_candidate','unreadable_row'])
-        self.assertTrue(all(t['row'] for t in data['tickets']))
-        self.assertEqual(sum(s['unresolved_row_rows'] for s in data['coverage']),0)
+                self.assertIn(t['extraction_status'],['visually_transcribed_draft1','ocr_candidate','unreadable_row','admin_reviewed'])
+        self.assertTrue(all(t['row'] for t in data['tickets'] if t['source_index']<=79))
+        self.assertEqual(sum(s['unresolved_row_rows'] for s in data['coverage'] if s['source_index']<=79),0)
         # The black sheet had 18 visible options but zero meaningful OCR in draft 1.
         black=[t for t in data['tickets'] if t['source_index']==4]
         self.assertEqual(len(black),18)

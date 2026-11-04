@@ -1,0 +1,407 @@
+[
+  {
+    "screenshot": 1,
+    "filename": "3541793759403_.pic_hd.jpg",
+    "sha256": "ba1a97db304fc373652924ca274604a5d5e31c18ed7a85a5135fb9bb947c561c",
+    "source_index": 80,
+    "duplicate_of": null,
+    "physical_option_rows": 44,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 2,
+    "filename": "4271793779587_.pic.jpg",
+    "sha256": "c4dd7cdb10e1c9889bbe864a4d479fbb2aeebc3aaf3f57786c713a25216ebd85",
+    "source_index": 81,
+    "duplicate_of": null,
+    "physical_option_rows": 11,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 3,
+    "filename": "3851793760388_.pic.jpg",
+    "sha256": "be42898f269a0c510d58e1f793ecc2688592275b0c036da9306cde53bd007563",
+    "source_index": 82,
+    "duplicate_of": null,
+    "physical_option_rows": 14,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 4,
+    "filename": "3561793759406_.pic_hd.jpg",
+    "sha256": "436f30501ddecd283e60bec53f832bc165027749c738ac6b9727a6be875872a5",
+    "source_index": 83,
+    "duplicate_of": null,
+    "physical_option_rows": 42,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 5,
+    "filename": "3671793759637_.pic_hd.jpg",
+    "sha256": "5d98fea01a9b9ff7e89e0f660ecac28882056054e64fbc3a9b7aac8293413526",
+    "source_index": 84,
+    "duplicate_of": null,
+    "physical_option_rows": 11,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 6,
+    "filename": "4251793774850_.pic.jpg",
+    "sha256": "d96b70dc13f1f8829c755e520b4fe7d004af7b15ce46186a008e7ade50a1a8cf",
+    "source_index": 85,
+    "duplicate_of": null,
+    "physical_option_rows": 49,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 7,
+    "filename": "4281793779656_.pic.jpg",
+    "sha256": "3a665ceeaf988bc66fb3b424ea198d20269b4f333bc048566b57102485e45e69",
+    "source_index": 86,
+    "duplicate_of": null,
+    "physical_option_rows": 18,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 8,
+    "filename": "3701793759640_.pic.jpg",
+    "sha256": "01b47ac87a6d0dc142adf5c20377fc0300a9e8f369ff87d01291c8a0bbfd4d08",
+    "source_index": 87,
+    "duplicate_of": null,
+    "physical_option_rows": 13,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 9,
+    "filename": "3781793759896_.pic_hd.jpg",
+    "sha256": "5d98fea01a9b9ff7e89e0f660ecac28882056054e64fbc3a9b7aac8293413526",
+    "source_index": 84,
+    "duplicate_of": 5,
+    "physical_option_rows": 11,
+    "status": "Exact duplicate; options counted once"
+  },
+  {
+    "screenshot": 10,
+    "filename": "3711793759642_.pic_hd.jpg",
+    "sha256": "b166c907afd8cdfccc295650b8ff4b1738c7781994ae1cf070dafd8bcf8520ee",
+    "source_index": 88,
+    "duplicate_of": null,
+    "physical_option_rows": 8,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 11,
+    "filename": "3601793759450_.pic.jpg",
+    "sha256": "83808430f54c8b2ceda5e565015a89d6091313131cbfe24a98722505f55844ce",
+    "source_index": 89,
+    "duplicate_of": null,
+    "physical_option_rows": 68,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 12,
+    "filename": "3831793760348_.pic.jpg",
+    "sha256": "79c6595f6320e5421f37a4ed6f20272a284b0205b9e36c6875d219eb7810cf4d",
+    "source_index": 90,
+    "duplicate_of": null,
+    "physical_option_rows": 7,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 13,
+    "filename": "3841793760362_.pic.jpg",
+    "sha256": "e3f946e7da44cb541273888d3d6ad1691afd4af3efc21f436f54c1347113431a",
+    "source_index": 91,
+    "duplicate_of": null,
+    "physical_option_rows": 6,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 14,
+    "filename": "3571793759407_.pic_hd.jpg",
+    "sha256": "cd228dba5b9c2784c2aecfce36df4b3ed82726fe2a0bea5ba170d99d288387e9",
+    "source_index": 92,
+    "duplicate_of": null,
+    "physical_option_rows": 42,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 15,
+    "filename": "3931793762669_.pic.jpg",
+    "sha256": "991e56de0018f1b76fd10843e89b185a476c3dc809958c415cef7140dbca7209",
+    "source_index": 93,
+    "duplicate_of": null,
+    "physical_option_rows": 46,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 16,
+    "filename": "3721793759642_.pic.jpg",
+    "sha256": "0f0da8a4ce6a2ee36f4bb122a485de7c04b004d9df3a5a3c01b8f3bc3d11ebf6",
+    "source_index": 94,
+    "duplicate_of": null,
+    "physical_option_rows": 19,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 17,
+    "filename": "4151793770941_.pic.jpg",
+    "sha256": "762d01c009f5cdc3d8b695214bd379a4df37651d00aaf9cf86d92580a2eb711d",
+    "source_index": 95,
+    "duplicate_of": null,
+    "physical_option_rows": 22,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 18,
+    "filename": "4201793774684_.pic.jpg",
+    "sha256": "46017a6dadf6b1b109e4b46b12fd8ee14f559e30522f5c92e4357eae48530822",
+    "source_index": 96,
+    "duplicate_of": null,
+    "physical_option_rows": 29,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 19,
+    "filename": "3791793759898_.pic_hd.jpg",
+    "sha256": "dd61900bd82fc0b60b6a3dc744e24b56bfe3c8e416951fadd6ffac021d8299e0",
+    "source_index": 97,
+    "duplicate_of": null,
+    "physical_option_rows": 12,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 20,
+    "filename": "4231793774805_.pic.jpg",
+    "sha256": "60d28e3b212095eb4a6e0d797339a4e5bf9f94fc3467186ad6255f208aed13c4",
+    "source_index": 98,
+    "duplicate_of": null,
+    "physical_option_rows": 122,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 21,
+    "filename": "4261793774862_.pic.jpg",
+    "sha256": "890ad10e5f5c7dbca03a1ed037df62249b3119fe41672d34f56e61ea59f0a13b",
+    "source_index": 99,
+    "duplicate_of": null,
+    "physical_option_rows": 82,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 22,
+    "filename": "4071793766311_.pic.jpg",
+    "sha256": "e0645117598f817f0590fa35cc80f5fa46a17fd131b7f6c5eca8e4b5186feaf4",
+    "source_index": 100,
+    "duplicate_of": null,
+    "physical_option_rows": 42,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 23,
+    "filename": "3871793760771_.pic.jpg",
+    "sha256": "be42898f269a0c510d58e1f793ecc2688592275b0c036da9306cde53bd007563",
+    "source_index": 82,
+    "duplicate_of": 3,
+    "physical_option_rows": 14,
+    "status": "Exact duplicate; options counted once"
+  },
+  {
+    "screenshot": 24,
+    "filename": "3551793759404_.pic_hd.jpg",
+    "sha256": "e88fec6cec6e316b78e3e184edb5e990b787429965b5f3b6abff7ad66f635941",
+    "source_index": 101,
+    "duplicate_of": null,
+    "physical_option_rows": 42,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 25,
+    "filename": "4011793764225_.pic.jpg",
+    "sha256": "a49d00a1b632e0e1e1671b09d8947481d6d5aefa38f9ff7e431b498e4a03f7fd",
+    "source_index": 102,
+    "duplicate_of": null,
+    "physical_option_rows": 4,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 26,
+    "filename": "3751793759743_.pic.jpg",
+    "sha256": "003f709c2cdbbee62752c8f6a99b8934dd838eca6f5ba6e3bafb2ad46dd65536",
+    "source_index": 103,
+    "duplicate_of": null,
+    "physical_option_rows": 7,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 27,
+    "filename": "3621793759494_.pic.jpg",
+    "sha256": "73b16d02f6d77f498f2b0a82c7ce475a90ba992e622587f3a03473700761b37f",
+    "source_index": 104,
+    "duplicate_of": null,
+    "physical_option_rows": 58,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 28,
+    "filename": "3691793759640_.pic_hd.jpg",
+    "sha256": "ff5e87055d68e44fa3b1b87dc922047a315e7ebe6fc3050ad1f14317eb23519c",
+    "source_index": 105,
+    "duplicate_of": null,
+    "physical_option_rows": 30,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 29,
+    "filename": "3901793762176_.pic.jpg",
+    "sha256": "f8beb5164590fe74eab3c90907a6619f699ff083fd7d05172aaf1c9f656fffbc",
+    "source_index": 106,
+    "duplicate_of": null,
+    "physical_option_rows": 13,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 30,
+    "filename": "4121793769594_.pic.jpg",
+    "sha256": "b2f0473ab4508c17b98983dd001ec568fcf1d406a31a679ad622f7f0bad4eae0",
+    "source_index": 107,
+    "duplicate_of": null,
+    "physical_option_rows": 3,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 31,
+    "filename": "3991793763141_.pic_hd.jpg",
+    "sha256": "6af74d4f1ba117bc29b090e1b10fbd9498924ca2b9bfc10e491e8fa34fa3182a",
+    "source_index": 108,
+    "duplicate_of": null,
+    "physical_option_rows": 35,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 32,
+    "filename": "3741793759735_.pic.jpg",
+    "sha256": "0039f8a367262ed3203568eba8947c2c33aa4ba3a43c62cf83ad0c6b8a17e0fa",
+    "source_index": 109,
+    "duplicate_of": null,
+    "physical_option_rows": 21,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 33,
+    "filename": "3581793759408_.pic_hd.jpg",
+    "sha256": "27a7ad406b4a07c869e3cf79a0ed205696a9824a3876004de07eb319f4a2f369",
+    "source_index": 110,
+    "duplicate_of": null,
+    "physical_option_rows": 42,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 34,
+    "filename": "4211793774692_.pic.jpg",
+    "sha256": "9b61b7e73ca02676deacb8dedbba4c9290237dcd9b013e7a7d2a39b35350f529",
+    "source_index": 111,
+    "duplicate_of": null,
+    "physical_option_rows": 22,
+    "status": "Historical/equivalent rendering; field verification pending"
+  },
+  {
+    "screenshot": 35,
+    "filename": "3981793763140_.pic_hd.jpg",
+    "sha256": "d7e89628b5f2da9e05ec8b9f312eb1057c8ad0ad5cb323197910b03fa02698bf",
+    "source_index": 112,
+    "duplicate_of": null,
+    "physical_option_rows": 44,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 36,
+    "filename": "3891793762157_.pic.jpg",
+    "sha256": "8d93d9d0f44750f96aedfe357c16e6ede35c09a54dad9a342ddaa0f95b868d9e",
+    "source_index": 113,
+    "duplicate_of": null,
+    "physical_option_rows": 8,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 37,
+    "filename": "3881793760817_.pic.jpg",
+    "sha256": "65fde689161eaffd4ecde675790b767b0639ca22a059d31c376bc818018a3526",
+    "source_index": 114,
+    "duplicate_of": null,
+    "physical_option_rows": 22,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 38,
+    "filename": "3681793759638_.pic_hd.jpg",
+    "sha256": "e6538aca2bacf6dfb7ebad4400276e69d996f7284c35608049ae43b56be1a0d1",
+    "source_index": 115,
+    "duplicate_of": null,
+    "physical_option_rows": 12,
+    "status": "Historical/equivalent rendering; field verification pending"
+  },
+  {
+    "screenshot": 39,
+    "filename": "3801793759932_.pic.jpg",
+    "sha256": "b897f82022ac7c2cd97e933e455513bde3c3485f0170981b3787371122819522",
+    "source_index": 116,
+    "duplicate_of": null,
+    "physical_option_rows": 16,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 40,
+    "filename": "4081793766317_.pic.jpg",
+    "sha256": "8a3f017afe8b6e9c90c2b4b04187a39a1fac97ff8e310cba7b8a4ea92de583d2",
+    "source_index": 117,
+    "duplicate_of": null,
+    "physical_option_rows": 13,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 41,
+    "filename": "3611793759451_.pic_hd.jpg",
+    "sha256": "c41de7d65adafe79e7d744b1d650ab3439c493177c0f3cf74ae7fafdb640129b",
+    "source_index": 118,
+    "duplicate_of": null,
+    "physical_option_rows": 13,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 42,
+    "filename": "4141793769640_.pic.jpg",
+    "sha256": "aa4ac61538b0e60d9642df6a0a7de39cdf9fab64b0a22d115f8df73fdc0357a8",
+    "source_index": 119,
+    "duplicate_of": null,
+    "physical_option_rows": 29,
+    "status": "Historical/equivalent rendering; field verification pending"
+  },
+  {
+    "screenshot": 43,
+    "filename": "4111793769500_.pic.jpg",
+    "sha256": "f7d63fa0bfdec79b1a7d6f68a97ba43918f926125581936fa1e00bd641eb9865",
+    "source_index": 120,
+    "duplicate_of": null,
+    "physical_option_rows": 7,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 44,
+    "filename": "4221793774750_.pic.jpg",
+    "sha256": "8cc6848cd164f991b20428a238cb1655fc28db4ef553fd6550a1b5ab9df59706",
+    "source_index": 121,
+    "duplicate_of": null,
+    "physical_option_rows": 16,
+    "status": "All physical option rows represented; field verification pending"
+  },
+  {
+    "screenshot": 45,
+    "filename": "4131793769601_.pic.jpg",
+    "sha256": "c5589f25fb74125c7d903dbeee5557fdbaec6fff91656e2542dd1217d9043f70",
+    "source_index": 122,
+    "duplicate_of": null,
+    "physical_option_rows": 38,
+    "status": "All physical option rows represented; field verification pending"
+  }
+]

@@ -18,6 +18,23 @@ def apply_patch(catalog,patch):
     result=copy.deepcopy(catalog)
     if patch['job_id'] in result.get('applied_updates',[]):return result
     source=patch['source'];base_id=patch.get('base_source_index')
+    amendment=patch.get('amend_source_index')
+    if amendment is not None:
+        previous=next((s for s in result['sources'] if s['source_index']==amendment),None)
+        if previous is None or previous['sha256']!=source['sha256'] or source['source_index']!=amendment:
+            raise ValueError('Amendment must retain the original source and checksum')
+        if previous.get('superseded_by'):raise ValueError('Amend the current source version instead')
+        result['sources']=[copy.deepcopy(source) if s['source_index']==amendment else s for s in result['sources']]
+        result['tickets']=[t for t in result['tickets'] if t['source_index']!=amendment]+copy.deepcopy(patch['tickets'])
+        for reference in patch.get('additional_previous_sources',[]):
+            previous=next((s for s in result['sources'] if s['source_index']==reference['source_index']),None)
+            if previous is None or previous['sha256']!=reference['sha256']:raise ValueError('Previous snapshot checksum mismatch')
+            if previous.get('superseded_by'):raise ValueError('Previous snapshot already has a newer version')
+            previous['superseded_by']=source['source_index']
+            for ticket in result['tickets']:
+                if ticket['source_index']==previous['source_index']:ticket['superseded_by']=source['source_index']
+        result.setdefault('applied_updates',[]).append(patch['job_id'])
+        return refresh_coverage(result)
     if any(s['sha256']==source['sha256'] for s in result['sources']):raise ValueError('Exact duplicate screenshot already published')
     if any(s['source_index']==source['source_index'] for s in result['sources']):raise ValueError('Source ID already exists')
     if base_id is not None:
@@ -27,6 +44,14 @@ def apply_patch(catalog,patch):
         previous['superseded_by']=source['source_index']
         for ticket in result['tickets']:
             if ticket['source_index']==base_id:ticket['superseded_by']=source['source_index']
+    # Curated batch imports may explicitly identify several older snapshots of one sheet.
+    for reference in patch.get('additional_previous_sources',[]):
+        previous=next((s for s in result['sources'] if s['source_index']==reference['source_index']),None)
+        if previous is None or previous['sha256']!=reference['sha256']:raise ValueError('Previous snapshot checksum mismatch')
+        if previous.get('superseded_by'):raise ValueError('Previous snapshot already has a newer version')
+        previous['superseded_by']=source['source_index']
+        for ticket in result['tickets']:
+            if ticket['source_index']==previous['source_index']:ticket['superseded_by']=source['source_index']
     result['sources'].append(copy.deepcopy(source));result['tickets'].extend(copy.deepcopy(patch['tickets']))
     result.setdefault('applied_updates',[]).append(patch['job_id'])
     return refresh_coverage(result)

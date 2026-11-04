@@ -1,6 +1,10 @@
 # Price alerts for uu scout / 价格提醒
 
-`pricing.py` contains the tested comparable-ticket matcher. It does not send messages or collect subscribers yet.
+The public site now has a **Below comparable median** filter and **Compare similar tickets** in each ticket's details. It compares current offers using the rules below and links to cheaper comparable source records. A below-median signal requires at least two distinct peer quotes. Identical row/mask/price observations are counted once in the benchmark. Browser comparisons use the complete catalog, independently of display filters.
+
+These are comparisons across offers, not historical drops for an identified physical ticket. OCR quotes and per-ticket versus bundle pricing still require confirmation. `pricing.py` contains the same tested eligibility/matching rules. No notification service, subscriber database or Telegram delivery is configured; no alerts have been sent.
+
+网站现已提供“低于同类报价中位数”筛选，并在票源详情中显示“比较相近票源”。中位数提示至少需要两个不同的同类报价；相同排号、掩码和价格的重复记录只计一次。目前比较不同票源，不能确认同一张实体票降价；尚未启用订阅或自动通知。
 
 ## Matching rules
 

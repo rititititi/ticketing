@@ -5,13 +5,19 @@ English / 简体中文 fan ticket explorer. [Download the latest uu scout ZIP](h
 To make the website available to fans, follow [the bilingual GitHub Pages sharing guide](SHARING.md). The repository includes the **Publish uu scout** deployment workflow. The website URL after deployment is `https://rititititi.github.io/ticketing/`.
 
 
+## November 4 update
+
+The latest site contains **4,770 option rows across 122 screenshots**, including preserved historical versions. The 45-file update is fully accounted for: 42 new images, one previously uploaded image, and two duplicate files. It adds **1,158 rows**. [Batch coverage and limitations](data/nov4/REPORT.md) · [Coverage CSV](data/nov4/coverage.csv).
+
+Use **Below comparable median** to find lower comparable quotes, or open a ticket for **Compare similar tickets**. Matching uses the same performance, section and seat prefix with rows within ±3. These are comparisons across offers; automatic notifications are not configured.
+
 ## Screenshot uploads and row corrections
 
 The Chinese/Korean parser now separates 区/区域, 排/排数 and 座位号 and supports letter rows and row alternatives. The original missing-row cases were visually rechecked; all 3,568 existing options now have a row value. Selected row/section corrections are recorded in `data/row-corrections.json`; remaining uncertain sections and other fields stay labelled.
 
 The new **Admin uploads / 管理上传** section connects to the free Cloudflare Worker admin panel. It requires one-time activation and private Worker secrets: [bilingual setup and usage guide](docs/ADMIN_UPLOADS.md). Uploads require review before publishing. Updated screenshots retain older versions, and sold status is explicit.
 
-[Price alert matching rules and a free Telegram implementation plan](docs/PRICE_ALERTS.md). The matcher is implemented and tested; subscriber storage and notifications are not enabled.
+[Price alert matching rules and a free Telegram implementation plan](docs/PRICE_ALERTS.md). The on-site comparison filter and ticket details are implemented and tested; subscriber storage and notifications are not enabled.
 
 ## Draft 2
 
@@ -31,7 +37,7 @@ the portable demo. Keep its `source-images` folder beside `index.html`.
 A local, read-only concert inventory workspace for NCT WISH at Gocheok Sky Dome.
 Choose a performance and click the seating schematic to see supplier quote ranges,
 source ticket records, seating notes, delivery details and original screenshots.
-The supplier library searches all 79 original images and their extracted text.
+The supplier library searches the original images and subsequent uploads with their extracted text.
 
 ## Run
 
@@ -50,13 +56,13 @@ No external fonts, JavaScript CDNs, API keys or third-party services are require
 
 ## Data and limitations
 
-- `data/catalog.json` contains 3,568 source option rows, including 175 original
-  visual transcriptions, all 79 source records, and 4,042 original OCR lines.
+- `data/catalog.json` contains 4,770 source option rows, including 175 original
+  visual transcriptions, 122 source records, and all 4,042 original OCR lines.
   The extraction-status filter separates checked rows from OCR candidates.
   Missing fields stay unresolved, and OCR candidates can contain incorrect values.
 - Supplier quotes are RMB/CNY. Customer selling prices remain unset.
 - Records are **not unique or confirmed stock**. Versions and identical masked
-  seats stay separate. The app does not infer update order or seller identity.
+  seats stay separate. Only explicitly reviewed snapshot relationships hide older versions; seller identity is not inferred.
 - `2X` remains a masked seat number; one ticket per row is the default, not two.
 - Sold-in-source records are hidden initially and available via a checkbox.
 - Dates printed as 2026 remain 2026. Missing years and conflicting November dates

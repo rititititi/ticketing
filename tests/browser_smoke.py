@@ -1,8 +1,11 @@
 """Run with the host Python that provides Playwright and system Chromium."""
 from pathlib import Path
 import sys
+import json
 from playwright.sync_api import sync_playwright
 ROOT=Path(__file__).resolve().parents[1]
+expected=json.loads((ROOT/'data/catalog.json').read_text())
+source_count=len(expected['sources'])
 with sync_playwright() as p:
     browser=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
     page=browser.new_page(viewport={'width':1440,'height':1100},device_scale_factor=1)
@@ -11,10 +14,10 @@ with sync_playwright() as p:
     response=page.goto(sys.argv[1] if len(sys.argv)>1 else 'http://127.0.0.1:5000')
     assert response.status==200
     page.wait_for_selector('.ticket-card')
-    assert '3,568' in page.locator('#draft-summary').inner_text()
+    assert f"{len(expected['tickets']):,}" in page.locator('#draft-summary').inner_text()
     page.locator('[data-view="sources"]').click()
-    assert page.locator('#coverage-body tr').count()==79
-    assert page.locator('.source-card').count()==79
+    assert page.locator('#coverage-body tr').count()==source_count
+    assert page.locator('.source-card').count()==source_count
     page.locator('[data-view="explorer"]').click()
     page.select_option('#review-filter','checked')
     page.select_option('#date','2027-01-15')
@@ -49,7 +52,7 @@ with sync_playwright() as p:
     (ROOT/'artifacts').mkdir(exist_ok=True)
     page.screenshot(path=str(ROOT/'artifacts/desktop.png'),full_page=True)
     page.locator('[data-view="sources"]').click()
-    assert page.locator('.source-card').count()==79
+    assert page.locator('.source-card').count()==source_count
     page.fill('#source-search','2781793688755')
     assert page.locator('.source-card').count()==1
     page.locator('.source-card').click()

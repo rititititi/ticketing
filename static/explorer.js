@@ -49,6 +49,46 @@ function buildMap() {
  catalog.tickets.forEach(t=>{if(t.section&&!names.includes(t.section))names.push(t.section);});
  names.sort((a,b)=>a.localeCompare(b,undefined,{numeric:true})).forEach(name=>{const o=document.createElement('option');o.value=name;o.textContent=name;$('section-select').append(o);});
 }
+// On-site comparison only. No subscriber data or notifications are collected here.
+const comparisonCache = new Map(), comparisonGroups = new Map();
+function comparisonKey(t) {return [t.event_id||t.concert,t.performance_date,t.section,t.currency,maskForComparison(t.seat_as_printed)].join("|");}
+function indexComparisons() {
+ comparisonCache.clear();comparisonGroups.clear();
+ catalog.tickets.filter(priceEligible).forEach(t=>{const key=comparisonKey(t);if(!comparisonGroups.has(key))comparisonGroups.set(key,[]);comparisonGroups.get(key).push(t);});
+}
+function maskForComparison(value) {
+ const match=String(value??'').replace(/\s+/g,'').toUpperCase().match(/^([0-9]?X)(?:[（(][^()（）]*[）)]|#|号|番)?$/);
+ return match ? match[1] : null;
+}
+function priceEligible(t) {
+ return !t.sold&&!t.superseded_by&&!['paid_in_source','locked_in_source'].includes(t.availability)&&/^\d{4}-\d{2}-\d{2}$/.test(t.performance_date||'')&&/^\d{1,2}$/.test(String(t.row))&&typeof t.price==='number'&&Number.isFinite(t.price)&&t.price>0&&t.section&&t.section!=='UNRESOLVED'&&maskForComparison(t.seat_as_printed);
+}
+function comparableTickets(a,b) {
+ return a.id!==b.id&&priceEligible(a)&&priceEligible(b)&&['performance_date','section','currency'].every(k=>a[k]===b[k])&&(a.event_id||a.concert)===(b.event_id||b.concert)&&maskForComparison(a.seat_as_printed)===maskForComparison(b.seat_as_printed)&&Math.abs(Number(a.row)-Number(b.row))<=3;
+}
+function priceComparison(t) {
+ if(comparisonCache.has(t.id))return comparisonCache.get(t.id);
+ const distinct=new Map();
+ if(priceEligible(t))(comparisonGroups.get(comparisonKey(t))||[]).filter(peer=>comparableTickets(t,peer)).forEach(peer=>{
+  // Repeated identical row/mask/quote observations do not multiply the benchmark.
+  if(peer.row===t.row&&peer.price===t.price)return;
+  const key=[peer.row,maskForComparison(peer.seat_as_printed),peer.price].join('|');if(!distinct.has(key))distinct.set(key,peer);
+ });
+ const peers=[...distinct.values()].sort((a,b)=>a.price-b.price),prices=peers.map(x=>x.price),mid=Math.floor(prices.length/2);
+ const median=prices.length?(prices.length%2?prices[mid]:(prices[mid-1]+prices[mid])/2):null;
+ const value={peers,median,below:prices.length>=2&&t.price<median,percent:median?Math.round((1-t.price/median)*100):0};comparisonCache.set(t.id,value);return value;
+}
+function comparisonDetails(t) {
+ const c=priceComparison(t),cheaper=c.peers.filter(p=>p.price<t.price).slice(0,5);
+ let result='<p>No eligible comparable quotes. A resolved date, numeric row and clear seat mask are required.</p>';
+ if(c.median!==null) {
+  result=`<p><strong>${money(c.median)}</strong> <span>comparable median</span> · ${c.peers.length} <span>distinct quotes</span>`;
+  if(c.below)result+=` · <strong>${c.percent}% <span>below median</span></strong>`;
+  result+='</p>';
+  result+=cheaper.length?'<p>Lower comparable quotes:</p>'+cheaper.map(p=>`<button class="quiet compare-ticket" data-compare="${esc(p.id)}">${money(p.price)} · <span>Row ${esc(p.row)}</span> · <span>Source ${p.source_index}</span></button>`).join(''):'<p>No cheaper comparable quote in the current catalog.</p>';
+ }
+ return `<section class="price-comparison"><h3>Compare similar tickets</h3><p>Same performance, section and seat prefix; numeric rows within ±3. Repeated identical quotes count once. OCR quotes and grouped prices need confirmation.</p>${result}<p class="detail-warning">This is a comparison across offers, not a confirmed price drop for the same ticket. Automatic notifications are not enabled.</p></section>`;
+}
 function baseTickets() {
  const date=$('date').value, sold=$('include-sold').checked, review=$('review-filter').value;
  return catalog.tickets.filter(t=>(date==='all'||t.date_key===date)&&(sold||!t.sold)&&($('include-history').checked||!t.superseded_by)&&(review==='all'||(review==='checked'?['visually_transcribed_draft1','admin_reviewed'].includes(t.extraction_status):!['visually_transcribed_draft1','admin_reviewed'].includes(t.extraction_status))));
@@ -56,7 +96,7 @@ function baseTickets() {
 function range(items) {const prices=items.filter(t=>!t.sold&&t.price!=null).map(t=>t.price);return prices.length?`${money(Math.min(...prices))}${Math.min(...prices)!==Math.max(...prices)?' – '+money(Math.max(...prices)):''}`:'No active quoted options';}
 function choose(section) {selected=section;$('section-select').value=section;render();}
 function render() {
- const base=baseTickets(), term=$('search').value.trim().toLowerCase();
+ const base=baseTickets().filter(t=>!$('below-median').checked||priceComparison(t).below), term=$('search').value.trim().toLowerCase();
  visible=base.filter(t=>(!selected||t.section===selected)&&(!term||[t.section,t.row,t.seat_as_printed,t.seating_notes,t.source_file,t.date_as_printed,t.raw_ocr,t.legacy_ocr,t.review_flags].join(' ').toLowerCase().includes(term)));
  const sort=$('sort').value;
  visible.sort((a,b)=>sort==='row'?String(a.row).localeCompare(String(b.row),undefined,{numeric:true}):sort==='price-desc'?(b.price??-Infinity)-(a.price??-Infinity):(a.price??Infinity)-(b.price??Infinity));
@@ -78,8 +118,8 @@ function detail(id) {
  const source=catalog.sources.find(s=>s.source_index===t.source_index);
  const siblings=catalog.tickets.filter(x=>x.id!==t.id&&x.section===t.section&&x.row===t.row&&x.seat_as_printed&&t.seat_as_printed&&x.seat_as_printed.toLowerCase()===t.seat_as_printed.toLowerCase());
  const fields=[['Extraction',t.extraction_status==='admin_reviewed'?'Admin reviewed':t.extraction_status==='visually_transcribed_draft1'?'Visually transcribed in draft 1':'OCR candidate · fields need checking'],['Physical row',t.physical_row],['Performance',dateLabel(t)],['Section / row',`${t.section} / ${t.row}`],['Masked seat',t.seat_as_printed],['Quantity',t.quantity_basis],['Seating notes',t.seating_notes||'None stated'],['Delivery',t.delivery||'Not stated'],['Supplier', 'Unknown · not identified by screenshot'],['Source',`${t.source_file} · row ${t.source_row}`],['Verification',t.verification]];
- $('detail-content').innerHTML=`<h2>${esc(t.section)} <span>/ Row ${esc(t.row)}</span></h2><p class="detail-price">${t.sold?'Sold in this source':money(t.price)} <small>${t.sold?'':'RMB · supplier quote'}</small></p><p class="detail-warning">${esc(t.review_flags)}</p><dl>${fields.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>${siblings.length?`<div class="overlap-note">${siblings.length} other source record(s) share these masked section / row / seat attributes. They may be separate tickets or versions and have not been merged.</div>`:''}${rowEvidence(t)}<h3>Row text · OCR may be wrong</h3><pre>${esc(t.raw_ocr||t.legacy_ocr||'No readable OCR; inspect original row')}</pre><button class="primary" id="view-original">View original screenshot ↗</button><p class="detail-footer">Customer selling price not set. Confirm availability with the supplier before requesting payment.</p>`;
- $('view-original').onclick=()=>showSource(source.source_index,t.physical_row);if(!$('ticket-dialog').open)$('ticket-dialog').showModal();
+ $('detail-content').innerHTML=`<h2>${esc(t.section)} <span>/ Row ${esc(t.row)}</span></h2><p class="detail-price">${t.sold?'Sold in this source':money(t.price)} <small>${t.sold?'':'RMB · supplier quote'}</small></p><p class="detail-warning">${esc(t.review_flags)}</p><dl>${fields.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>${siblings.length?`<div class="overlap-note">${siblings.length} other source record(s) share these masked section / row / seat attributes. They may be separate tickets or versions and have not been merged.</div>`:''}${comparisonDetails(t)}${rowEvidence(t)}<h3>Row text · OCR may be wrong</h3><pre>${esc(t.raw_ocr||t.legacy_ocr||'No readable OCR; inspect original row')}</pre><button class="primary" id="view-original">View original screenshot ↗</button><p class="detail-footer">Customer selling price not set. Confirm availability with the supplier before requesting payment.</p>`;
+ document.querySelectorAll('[data-compare]').forEach(b=>b.onclick=()=>detail(b.dataset.compare));$('view-original').onclick=()=>showSource(source.source_index,t.physical_row);if(!$('ticket-dialog').open)$('ticket-dialog').showModal();
 }
 function rowEvidence(t) {
  if(!t.source_bbox)return '';
@@ -106,13 +146,13 @@ function exportCSV() {
 }
 function setZoom(n){zoom=Math.max(1,Math.min(2,n));$('seat-map').style.width=`${zoom*100}%`;$('seat-map').style.maxWidth=zoom===1?'680px':'none';}
 async function init() {
- try {const response=await fetch('/api/catalog');if(!response.ok)throw new Error('Catalog unavailable');catalog=await response.json();buildMap();render();renderSources();$('source-count').textContent=catalog.sources.length;
+ try {const response=await fetch('/api/catalog');if(!response.ok)throw new Error('Catalog unavailable');catalog=await response.json();indexComparisons();buildMap();render();renderSources();$('source-count').textContent=catalog.sources.length;
  const stats=catalog.extraction_summary;
  $('draft-summary').textContent=`Draft 2: ${stats.total_option_rows.toLocaleString()} identified option rows across all ${stats.total_source_images} screenshots. ${stats.visually_transcribed_rows} visually transcribed in draft 1; ${stats.ocr_candidate_rows.toLocaleString()} OCR candidates and ${stats.unreadable_rows} unreadable rows need review. Row coverage does not establish field accuracy. Dates, versions and grouped offers remain separate.`;
  $('admin-review-summary').textContent=stats.admin_reviewed_rows?`${stats.admin_reviewed_rows} admin-reviewed uploaded rows.`:'';
  $('coverage-body').innerHTML=catalog.coverage.map(c=>`<tr><td>${c.source_index}</td><td>${esc(c.source_file)}</td><td>${c.physical_option_rows}</td><td>${c.extracted_rows}</td><td>${c.visually_transcribed_rows}</td><td>${c.admin_reviewed_rows||0}</td><td>${c.ocr_candidate_rows}</td><td>${c.unreadable_rows}</td></tr>`).join('');
  $('download-coverage').onclick=()=>{const keys=['source_index','source_file','physical_option_rows','extracted_rows','visually_transcribed_rows','admin_reviewed_rows','ocr_candidate_rows','unreadable_rows','unresolved_section_rows','unresolved_row_rows','unresolved_seat_rows','unresolved_date_rows','unresolved_quote_rows','coverage_status'];const csv=[keys,...catalog.coverage.map(c=>keys.map(k=>c[k]))].map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');const url=URL.createObjectURL(new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8;'}));const a=document.createElement('a');a.href=url;a.download='uu-scout-coverage.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
- ['date','include-sold','include-history','sort','review-filter'].forEach(id=>$(id).addEventListener('change',render));$('search').addEventListener('input',render);$('section-select').onchange=e=>choose(e.target.value);$('clear-section').onclick=()=>choose('');$('source-search').addEventListener('input',renderSources);$('download').onclick=exportCSV;
+ ['date','include-sold','include-history','below-median','sort','review-filter'].forEach(id=>$(id).addEventListener('change',render));$('search').addEventListener('input',render);$('section-select').onchange=e=>choose(e.target.value);$('clear-section').onclick=()=>choose('');$('source-search').addEventListener('input',renderSources);$('download').onclick=exportCSV;
  document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{const showSources=b.dataset.view==='sources';$('sources-view').hidden=!showSources;$('explorer-view').hidden=showSources;document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x===b));});
  $('zoom-in').onclick=()=>setZoom(zoom+.25);$('zoom-out').onclick=()=>setZoom(zoom-.25);$('zoom-reset').onclick=()=>setZoom(1);
  }catch(error){$('tickets').textContent='Could not load the supplier collection. Please restart the app and try again.';console.error(error);}

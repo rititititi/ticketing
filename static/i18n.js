@@ -2,6 +2,19 @@
 'use strict';
 (() => {
  const zh = {
+"Nov 4 upload coverage (45 files) ↓":"11 月 4 日上传覆盖报告（45 个文件）↓",
+"Nov 4 batch":"11 月 4 日上传",
+"Below comparable median":"低于同类报价中位数",
+"Compare similar tickets":"比较相近票源",
+"Same performance, section and seat prefix; numeric rows within ±3. Repeated identical quotes count once. OCR quotes and grouped prices need confirmation.":"比较相同场次、区域和座位号前缀，排号相差不超过 3 排的报价。重复的相同报价只计一次。OCR 报价和组合票价格仍需核实。",
+"No eligible comparable quotes. A resolved date, numeric row and clear seat mask are required.":"暂无符合条件的同类报价。需明确的演出日期、数字排号和隐藏部分数字的座位号。",
+"comparable median":"同类报价中位数",
+"distinct quotes":"不同报价",
+"below median":"低于中位数",
+"Lower comparable quotes:":"更低的同类报价：",
+"No cheaper comparable quote in the current catalog.":"当前资料中暂无更低的同类报价。",
+"This is a comparison across offers, not a confirmed price drop for the same ticket. Automatic notifications are not enabled.":"此处比较不同票源的报价，不能确认同一张票降价。目前尚未启用自动通知。",
+
  "Reviewed records":"已核对记录",
  "Include older versions":"显示旧版本",
  "Older screenshot version":"旧版本截图",

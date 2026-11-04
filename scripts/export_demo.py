@@ -17,6 +17,7 @@ def export_demo():
     html=html.replace('href="/"','href="index.html"').replace('href="/uploads/"','href="uploads/"')
     js=js.replace("const response=await fetch('/api/catalog');if(!response.ok)throw new Error('Catalog unavailable');catalog=await response.json();", "catalog=JSON.parse(document.getElementById('catalog-data').textContent);")
     js=js.replace('/static/sources/', 'source-images/')
+    html=html.replace('href="/static/nov4-coverage.csv"','href="reports/nov4-coverage.csv"')
     html=html.replace('</body>', '<script id="catalog-data" type="application/json">'+data+'</script><script>'+translations+'</script><script>'+js+'</script></body>')
     dest=ROOT/'artifacts';dest.mkdir(exist_ok=True)
     (dest/'index.html').write_text(html)
@@ -29,6 +30,8 @@ def export_demo():
         z.writestr('uu-scout/START HERE.txt','uu scout — NCT WISH Gocheok. Open index.html in your browser and choose English or 简体中文. Keep source-images next to index.html. Source quotes and availability require confirmation.\n打开 index.html，选择 English 或简体中文。请将 source-images 文件夹保留在 index.html 旁边。票源报价及有票状态需另行确认。\n')
         for name in ['coverage.csv','coverage.json','ticket-options.csv','provenance.json']:
             z.write(ROOT/'data/draft2'/name,'uu-scout/reports/'+name)
+        z.write(ROOT/'static/nov4-coverage.csv','uu-scout/reports/nov4-coverage.csv')
+        z.write(ROOT/'data/nov4/REPORT.md','uu-scout/reports/NOV4-REPORT.md')
         z.write(ROOT/'data/draft2/REPORT.md','uu-scout/reports/REPORT.md')
         for p in sorted((ROOT/'static/sources').iterdir()):
             if p.suffix.lower() not in ['.jpg','.jpeg','.png']:continue

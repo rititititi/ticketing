@@ -130,9 +130,7 @@ def build():
     base=apply_saved_updates(base,ROOT/'data/updates');coverage=base['coverage'];result=base['tickets']
     (ROOT/'data/catalog.json').write_text(json.dumps(base,ensure_ascii=False,separators=(',',':')))
     (ROOT/'data/draft2/coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2))
-    for name,rows in [('coverage',coverage),('ticket-options',result)]:
-        keys=list(rows[0]) if name=='coverage' else ['id','source_index','source_file','physical_row','source_row','extraction_status','date_as_printed','performance_date','section','row','seat_as_printed','quantity','quantity_basis','price_as_printed','supplier_quote_cny','availability','seating_notes','delivery','verification','review_flags','source_bbox','source_color_markings','printed_identifier','ocr_line_numbers','raw_ocr','legacy_ocr']
-        stream=io.StringIO();writer=csv.DictWriter(stream,fieldnames=keys,extrasaction='ignore',lineterminator='\n');writer.writeheader();writer.writerows(rows)
-        (ROOT/f'data/draft2/{name}.csv').write_text('\ufeff'+stream.getvalue())
+    from catalog_updates import write_reports
+    write_reports(base,ROOT)
     print(json.dumps(base['extraction_summary'],indent=2))
 if __name__=='__main__':build()

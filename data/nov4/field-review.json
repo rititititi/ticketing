@@ -1,0 +1,4045 @@
+{
+  "1": {
+    "1": {
+      "section": "F12",
+      "row": "1",
+      "seat_as_printed": "5-10",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "F12",
+      "row": "1",
+      "seat_as_printed": "15-20",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F12",
+      "row": "1",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F12",
+      "row": "2",
+      "seat_as_printed": "10-15",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F12",
+      "row": "2",
+      "seat_as_printed": "5-10",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "F12",
+      "row": "2",
+      "seat_as_printed": "15-20",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "F12",
+      "row": "2",
+      "seat_as_printed": "X/2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "F12",
+      "row": "3",
+      "seat_as_printed": "10-15",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "F12",
+      "row": "3",
+      "seat_as_printed": "15-20",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F12",
+      "row": "3",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F12",
+      "row": "4",
+      "seat_as_printed": "10-15",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F12",
+      "row": "4",
+      "seat_as_printed": "X/2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "F12",
+      "row": "5",
+      "seat_as_printed": "5-10",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "F12",
+      "row": "5",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "section": "F12",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "section": "F12",
+      "row": "6",
+      "seat_as_printed": "X/2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "section": "F12",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "section": "F12",
+      "row": "7",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "section": "F12",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "20": {
+      "section": "F12",
+      "row": "8",
+      "seat_as_printed": "X/2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "21": {
+      "section": "F12",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "22": {
+      "section": "F12",
+      "row": "9",
+      "seat_as_printed": "X/2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "23": {
+      "section": "F12",
+      "row": "10",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "24": {
+      "section": "F12",
+      "row": "1",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "25": {
+      "section": "F12",
+      "row": "2",
+      "seat_as_printed": "10-15",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "26": {
+      "section": "F12",
+      "row": "2",
+      "seat_as_printed": "5-10",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "27": {
+      "section": "F12",
+      "row": "2",
+      "seat_as_printed": "15-20",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "28": {
+      "section": "F12",
+      "row": "2",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "29": {
+      "section": "F12",
+      "row": "3",
+      "seat_as_printed": "10-15",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "30": {
+      "section": "F12",
+      "row": "3",
+      "seat_as_printed": "X/2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "31": {
+      "section": "F12",
+      "row": "4",
+      "seat_as_printed": "10-15",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "32": {
+      "section": "F12",
+      "row": "4",
+      "seat_as_printed": "5-10",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "33": {
+      "section": "F12",
+      "row": "4",
+      "seat_as_printed": "X/2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "34": {
+      "section": "F12",
+      "row": "5",
+      "seat_as_printed": "10-15",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "35": {
+      "section": "F12",
+      "row": "5",
+      "seat_as_printed": "5-10",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "36": {
+      "section": "F12",
+      "row": "5",
+      "seat_as_printed": "15-20",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "37": {
+      "section": "F12",
+      "row": "5",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "38": {
+      "section": "F12",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "39": {
+      "section": "F12",
+      "row": "6",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "40": {
+      "section": "F12",
+      "row": "7",
+      "seat_as_printed": "X/2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "41": {
+      "section": "F12",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "42": {
+      "section": "F12",
+      "row": "8",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "43": {
+      "section": "F12",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "44": {
+      "section": "F12",
+      "row": "9",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "4": {
+    "1": {
+      "section": "F4",
+      "row": "6",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "F4",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F4",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F4",
+      "row": "3",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F4",
+      "row": "2",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "F4",
+      "row": "7",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "F4",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "F4",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "F4",
+      "row": "4",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F4",
+      "row": "3",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F4",
+      "row": "5",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F4",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "F4",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "F4",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "section": "F4",
+      "row": "13",
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "section": "F4",
+      "row": "16/17",
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "section": "F4",
+      "row": "19",
+      "seat_as_printed": "5内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "section": "F4",
+      "row": "20/21",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "section": "F4",
+      "row": "15",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "20": {
+      "section": "F4",
+      "row": "9/10",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "21": {
+      "section": "F4",
+      "row": "11/12/13",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "22": {
+      "section": "F5",
+      "row": "6",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "23": {
+      "section": "F5",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "24": {
+      "section": "F5",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "25": {
+      "section": "F5",
+      "row": "3",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "26": {
+      "section": "F5",
+      "row": "2",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "27": {
+      "section": "F5",
+      "row": "7",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "28": {
+      "section": "F5",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "29": {
+      "section": "F5",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "30": {
+      "section": "F5",
+      "row": "4",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "31": {
+      "section": "F5",
+      "row": "3",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "32": {
+      "section": "F5",
+      "row": "5",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "33": {
+      "section": "F5",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "34": {
+      "section": "F5",
+      "row": "7",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "35": {
+      "section": "F5",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "36": {
+      "section": "F5",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "37": {
+      "section": "F5",
+      "row": "13/14/15",
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "38": {
+      "section": "F5",
+      "row": "17",
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "39": {
+      "section": "F5",
+      "row": "20",
+      "seat_as_printed": "5内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "40": {
+      "section": "F5",
+      "row": "20/21",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "41": {
+      "section": "F5",
+      "row": "9/10",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "42": {
+      "section": "F5",
+      "row": "11/12/13",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "3": {
+    "1": {
+      "section": "F6",
+      "row": "10",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "F6",
+      "row": "17",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F3",
+      "row": "15",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F17",
+      "row": "8",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F10",
+      "row": "12",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "F10",
+      "row": "14",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "T17",
+      "row": "C",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "114",
+      "row": "H",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "F6",
+      "row": "13",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F6",
+      "row": "17",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F3",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F3",
+      "row": "11",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "F10",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "114",
+      "row": "N",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "16": {
+    "1": {
+      "section": "F6",
+      "row": "10",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "F6",
+      "row": "17",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F3",
+      "row": "15",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F17",
+      "row": "8",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F10",
+      "row": "12",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "F10",
+      "row": "14",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "T17",
+      "row": "C",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "114",
+      "row": "H",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "114",
+      "row": "K",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "113",
+      "row": "I",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "111",
+      "row": "G",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "110",
+      "row": "L",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "108",
+      "row": "L",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "F6",
+      "row": "13",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "section": "F6",
+      "row": "17",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "section": "F3",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "section": "F3",
+      "row": "11",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "section": "F10",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "section": "114",
+      "row": "N",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "5": {
+    "1": {
+      "section": "T03",
+      "row": "A",
+      "seat_as_printed": "10内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "T03",
+      "row": "B",
+      "seat_as_printed": "12内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "T03",
+      "row": "A",
+      "seat_as_printed": "7内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "T05",
+      "row": "B",
+      "seat_as_printed": "3内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "T07",
+      "row": "A",
+      "seat_as_printed": "12内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "T03",
+      "row": "A",
+      "seat_as_printed": "17内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "T03",
+      "row": "C",
+      "seat_as_printed": "13内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "T03",
+      "row": "C",
+      "seat_as_printed": "20内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "T03",
+      "row": "C",
+      "seat_as_printed": "8内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "T05",
+      "row": "A",
+      "seat_as_printed": "12内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "411",
+      "row": "L",
+      "seat_as_printed": "7内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "17": {
+    "1": {
+      "section": "F11",
+      "row": "5",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "F12",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F12",
+      "row": "8",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F12",
+      "row": "8",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F12",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "F13",
+      "row": "4",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "F13",
+      "row": "4",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "F13",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "F13",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F13",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F13",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F13",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "F13",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "F13",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "section": "F13",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "section": "F5",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "section": "F5",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "section": "F5",
+      "row": "14",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "section": "F12",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "20": {
+      "section": "F4",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "21": {
+      "section": "F4",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "22": {
+      "section": "F5",
+      "row": "5",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "34": {
+    "1": {
+      "section": "F11",
+      "row": "5",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "F12",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F12",
+      "row": "8",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F12",
+      "row": "8",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F12",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "F13",
+      "row": "4",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "F13",
+      "row": "4",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "F13",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "F13",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F13",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F13",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F13",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "F13",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "F13",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "section": "F13",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "section": "F5",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "section": "F5",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "section": "F5",
+      "row": "14",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "section": "F12",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "20": {
+      "section": "F4",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "21": {
+      "section": "F4",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "22": {
+      "section": "F5",
+      "row": "5",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "43": {
+    "1": {
+      "section": "201",
+      "row": "H",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "207",
+      "row": "F",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "209",
+      "row": "J",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "210",
+      "row": "H",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "201",
+      "row": "F",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "209",
+      "row": "J",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "210",
+      "row": "E",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "45": {
+    "1": {
+      "section": "F3",
+      "row": "7",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "F3",
+      "row": "9",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F3",
+      "row": "13",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F3",
+      "row": "14",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F4",
+      "row": "14",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "F5",
+      "row": "14",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "F5",
+      "row": "15",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "F5",
+      "row": "17",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "F5",
+      "row": "19",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F6",
+      "row": "8",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F6",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F6",
+      "row": "12",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "F6",
+      "row": "17",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "F10",
+      "row": "3",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "section": "F10",
+      "row": "15",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "section": "F11",
+      "row": "17",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "section": "F14",
+      "row": "13",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "section": "F14",
+      "row": "14",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "section": "F3",
+      "row": "2",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "20": {
+      "section": "F3",
+      "row": "3",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "21": {
+      "section": "F3",
+      "row": "13",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "22": {
+      "section": "F3",
+      "row": "23",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "23": {
+      "section": "F3",
+      "row": "23",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "24": {
+      "section": "F5",
+      "row": "20",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "25": {
+      "section": "F6",
+      "row": "5",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "26": {
+      "section": "F6",
+      "row": "7",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "27": {
+      "section": "F6",
+      "row": "7",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "28": {
+      "section": "F6",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "29": {
+      "section": "F6",
+      "row": "9",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "30": {
+      "section": "F6",
+      "row": "12",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "31": {
+      "section": "F6",
+      "row": "15",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "32": {
+      "section": "F6",
+      "row": "19",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "33": {
+      "section": "F10",
+      "row": "1",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "34": {
+      "section": "F10",
+      "row": "14",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "35": {
+      "section": "F14",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "36": {
+      "section": "F14",
+      "row": "12",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "37": {
+      "section": "F14",
+      "row": "17",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "38": {
+      "section": "F14",
+      "row": "18",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "11": {
+    "1": {
+      "section": "102",
+      "row": "E",
+      "seat_as_printed": "X(X=5-7)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "102",
+      "row": "I",
+      "seat_as_printed": "X(X=7-9)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "103",
+      "row": "M",
+      "seat_as_printed": "X(X=7-9)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "103",
+      "row": "F",
+      "seat_as_printed": "X(X=5-7)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "107",
+      "row": "L",
+      "seat_as_printed": "X(X=2-4)",
+      "price": 2300,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "108",
+      "row": "L",
+      "seat_as_printed": "1X(X=2-4)",
+      "price": 2300,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "112",
+      "row": "F",
+      "seat_as_printed": "X(X=5-7)",
+      "price": 2100,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "114",
+      "row": "K",
+      "seat_as_printed": "1X(X=0-2)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "F10",
+      "row": "18",
+      "seat_as_printed": "1X(X=0-2)",
+      "price": 2500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F10",
+      "row": "14",
+      "seat_as_printed": "X(X=7-9)",
+      "price": 3000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F10",
+      "row": "6",
+      "seat_as_printed": "1X(X=0-2)",
+      "price": 3500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F13",
+      "row": "8",
+      "seat_as_printed": "X(X=2-4)",
+      "price": 6000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "F14",
+      "row": "11",
+      "seat_as_printed": "X(X=4-6)",
+      "price": 2500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "F14",
+      "row": "7",
+      "seat_as_printed": "X(X=5-7)",
+      "price": 3300,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "section": "F14",
+      "row": "7",
+      "seat_as_printed": "X(X=7-9)",
+      "price": 3300,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "section": "F14",
+      "row": "19",
+      "seat_as_printed": "X(X=0-2)",
+      "price": 2300,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "section": "F17",
+      "row": "10",
+      "seat_as_printed": "2X(X=0-2)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "section": "F17",
+      "row": "10",
+      "seat_as_printed": "2X(X=0-2)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "section": "F17",
+      "row": "8",
+      "seat_as_printed": "2X(X=2-4)",
+      "price": 2100,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "20": {
+      "section": "F18",
+      "row": "3",
+      "seat_as_printed": "X(X=3-5)",
+      "price": 3000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "21": {
+      "section": "F18",
+      "row": "3",
+      "seat_as_printed": "X(X=3-5)",
+      "price": 3000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "22": {
+      "section": "F19",
+      "row": "8",
+      "seat_as_printed": "2X(X=0-2)",
+      "price": 2100,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "23": {
+      "section": "F3",
+      "row": "13",
+      "seat_as_printed": "2X(X=2-4)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "24": {
+      "section": "F3",
+      "row": "15",
+      "seat_as_printed": "1X(X=4-6)",
+      "price": 2500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "25": {
+      "section": "F3",
+      "row": "15",
+      "seat_as_printed": "1X(X=4-6)",
+      "price": 2500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "26": {
+      "section": "F4",
+      "row": "9",
+      "seat_as_printed": "1X(X=2-4)",
+      "price": 4500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "27": {
+      "section": "F4",
+      "row": "15",
+      "seat_as_printed": "1X(X=2-4)",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "28": {
+      "section": "F5",
+      "row": "11",
+      "seat_as_printed": "1X(X=7-9)",
+      "price": 4200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "29": {
+      "section": "F6",
+      "row": "14",
+      "seat_as_printed": "2X(X=0-2)",
+      "price": 2500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "30": {
+      "section": "F6",
+      "row": "8",
+      "seat_as_printed": "X(X=7-9)",
+      "price": 3200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "31": {
+      "section": "F6",
+      "row": "6",
+      "seat_as_printed": "1X(X=2-4)",
+      "price": 3500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "32": {
+      "section": "F6",
+      "row": "8",
+      "seat_as_printed": "X(X=7-9)",
+      "price": 3200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "33": {
+      "section": "F6",
+      "row": "6",
+      "seat_as_printed": "1X(X=7-9)",
+      "price": 3500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "34": {
+      "section": "F7",
+      "row": "23",
+      "seat_as_printed": "X(X=0-2)",
+      "price": 2800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "35": {
+      "section": "T11",
+      "row": "C",
+      "seat_as_printed": "1X(X=0-2)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "36": {
+      "section": "101",
+      "row": "N",
+      "seat_as_printed": "1X(X=7-9)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "37": {
+      "section": "102",
+      "row": "F",
+      "seat_as_printed": "X(X=4-6)",
+      "price": 2100,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "38": {
+      "section": "102",
+      "row": "F",
+      "seat_as_printed": "X(X=4-6)",
+      "price": 2100,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "39": {
+      "section": "103",
+      "row": "M",
+      "seat_as_printed": "X(X=7-9)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "40": {
+      "section": "106",
+      "row": "F",
+      "seat_as_printed": "X(X=5-7)",
+      "price": 2800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "41": {
+      "section": "110",
+      "row": "L",
+      "seat_as_printed": "X(X=4-6)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "42": {
+      "section": "110",
+      "row": "L",
+      "seat_as_printed": "X(X=4-6)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "43": {
+      "section": "112",
+      "row": "F",
+      "seat_as_printed": "X(X=1-3)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "44": {
+      "section": "114",
+      "row": "K",
+      "seat_as_printed": "1X(X=2-4)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "45": {
+      "section": "114",
+      "row": "N",
+      "seat_as_printed": "1X(X=5-7)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "46": {
+      "section": "114",
+      "row": "H",
+      "seat_as_printed": "X(X=2-4)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "47": {
+      "section": "F10",
+      "row": "6",
+      "seat_as_printed": "1X(X=2-4)",
+      "price": 3500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "48": {
+      "section": "F12",
+      "row": "9",
+      "seat_as_printed": "X(X=7-9)",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "49": {
+      "section": "F14",
+      "row": "4",
+      "seat_as_printed": "1X(X=5-7)",
+      "price": 3600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "50": {
+      "section": "F17",
+      "row": "8",
+      "seat_as_printed": "2X(X=2-4)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "51": {
+      "section": "F17",
+      "row": "8",
+      "seat_as_printed": "2X(X=0-2)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "52": {
+      "section": "F17",
+      "row": "8",
+      "seat_as_printed": "1X(X=7-9)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "53": {
+      "section": "F17",
+      "row": "8",
+      "seat_as_printed": "2X(X=2-4)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "54": {
+      "section": "F19",
+      "row": "8",
+      "seat_as_printed": "1X(X=7-9)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "55": {
+      "section": "F19",
+      "row": "8",
+      "seat_as_printed": "2X(X=0-2)",
+      "price": 2000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "56": {
+      "section": "F3",
+      "row": "9",
+      "seat_as_printed": "2X(X=0-2)",
+      "price": 3000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "57": {
+      "section": "F3",
+      "row": "11",
+      "seat_as_printed": "1X(X=0-2)",
+      "price": 3000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "58": {
+      "section": "F3",
+      "row": "21",
+      "seat_as_printed": "1X(X=0-2)",
+      "price": 3500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "59": {
+      "section": "F3",
+      "row": "21",
+      "seat_as_printed": "1X(X=2-4)",
+      "price": 3500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "60": {
+      "section": "F6",
+      "row": "19",
+      "seat_as_printed": "1X(X=5-7)",
+      "price": 2800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "61": {
+      "section": "F6",
+      "row": "15",
+      "seat_as_printed": "X(X=7-9)",
+      "price": 2500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "62": {
+      "section": "F6",
+      "row": "23",
+      "seat_as_printed": "1X(X=2-4)",
+      "price": 3800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "63": {
+      "section": "F6",
+      "row": "7",
+      "seat_as_printed": "1X(X=7-9)",
+      "price": 3500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "64": {
+      "section": "F6",
+      "row": "21",
+      "seat_as_printed": "2X(X=0-2)",
+      "price": 3500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "65": {
+      "section": "F6",
+      "row": "15",
+      "seat_as_printed": "X(X=7-9)",
+      "price": 2500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "66": {
+      "section": "F6",
+      "row": "11",
+      "seat_as_printed": "1X(X=5-7)",
+      "price": 3200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "67": {
+      "section": "F6",
+      "row": "19",
+      "seat_as_printed": "1X(X=5-7)",
+      "price": 2800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "68": {
+      "section": "F6",
+      "row": "15",
+      "seat_as_printed": "X(X=2-4)",
+      "price": 3500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "14": {
+    "1": {
+      "section": "F11",
+      "row": "5",
+      "seat_as_printed": "X",
+      "price": 9500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "F11",
+      "row": "3",
+      "seat_as_printed": "1X",
+      "price": 9500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F11",
+      "row": "1",
+      "seat_as_printed": "1X",
+      "price": 9500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F11",
+      "row": "7",
+      "seat_as_printed": "X",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F11",
+      "row": "5",
+      "seat_as_printed": "",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained",
+      "seating_notes": "Original row does not state a masked seat; inspect source"
+    },
+    "6": {
+      "section": "F11",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "F11",
+      "row": "8-9",
+      "seat_as_printed": "1号",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "F11",
+      "row": "11-12",
+      "seat_as_printed": "1号",
+      "price": 6000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "F11",
+      "row": "7",
+      "seat_as_printed": "X",
+      "price": 7500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F11",
+      "row": "9",
+      "seat_as_printed": "X",
+      "price": 5500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F11",
+      "row": "10",
+      "seat_as_printed": "X",
+      "price": 5300,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F11",
+      "row": "11",
+      "seat_as_printed": "X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "F11",
+      "row": "1",
+      "seat_as_printed": "1X",
+      "price": 6900,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "F11",
+      "row": "2",
+      "seat_as_printed": "1X",
+      "price": 6600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "section": "F11",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": 5800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "section": "F11",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "price": 5300,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "section": "F11",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 4800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "section": "F11",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "price": 4200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "section": "F11",
+      "row": "1",
+      "seat_as_printed": "2X",
+      "price": 6000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "20": {
+      "section": "F11",
+      "row": "2",
+      "seat_as_printed": "2X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "21": {
+      "section": "F11",
+      "row": "4",
+      "seat_as_printed": "2X",
+      "price": 4500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "22": {
+      "section": "F11",
+      "row": "8/9/10",
+      "seat_as_printed": "2X",
+      "price": 3700,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "23": {
+      "section": "F11",
+      "row": "13/14/16",
+      "seat_as_printed": "X",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "24": {
+      "section": "F13",
+      "row": "7",
+      "seat_as_printed": "X",
+      "price": 9500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "25": {
+      "section": "F13",
+      "row": "1",
+      "seat_as_printed": "1X",
+      "price": 9500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "26": {
+      "section": "F13",
+      "row": "7",
+      "seat_as_printed": "X",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "27": {
+      "section": "F13",
+      "row": "5",
+      "seat_as_printed": "",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained",
+      "seating_notes": "Original row does not state a masked seat; inspect source"
+    },
+    "28": {
+      "section": "F13",
+      "row": "2",
+      "seat_as_printed": "1X",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "29": {
+      "section": "F13",
+      "row": "8-9",
+      "seat_as_printed": "1号",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "30": {
+      "section": "F13",
+      "row": "10-11",
+      "seat_as_printed": "1号",
+      "price": 6000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "31": {
+      "section": "F13",
+      "row": "6",
+      "seat_as_printed": "X",
+      "price": 7800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "32": {
+      "section": "F13",
+      "row": "7",
+      "seat_as_printed": "X",
+      "price": 7500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "33": {
+      "section": "F13",
+      "row": "9",
+      "seat_as_printed": "X",
+      "price": 5500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "34": {
+      "section": "F13",
+      "row": "11",
+      "seat_as_printed": "X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "35": {
+      "section": "F13",
+      "row": "13/16",
+      "seat_as_printed": "X",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "36": {
+      "section": "F13",
+      "row": "1",
+      "seat_as_printed": "1X",
+      "price": 7500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "37": {
+      "section": "F13",
+      "row": "3",
+      "seat_as_printed": "1X",
+      "price": 6500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "38": {
+      "section": "F13",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "price": 5300,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "39": {
+      "section": "F13",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 4500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "40": {
+      "section": "F13",
+      "row": "10",
+      "seat_as_printed": "1X",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "41": {
+      "section": "F13",
+      "row": "1",
+      "seat_as_printed": "2X",
+      "price": 6000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "42": {
+      "section": "F13",
+      "row": "2",
+      "seat_as_printed": "2X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "24": {
+    "1": {
+      "section": "F4",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "price": 11000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "F4",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": 9600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F4",
+      "row": "3",
+      "seat_as_printed": "2X",
+      "price": 8900,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F4",
+      "row": "2",
+      "seat_as_printed": "2X",
+      "price": 8200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F4",
+      "row": "7",
+      "seat_as_printed": "X",
+      "price": 11800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "F4",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "price": 9500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "F4",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "price": 8900,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "F4",
+      "row": "4",
+      "seat_as_printed": "2X",
+      "price": 8500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "F4",
+      "row": "3",
+      "seat_as_printed": "2X",
+      "price": 7900,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F4",
+      "row": "5",
+      "seat_as_printed": "2X",
+      "price": 5800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F4",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "price": 5500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F4",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 5200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "F4",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "F4",
+      "row": "13/15",
+      "seat_as_printed": "X(5内)",
+      "price": 5500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "section": "F4",
+      "row": "16/17",
+      "seat_as_printed": "X(5内)",
+      "price": 5200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "section": "F4",
+      "row": "19/20/21",
+      "seat_as_printed": "贴台5内",
+      "price": 4500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "section": "F4",
+      "row": "22/23",
+      "seat_as_printed": "贴台5内",
+      "price": 4500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "section": "F4",
+      "row": "15",
+      "seat_as_printed": "X",
+      "price": 4500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "section": "F4",
+      "row": "9/10",
+      "seat_as_printed": "1X",
+      "price": 4500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "20": {
+      "section": "F4",
+      "row": "13",
+      "seat_as_printed": "1X",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "21": {
+      "section": "F5",
+      "row": "6",
+      "seat_as_printed": "X",
+      "price": 13000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "22": {
+      "section": "F5",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": 9600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "23": {
+      "section": "F5",
+      "row": "3",
+      "seat_as_printed": "2X",
+      "price": 8900,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "24": {
+      "section": "F5",
+      "row": "2",
+      "seat_as_printed": "2X",
+      "price": 8200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "25": {
+      "section": "F5",
+      "row": "7",
+      "seat_as_printed": "X",
+      "price": 11800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "26": {
+      "section": "F5",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "price": 9500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "27": {
+      "section": "F5",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "price": 8900,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "28": {
+      "section": "F5",
+      "row": "4",
+      "seat_as_printed": "2X",
+      "price": 8500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "29": {
+      "section": "F5",
+      "row": "3",
+      "seat_as_printed": "2X",
+      "price": 7900,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "30": {
+      "section": "F5",
+      "row": "5",
+      "seat_as_printed": "2X",
+      "price": 5500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "31": {
+      "section": "F5",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "price": 5500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "32": {
+      "section": "F5",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 5200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "33": {
+      "section": "F5",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "34": {
+      "section": "F5",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "price": 4600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "35": {
+      "section": "F5",
+      "row": "7",
+      "seat_as_printed": "2X",
+      "price": 4500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "36": {
+      "section": "F5",
+      "row": "13/14/15",
+      "seat_as_printed": "X(5内)",
+      "price": 5500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "37": {
+      "section": "F5",
+      "row": "16/17",
+      "seat_as_printed": "X(5内)",
+      "price": 5200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "38": {
+      "section": "F5",
+      "row": "21",
+      "seat_as_printed": "1X",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "39": {
+      "section": "F5",
+      "row": "10/11",
+      "seat_as_printed": "X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "40": {
+      "section": "F5",
+      "row": "15",
+      "seat_as_printed": "X",
+      "price": 4500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "41": {
+      "section": "F5",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "price": 4500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "42": {
+      "section": "F5",
+      "row": "11/12",
+      "seat_as_printed": "1X",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "33": {
+    "1": {
+      "section": "F11",
+      "row": "4",
+      "seat_as_printed": "",
+      "price": 9500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained",
+      "seating_notes": "Original row does not state a masked seat; inspect source"
+    },
+    "2": {
+      "section": "F11",
+      "row": "3",
+      "seat_as_printed": "1X",
+      "price": 9500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F11",
+      "row": "7",
+      "seat_as_printed": "X",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F11",
+      "row": "6",
+      "seat_as_printed": "X",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F11",
+      "row": "5",
+      "seat_as_printed": "",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained",
+      "seating_notes": "Original row does not state a masked seat; inspect source"
+    },
+    "6": {
+      "section": "F11",
+      "row": "9-12",
+      "seat_as_printed": "1号",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "F11",
+      "row": "11-12",
+      "seat_as_printed": "1号",
+      "price": 6000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "F11",
+      "row": "7",
+      "seat_as_printed": "X",
+      "price": 7500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "F11",
+      "row": "11",
+      "seat_as_printed": "X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F11",
+      "row": "1",
+      "seat_as_printed": "1X",
+      "price": 7500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F11",
+      "row": "2",
+      "seat_as_printed": "1X",
+      "price": 7000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F11",
+      "row": "3",
+      "seat_as_printed": "1X",
+      "price": 6500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "F11",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": 6000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "F11",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "price": 5500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "section": "F11",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "price": 5200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "section": "F11",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "section": "F11",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 4500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "section": "F11",
+      "row": "10/11/12",
+      "seat_as_printed": "1X",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "section": "F11",
+      "row": "1",
+      "seat_as_printed": "2X",
+      "price": 6000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "20": {
+      "section": "F11",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "21": {
+      "section": "F13",
+      "row": "5",
+      "seat_as_printed": "X",
+      "price": 9500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "22": {
+      "section": "F13",
+      "row": "4",
+      "seat_as_printed": "",
+      "price": 9500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained",
+      "seating_notes": "Original row does not state a masked seat; inspect source"
+    },
+    "23": {
+      "section": "F13",
+      "row": "1",
+      "seat_as_printed": "1X",
+      "price": 9500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "24": {
+      "section": "F13",
+      "row": "7",
+      "seat_as_printed": "X",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "25": {
+      "section": "F13",
+      "row": "5",
+      "seat_as_printed": "",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained",
+      "seating_notes": "Original row does not state a masked seat; inspect source"
+    },
+    "26": {
+      "section": "F13",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "27": {
+      "section": "F13",
+      "row": "2",
+      "seat_as_printed": "1X",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "28": {
+      "section": "F13",
+      "row": "8-9",
+      "seat_as_printed": "1号",
+      "price": 8000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "29": {
+      "section": "F13",
+      "row": "10-11",
+      "seat_as_printed": "1号",
+      "price": 6000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "30": {
+      "section": "F13",
+      "row": "6",
+      "seat_as_printed": "X",
+      "price": 7800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "31": {
+      "section": "F13",
+      "row": "7",
+      "seat_as_printed": "X",
+      "price": 7500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "32": {
+      "section": "F13",
+      "row": "8",
+      "seat_as_printed": "X",
+      "price": 6000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "33": {
+      "section": "F13",
+      "row": "10",
+      "seat_as_printed": "X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "34": {
+      "section": "F13",
+      "row": "1",
+      "seat_as_printed": "1X",
+      "price": 7500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "35": {
+      "section": "F13",
+      "row": "2",
+      "seat_as_printed": "1X",
+      "price": 7000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "36": {
+      "section": "F13",
+      "row": "3",
+      "seat_as_printed": "1X",
+      "price": 6500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "37": {
+      "section": "F13",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": 6000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "38": {
+      "section": "F13",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "price": 5500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "39": {
+      "section": "F13",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "price": 5200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "40": {
+      "section": "F13",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "41": {
+      "section": "F13",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "price": 4500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "42": {
+      "section": "F13",
+      "row": "2",
+      "seat_as_printed": "2X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "18": {
+    "1": {
+      "section": "F4",
+      "row": "11",
+      "seat_as_printed": "1X",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "F4",
+      "row": "12",
+      "seat_as_printed": "1X",
+      "price": 3800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F4",
+      "row": "13",
+      "seat_as_printed": "1X",
+      "price": 3800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F4",
+      "row": "14",
+      "seat_as_printed": "1X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F4",
+      "row": "16",
+      "seat_as_printed": "X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "F4",
+      "row": "16",
+      "seat_as_printed": "1X",
+      "price": 3800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "F4",
+      "row": "16",
+      "seat_as_printed": "1X",
+      "price": 3800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "F4",
+      "row": "18",
+      "seat_as_printed": "1X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "F4",
+      "row": "19",
+      "seat_as_printed": "1X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F5",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "price": 4800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F11",
+      "row": "11",
+      "seat_as_printed": "X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F11",
+      "row": "19",
+      "seat_as_printed": "2X",
+      "price": 3600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "F12",
+      "row": "5",
+      "seat_as_printed": "2X",
+      "price": 7300,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "F12",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 7000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "section": "F12",
+      "row": "12",
+      "seat_as_printed": "2X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "section": "F13",
+      "row": "15",
+      "seat_as_printed": "X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "section": "F13",
+      "row": "15",
+      "seat_as_printed": "2X",
+      "price": 3800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "section": "F13",
+      "row": "17",
+      "seat_as_printed": "1X",
+      "price": 3600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "section": "F13",
+      "row": "20",
+      "seat_as_printed": "2X",
+      "price": 3600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "20": {
+      "section": "F4",
+      "row": "8",
+      "seat_as_printed": "2X",
+      "price": 4800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "21": {
+      "section": "F4",
+      "row": "14",
+      "seat_as_printed": "2X",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "22": {
+      "section": "F4",
+      "row": "17",
+      "seat_as_printed": "2X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "23": {
+      "section": "F4",
+      "row": "18",
+      "seat_as_printed": "1X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "24": {
+      "section": "F11",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "25": {
+      "section": "F11",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "26": {
+      "section": "F11",
+      "row": "9",
+      "seat_as_printed": "X",
+      "price": 5200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "27": {
+      "section": "F11",
+      "row": "17",
+      "seat_as_printed": "X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "28": {
+      "section": "F11",
+      "row": "18",
+      "seat_as_printed": "1X",
+      "price": 3600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "29": {
+      "section": "F13",
+      "row": "20",
+      "seat_as_printed": "2X",
+      "price": 3600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "42": {
+    "1": {
+      "section": "F4",
+      "row": "11",
+      "seat_as_printed": "1X",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "F4",
+      "row": "12",
+      "seat_as_printed": "1X",
+      "price": 3800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F4",
+      "row": "13",
+      "seat_as_printed": "1X",
+      "price": 3800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F4",
+      "row": "14",
+      "seat_as_printed": "1X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F4",
+      "row": "16",
+      "seat_as_printed": "X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "F4",
+      "row": "16",
+      "seat_as_printed": "1X",
+      "price": 3800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "F4",
+      "row": "16",
+      "seat_as_printed": "1X",
+      "price": 3800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "F4",
+      "row": "18",
+      "seat_as_printed": "1X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "section": "F4",
+      "row": "19",
+      "seat_as_printed": "1X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F5",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "price": 4800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F11",
+      "row": "11",
+      "seat_as_printed": "X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F11",
+      "row": "19",
+      "seat_as_printed": "2X",
+      "price": 3600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "section": "F12",
+      "row": "5",
+      "seat_as_printed": "2X",
+      "price": 7300,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "section": "F12",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 7000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "section": "F12",
+      "row": "12",
+      "seat_as_printed": "2X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "section": "F13",
+      "row": "15",
+      "seat_as_printed": "X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "section": "F13",
+      "row": "15",
+      "seat_as_printed": "2X",
+      "price": 3800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "section": "F13",
+      "row": "17",
+      "seat_as_printed": "1X",
+      "price": 3600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "section": "F13",
+      "row": "20",
+      "seat_as_printed": "2X",
+      "price": 3600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "20": {
+      "section": "F4",
+      "row": "8",
+      "seat_as_printed": "2X",
+      "price": 4800,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "21": {
+      "section": "F4",
+      "row": "14",
+      "seat_as_printed": "2X",
+      "price": 4000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "22": {
+      "section": "F4",
+      "row": "17",
+      "seat_as_printed": "2X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "23": {
+      "section": "F4",
+      "row": "18",
+      "seat_as_printed": "1X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "24": {
+      "section": "F11",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 5000,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "25": {
+      "section": "F11",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "26": {
+      "section": "F11",
+      "row": "9",
+      "seat_as_printed": "X",
+      "price": 5200,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "27": {
+      "section": "F11",
+      "row": "17",
+      "seat_as_printed": "X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "28": {
+      "section": "F11",
+      "row": "18",
+      "seat_as_printed": "1X",
+      "price": 3600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "29": {
+      "section": "F13",
+      "row": "20",
+      "seat_as_printed": "2X",
+      "price": 3600,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "13": {
+    "1": {
+      "section": "F7",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 3500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "section": "F7",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 3500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F15",
+      "row": "15",
+      "seat_as_printed": "X",
+      "price": 2300,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F2",
+      "row": "8",
+      "seat_as_printed": "X",
+      "price": null,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F2",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 3500,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "F1",
+      "row": "18",
+      "seat_as_printed": "X",
+      "price": 2300,
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "2": {
+    "1": {
+      "section": "F4",
+      "row": "7",
+      "sold": true,
+      "price": null,
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "8": {
+    "3": {
+      "price": 2800,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "8": {
+      "price": 2800,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "9": {
+      "price": 2800,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "12": {
+      "row": "11",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "10": {
+    "1": {
+      "row": "11",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "5": {
+      "row": "11",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "22": {
+    "17": {
+      "price": 5500,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "18": {
+      "price": 5500,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "1": {
+      "section": "T03",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "2": {
+      "section": "T03",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "3": {
+      "section": "T03",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "4": {
+      "section": "T03",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "5": {
+      "section": "T03",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "6": {
+      "section": "T03",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "7": {
+      "section": "T03",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "10": {
+      "section": "T05",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "31": {
+      "section": "T05",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "22": {
+      "section": "T03",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "23": {
+      "section": "T03",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "25": {
+      "section": "T03",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "26": {
+      "section": "T03",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "28": {
+    "4": {
+      "section": "F6",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "7": {
+      "section": "F6",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "9": {
+      "section": "F6",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "13": {
+      "row": "7",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "24": {
+      "section": "F6",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "1": {
+      "section": "F3",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "price": 3800,
+      "basis": "First physical ticket row visually transcribed; header excluded"
+    }
+  },
+  "29": {
+    "2": {
+      "price": 4000,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "8": {
+      "seat_as_printed": "1号",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "31": {
+    "12": {
+      "row": "I",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "18": {
+      "section": "T01",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "32": {
+      "row": "I",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "25": {
+      "row": "S",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "26": {
+      "row": "S",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "32": {
+    "1": {
+      "row": "I",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "35": {
+    "7": {
+      "price": 4200,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "20": {
+      "row": "10",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "29": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "41": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "36": {
+    "3": {
+      "row": "18",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "4": {
+      "row": "13",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "6": {
+      "row": "13",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "37": {
+    "6": {
+      "price": 2800,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "10": {
+      "price": 2400,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "11": {
+      "price": 3100,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "12": {
+      "price": 2800,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "14": {
+      "price": 2800,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "22": {
+      "price": 2400,
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "39": {
+    "9": {
+      "price": 8500,
+      "basis": "Selected fields visually checked against the original screenshot",
+      "section": "F5",
+      "row": "19",
+      "seat_as_printed": "X",
+      "sold": false
+    },
+    "16": {
+      "section": "F17",
+      "row": "10",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained",
+      "seat_as_printed": "2X"
+    },
+    "1": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot",
+      "section": "F3",
+      "row": "10",
+      "seat_as_printed": "2X"
+    },
+    "13": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot",
+      "section": "F19",
+      "row": "10",
+      "seat_as_printed": "2X"
+    },
+    "14": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot",
+      "section": "108",
+      "row": "L",
+      "seat_as_printed": "1X"
+    },
+    "15": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot",
+      "section": "112",
+      "row": "F",
+      "seat_as_printed": "X"
+    },
+    "2": {
+      "section": "F5",
+      "row": "22",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "section": "F14",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "section": "F14",
+      "row": "13",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "section": "F17",
+      "row": "10",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "section": "F19",
+      "row": "8",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "section": "F19",
+      "row": "10",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "section": "101",
+      "row": "N",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "section": "F6",
+      "row": "11",
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "section": "F17",
+      "row": "10",
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "section": "F19",
+      "row": "10",
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "40": {
+    "1": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot",
+      "row": "I"
+    },
+    "2": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot",
+      "row": "I"
+    },
+    "3": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "4": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "5": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "7": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "8": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "9": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "10": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "11": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "12": {
+      "sold": true,
+      "price": null,
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "21": {
+    "24": {
+      "row": "1",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained",
+      "seat_as_printed": "1X"
+    },
+    "49": {
+      "row": "1",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained",
+      "seat_as_printed": "2X"
+    },
+    "1": {
+      "seat_as_printed": "X(3内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "8": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "9": {
+      "seat_as_printed": "X(3内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "10": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "11": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "12": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "13": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "14": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "15": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "16": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "17": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "18": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "19": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "20": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "21": {
+      "seat_as_printed": "X(3内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "22": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "23": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "25": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "26": {
+      "seat_as_printed": "X(3内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "27": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "28": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "29": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "30": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "31": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "32": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "33": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "34": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "35": {
+      "seat_as_printed": "X(3内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "36": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "37": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "38": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "39": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "40": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "41": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "42": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "43": {
+      "seat_as_printed": "X(3内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "44": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "45": {
+      "seat_as_printed": "X(3内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "46": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "47": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "48": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "50": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "51": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "52": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "53": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "54": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "55": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "56": {
+      "seat_as_printed": "X(3内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "57": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "58": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "59": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "60": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "61": {
+      "seat_as_printed": "X(3内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "62": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "63": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "64": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "65": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "66": {
+      "seat_as_printed": "X(3内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "67": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "68": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "69": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "70": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "71": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "72": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "73": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "74": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "75": {
+      "seat_as_printed": "X(3内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "76": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "77": {
+      "seat_as_printed": "X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "78": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "79": {
+      "seat_as_printed": "X(5内)",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "80": {
+      "seat_as_printed": "1X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "81": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "82": {
+      "seat_as_printed": "2X",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "6": {
+    "25": {
+      "section": "F11",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "26": {
+      "section": "F11",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "44": {
+      "section": "F11",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "46": {
+      "section": "F11",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "15": {
+    "5": {
+      "row": "11",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "28": {
+      "section": "T07",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "20": {
+    "19": {
+      "row": "17",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "46": {
+      "row": "17",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "72": {
+      "row": "17",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "25": {
+    "4": {
+      "row": "19",
+      "seat_as_printed": "X（靠近舞台）",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "27": {
+    "1": {
+      "row": "5/6",
+      "seat_as_printed": "/",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "25": {
+      "seat_as_printed": "15-20",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "32": {
+      "seat_as_printed": "20-25",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "36": {
+      "seat_as_printed": "10-15",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "40": {
+      "seat_as_printed": "5-10",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "41": {
+      "seat_as_printed": "15-20",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "43": {
+      "seat_as_printed": "1-5",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "45": {
+      "seat_as_printed": "10-15",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "46": {
+      "seat_as_printed": "20-25",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "49": {
+      "seat_as_printed": "20-25",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "51": {
+      "seat_as_printed": "1-5",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "44": {
+    "6": {
+      "seat_as_printed": "X伪连",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "7": {
+      "seat_as_printed": "X伪连",
+      "basis": "Selected fields visually checked against the original screenshot"
+    },
+    "15": {
+      "row": "",
+      "seating_notes": "Printed row resembles 0 or O; retain original screenshot for confirmation",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  },
+  "26": {
+    "1": {
+      "seat_as_printed": "10内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "seat_as_printed": "10内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "seat_as_printed": "10内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "4": {
+      "seat_as_printed": "5内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "5": {
+      "seat_as_printed": "5内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "6": {
+      "seat_as_printed": "15内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "7": {
+      "seat_as_printed": "15内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "30": {
+    "1": {
+      "seat_as_printed": "10内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "2": {
+      "seat_as_printed": "10内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    },
+    "3": {
+      "seat_as_printed": "15内",
+      "basis": "Selected fields visually transcribed from original screenshot on Nov 4; original OCR retained"
+    }
+  },
+  "41": {
+    "8": {
+      "seat_as_printed": "1号",
+      "basis": "Selected fields visually checked against the original screenshot"
+    }
+  }
+}
