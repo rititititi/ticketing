@@ -1,0 +1,1245 @@
+{
+  "1": {
+    "1": {
+      "section": "F6",
+      "row": "3",
+      "seat_as_printed": "23-26",
+      "price": null,
+      "sold": false,
+      "price_as_printed": "/"
+    },
+    "2": {
+      "section": "F6",
+      "row": "9",
+      "seat_as_printed": "20-23",
+      "price": null,
+      "sold": false,
+      "price_as_printed": "/"
+    },
+    "3": {
+      "section": "F6",
+      "row": "18",
+      "seat_as_printed": "10-15",
+      "price": null,
+      "sold": false,
+      "price_as_printed": "/"
+    },
+    "4": {
+      "section": "F13",
+      "row": "9",
+      "seat_as_printed": "15-17",
+      "price": null,
+      "sold": false,
+      "price_as_printed": "/"
+    },
+    "5": {
+      "section": "F3",
+      "row": "8",
+      "seat_as_printed": "1-3",
+      "price": null,
+      "sold": false,
+      "price_as_printed": "/"
+    },
+    "6": {
+      "section": "F3",
+      "row": "13",
+      "seat_as_printed": "12-15",
+      "price": null,
+      "sold": false,
+      "price_as_printed": "/"
+    },
+    "7": {
+      "section": "F7",
+      "row": "9",
+      "seat_as_printed": "1-3",
+      "price": null,
+      "sold": false,
+      "price_as_printed": "/"
+    },
+    "8": {
+      "section": "F6",
+      "row": "16",
+      "seat_as_printed": "17-20",
+      "price": null,
+      "sold": false,
+      "price_as_printed": "/"
+    },
+    "9": {
+      "section": "F14",
+      "row": "5",
+      "seat_as_printed": "15-20",
+      "price": 3800,
+      "sold": false
+    }
+  },
+  "2": {
+    "1": {
+      "section": "T01",
+      "row": "B",
+      "seat_as_printed": "1X",
+      "price": 3100,
+      "sold": false,
+      "printed_identifier": "1"
+    },
+    "2": {
+      "section": "T05",
+      "row": "B",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "2"
+    },
+    "3": {
+      "section": "T05",
+      "row": "B",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "3"
+    },
+    "4": {
+      "section": "T05",
+      "row": "B",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "4"
+    },
+    "5": {
+      "section": "T05",
+      "row": "B",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "5"
+    },
+    "6": {
+      "section": "F11",
+      "row": "18",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "6"
+    },
+    "7": {
+      "section": "F5",
+      "row": "8",
+      "seat_as_printed": "X",
+      "price": 7500,
+      "sold": false,
+      "printed_identifier": "7"
+    },
+    "8": {
+      "section": "F12",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "price": 7500,
+      "sold": false,
+      "printed_identifier": "8"
+    },
+    "9": {
+      "section": "F11",
+      "row": "8",
+      "seat_as_printed": "X",
+      "price": 7500,
+      "sold": false,
+      "printed_identifier": "9"
+    },
+    "10": {
+      "section": "F11",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "10"
+    },
+    "11": {
+      "section": "F11",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "11"
+    },
+    "12": {
+      "section": "F13",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "price": 4500,
+      "sold": false,
+      "printed_identifier": "12"
+    },
+    "13": {
+      "section": "T05",
+      "row": "B",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "13"
+    },
+    "14": {
+      "section": "T03",
+      "row": "B",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "14"
+    },
+    "15": {
+      "section": "T03",
+      "row": "B",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "15"
+    },
+    "16": {
+      "section": "T01",
+      "row": "B",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "16"
+    },
+    "17": {
+      "section": "T01",
+      "row": "A",
+      "seat_as_printed": "1X",
+      "price": 3400,
+      "sold": false,
+      "printed_identifier": "17"
+    },
+    "18": {
+      "section": "T01",
+      "row": "B",
+      "seat_as_printed": "2X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "18"
+    },
+    "19": {
+      "section": "T01",
+      "row": "B",
+      "seat_as_printed": "2X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "19"
+    },
+    "20": {
+      "section": "T05",
+      "row": "B",
+      "seat_as_printed": "X",
+      "price": 3200,
+      "sold": false,
+      "printed_identifier": "20"
+    },
+    "21": {
+      "section": "F11",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "price": 4500,
+      "sold": false,
+      "printed_identifier": "21"
+    },
+    "22": {
+      "section": "F11",
+      "row": "6",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "22"
+    },
+    "23": {
+      "section": "F4",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 7500,
+      "sold": false,
+      "printed_identifier": "23"
+    },
+    "24": {
+      "section": "F5",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 6800,
+      "sold": false,
+      "printed_identifier": "24"
+    },
+    "25": {
+      "section": "107",
+      "row": "J",
+      "seat_as_printed": "1X",
+      "price": 2500,
+      "sold": false,
+      "printed_identifier": "25"
+    },
+    "26": {
+      "section": "107",
+      "row": "J",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "26"
+    },
+    "27": {
+      "section": "107",
+      "row": "K",
+      "seat_as_printed": "X",
+      "price": 2500,
+      "sold": false,
+      "printed_identifier": "27"
+    },
+    "28": {
+      "section": "107",
+      "row": "K",
+      "seat_as_printed": "X",
+      "price": 2500,
+      "sold": false,
+      "printed_identifier": "28"
+    },
+    "29": {
+      "section": "107",
+      "row": "K",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "29"
+    },
+    "30": {
+      "section": "107",
+      "row": "K",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "30"
+    },
+    "31": {
+      "section": "107",
+      "row": "L",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "31"
+    },
+    "32": {
+      "section": "107",
+      "row": "L",
+      "seat_as_printed": "1X",
+      "price": 2500,
+      "sold": false,
+      "printed_identifier": "32"
+    },
+    "33": {
+      "section": "107",
+      "row": "L",
+      "seat_as_printed": "1X",
+      "price": 2500,
+      "sold": false,
+      "printed_identifier": "33"
+    },
+    "34": {
+      "section": "107",
+      "row": "L",
+      "seat_as_printed": "1X",
+      "price": 2500,
+      "sold": false,
+      "printed_identifier": "34"
+    },
+    "35": {
+      "section": "108",
+      "row": "J",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "35"
+    },
+    "36": {
+      "section": "108",
+      "row": "J",
+      "seat_as_printed": "X",
+      "price": 2500,
+      "sold": false,
+      "printed_identifier": "36"
+    },
+    "37": {
+      "section": "108",
+      "row": "J",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "37"
+    },
+    "38": {
+      "section": "108",
+      "row": "J",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "38"
+    },
+    "39": {
+      "section": "108",
+      "row": "K",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "39"
+    },
+    "40": {
+      "section": "108",
+      "row": "K",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "40"
+    },
+    "41": {
+      "section": "108",
+      "row": "K",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "41"
+    },
+    "42": {
+      "section": "108",
+      "row": "L",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "42"
+    },
+    "43": {
+      "section": "108",
+      "row": "L",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "43"
+    },
+    "44": {
+      "section": "108",
+      "row": "L",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "44"
+    },
+    "45": {
+      "section": "108",
+      "row": "L",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "45"
+    },
+    "46": {
+      "section": "105",
+      "row": "M",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "46"
+    },
+    "47": {
+      "section": "105",
+      "row": "M",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "47"
+    },
+    "48": {
+      "section": "105",
+      "row": "M",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "48"
+    },
+    "49": {
+      "section": "107",
+      "row": "L",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "49"
+    },
+    "50": {
+      "section": "107",
+      "row": "L",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "50"
+    },
+    "51": {
+      "section": "107",
+      "row": "L",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "51"
+    },
+    "52": {
+      "section": "107",
+      "row": "L",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "52"
+    },
+    "53": {
+      "section": "107",
+      "row": "M",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "53"
+    },
+    "54": {
+      "section": "107",
+      "row": "M",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "54"
+    },
+    "55": {
+      "section": "107",
+      "row": "M",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "55"
+    },
+    "56": {
+      "section": "107",
+      "row": "M",
+      "seat_as_printed": "1X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "56"
+    },
+    "57": {
+      "section": "107",
+      "row": "M",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "57"
+    },
+    "58": {
+      "section": "107",
+      "row": "M",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "58"
+    },
+    "59": {
+      "section": "107",
+      "row": "M",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "59"
+    },
+    "60": {
+      "section": "107",
+      "row": "M",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "60"
+    },
+    "61": {
+      "section": "108",
+      "row": "K",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "61"
+    },
+    "62": {
+      "section": "108",
+      "row": "K",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "62"
+    },
+    "63": {
+      "section": "108",
+      "row": "K",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "63"
+    },
+    "64": {
+      "section": "108",
+      "row": "K",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "64"
+    },
+    "65": {
+      "section": "108",
+      "row": "L",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "65"
+    },
+    "66": {
+      "section": "108",
+      "row": "L",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "66"
+    },
+    "67": {
+      "section": "108",
+      "row": "L",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "67"
+    },
+    "68": {
+      "section": "108",
+      "row": "L",
+      "seat_as_printed": "X",
+      "price": null,
+      "sold": true,
+      "printed_identifier": "68"
+    },
+    "69": {
+      "section": "F13",
+      "row": "8",
+      "seat_as_printed": "X",
+      "price": 7000,
+      "sold": false
+    },
+    "70": {
+      "section": "F4",
+      "row": "12",
+      "seat_as_printed": "2X",
+      "price": 3800,
+      "sold": false
+    },
+    "71": {
+      "section": "F4",
+      "row": "12",
+      "seat_as_printed": "2X",
+      "price": 3800,
+      "sold": false
+    },
+    "72": {
+      "section": "F4",
+      "row": "15",
+      "seat_as_printed": "1X",
+      "price": 3800,
+      "sold": false
+    },
+    "73": {
+      "section": "F4",
+      "row": "6",
+      "seat_as_printed": "X",
+      "price": 13500,
+      "sold": false
+    },
+    "74": {
+      "section": "F4",
+      "row": "7",
+      "seat_as_printed": "2X",
+      "price": 6500,
+      "sold": false
+    },
+    "75": {
+      "section": "F4",
+      "row": "7",
+      "seat_as_printed": "2X",
+      "price": 6500,
+      "sold": false
+    },
+    "76": {
+      "section": "F4",
+      "row": "7",
+      "seat_as_printed": "2X",
+      "price": 5300,
+      "sold": false
+    },
+    "77": {
+      "section": "F13",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "price": 4800,
+      "sold": false
+    },
+    "78": {
+      "section": "F13",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "price": 4800,
+      "sold": false
+    },
+    "79": {
+      "section": "F13",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "price": 4800,
+      "sold": false
+    },
+    "80": {
+      "section": "F13",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 5300,
+      "sold": false
+    },
+    "81": {
+      "section": "F13",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 4800,
+      "sold": false
+    },
+    "82": {
+      "section": "F4",
+      "row": "11",
+      "seat_as_printed": "2X",
+      "price": 5000,
+      "sold": false
+    },
+    "83": {
+      "section": "F4",
+      "row": "14",
+      "seat_as_printed": "1X",
+      "price": 4300,
+      "sold": false
+    },
+    "84": {
+      "section": "F4",
+      "row": "16",
+      "seat_as_printed": "2X",
+      "price": 3800,
+      "sold": false
+    },
+    "85": {
+      "section": "F4",
+      "row": "8",
+      "seat_as_printed": "X",
+      "price": 7500,
+      "sold": false
+    }
+  },
+  "3": {
+    "1": {
+      "section": "F5",
+      "row": "12",
+      "seat_as_printed": "1n",
+      "price": 4300,
+      "sold": false
+    },
+    "2": {
+      "section": "F5",
+      "row": "15",
+      "seat_as_printed": "1n",
+      "price": 4300,
+      "sold": false
+    },
+    "3": {
+      "section": "F5",
+      "row": "22",
+      "seat_as_printed": "2n",
+      "price": 4600,
+      "sold": false
+    },
+    "4": {
+      "section": "F13",
+      "row": "18",
+      "seat_as_printed": "1n",
+      "price": 4500,
+      "sold": false
+    },
+    "5": {
+      "section": "F5",
+      "row": "21",
+      "seat_as_printed": "1n贴2",
+      "price": 9800,
+      "sold": false
+    },
+    "6": {
+      "section": "F5",
+      "row": "23",
+      "seat_as_printed": "1n贴1",
+      "price": 10800,
+      "sold": false
+    }
+  },
+  "4": {
+    "23": {
+      "printed_identifier": "J-38"
+    },
+    "40": {
+      "price": 4300
+    },
+    "8": {
+      "seat_as_printed": "X"
+    },
+    "20": {
+      "seat_as_printed": "X"
+    },
+    "34": {
+      "seat_as_printed": "X"
+    }
+  },
+  "5": {
+    "1": {
+      "section": "F3",
+      "row": "6",
+      "seat_as_printed": "2X",
+      "price": 3800,
+      "sold": false
+    },
+    "2": {
+      "section": "F3",
+      "row": "8",
+      "seat_as_printed": "0X",
+      "price": 3600,
+      "sold": false
+    },
+    "3": {
+      "section": "F3",
+      "row": "13",
+      "seat_as_printed": "2X",
+      "price": 3200,
+      "sold": false
+    },
+    "4": {
+      "section": "F6",
+      "row": "10",
+      "seat_as_printed": "1X",
+      "price": 3500,
+      "sold": false
+    },
+    "5": {
+      "section": "F6",
+      "row": "14",
+      "seat_as_printed": "2X",
+      "price": 3100,
+      "sold": false
+    },
+    "6": {
+      "section": "F6",
+      "row": "14",
+      "seat_as_printed": "2X",
+      "price": 3100,
+      "sold": false
+    },
+    "7": {
+      "section": "F6",
+      "row": "15",
+      "seat_as_printed": "2X",
+      "price": 3100,
+      "sold": false
+    },
+    "8": {
+      "section": "F10",
+      "row": "18",
+      "seat_as_printed": "1X",
+      "price": 2800,
+      "sold": false
+    },
+    "9": {
+      "section": "F12",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 6500,
+      "sold": false
+    },
+    "10": {
+      "section": "F12",
+      "row": "11",
+      "seat_as_printed": "1X",
+      "price": 5500,
+      "sold": false
+    },
+    "11": {
+      "section": "F14",
+      "row": "5",
+      "seat_as_printed": "1X",
+      "price": 3800,
+      "sold": false
+    },
+    "12": {
+      "section": "F14",
+      "row": "9",
+      "seat_as_printed": "1X",
+      "price": 3500,
+      "sold": false
+    },
+    "13": {
+      "section": "F14",
+      "row": "11",
+      "seat_as_printed": "0X",
+      "price": 3300,
+      "sold": false
+    },
+    "14": {
+      "section": "F19",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 2600,
+      "sold": false
+    },
+    "15": {
+      "section": "F19",
+      "row": "10",
+      "seat_as_printed": "2X",
+      "price": 2600,
+      "sold": false
+    },
+    "16": {
+      "section": "F3",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "price": 3500,
+      "sold": false
+    },
+    "17": {
+      "section": "F3",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "price": 3500,
+      "sold": false
+    },
+    "18": {
+      "section": "F3",
+      "row": "9",
+      "seat_as_printed": "2X",
+      "price": 3500,
+      "sold": false
+    },
+    "19": {
+      "section": "F10",
+      "row": "10",
+      "seat_as_printed": "2X",
+      "price": 3300,
+      "sold": false
+    },
+    "20": {
+      "section": "F10",
+      "row": "12",
+      "seat_as_printed": "2X",
+      "price": 3200,
+      "sold": false
+    },
+    "21": {
+      "section": "F14",
+      "row": "13",
+      "seat_as_printed": "1X",
+      "price": 3200,
+      "sold": false
+    }
+  },
+  "6": {
+    "1": {
+      "section": "F2",
+      "row": "24",
+      "seat_as_printed": "1X",
+      "price": 3000,
+      "sold": false,
+      "printed_identifier": "序号1",
+      "date_as_printed": "2E+07"
+    },
+    "2": {
+      "section": "F3",
+      "row": "11",
+      "seat_as_printed": "2X",
+      "price": 4000,
+      "sold": false,
+      "printed_identifier": "序号2",
+      "date_as_printed": "2E+07"
+    },
+    "3": {
+      "section": "F3",
+      "row": "4",
+      "seat_as_printed": "2X",
+      "price": 5000,
+      "sold": false,
+      "printed_identifier": "序号3",
+      "date_as_printed": "2E+07"
+    },
+    "4": {
+      "section": "F5",
+      "row": "18",
+      "seat_as_printed": "2X",
+      "price": 6500,
+      "sold": false,
+      "printed_identifier": "序号4",
+      "date_as_printed": "2E+07"
+    },
+    "5": {
+      "section": "F6",
+      "row": "22",
+      "seat_as_printed": "2X",
+      "price": 3500,
+      "sold": false,
+      "printed_identifier": "序号5",
+      "date_as_printed": "2E+07"
+    },
+    "6": {
+      "section": "F6",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": 5000,
+      "sold": false,
+      "printed_identifier": "序号6",
+      "date_as_printed": "2E+07"
+    },
+    "7": {
+      "section": "F6",
+      "row": "8",
+      "seat_as_printed": "1X",
+      "price": 4500,
+      "sold": false,
+      "printed_identifier": "序号7",
+      "date_as_printed": "2E+07"
+    },
+    "8": {
+      "section": "F6",
+      "row": "9",
+      "seat_as_printed": "X",
+      "price": 4500,
+      "sold": false,
+      "printed_identifier": "序号8",
+      "date_as_printed": "2E+07"
+    },
+    "9": {
+      "section": "F10",
+      "row": "15",
+      "seat_as_printed": "2X",
+      "price": 3500,
+      "sold": false,
+      "printed_identifier": "序号9",
+      "date_as_printed": "2E+07"
+    },
+    "10": {
+      "section": "F10",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": 5000,
+      "sold": false,
+      "printed_identifier": "序号10",
+      "date_as_printed": "2E+07"
+    },
+    "11": {
+      "section": "F10",
+      "row": "4",
+      "seat_as_printed": "X",
+      "price": 5000,
+      "sold": false,
+      "printed_identifier": "序号11",
+      "date_as_printed": "2E+07"
+    },
+    "12": {
+      "section": "F10",
+      "row": "5",
+      "seat_as_printed": "X",
+      "price": 5000,
+      "sold": false,
+      "printed_identifier": "序号12",
+      "date_as_printed": "2E+07"
+    },
+    "13": {
+      "section": "F10",
+      "row": "5",
+      "seat_as_printed": "X",
+      "price": 5000,
+      "sold": false,
+      "printed_identifier": "序号13",
+      "date_as_printed": "2E+07"
+    },
+    "14": {
+      "section": "F10",
+      "row": "7",
+      "seat_as_printed": "1X",
+      "price": 4500,
+      "sold": false,
+      "printed_identifier": "序号14",
+      "date_as_printed": "2E+07"
+    },
+    "15": {
+      "section": "F11",
+      "row": "19",
+      "seat_as_printed": "X",
+      "price": 4500,
+      "sold": false,
+      "printed_identifier": "序号15",
+      "date_as_printed": "2E+07"
+    },
+    "16": {
+      "section": "F12",
+      "row": "12",
+      "seat_as_printed": "1X",
+      "price": 7500,
+      "sold": false,
+      "printed_identifier": "序号16",
+      "date_as_printed": "2E+07"
+    },
+    "17": {
+      "section": "F14",
+      "row": "11",
+      "seat_as_printed": "2X",
+      "price": 3700,
+      "sold": false,
+      "printed_identifier": "序号17",
+      "date_as_printed": "2E+07"
+    },
+    "18": {
+      "section": "F14",
+      "row": "16",
+      "seat_as_printed": "X",
+      "price": 3500,
+      "sold": false,
+      "printed_identifier": "序号18",
+      "date_as_printed": "2E+07"
+    },
+    "19": {
+      "section": "F14",
+      "row": "4",
+      "seat_as_printed": "1X",
+      "price": 5000,
+      "sold": false,
+      "printed_identifier": "序号19",
+      "date_as_printed": "2E+07"
+    },
+    "20": {
+      "section": "F3",
+      "row": "18",
+      "seat_as_printed": "1X",
+      "price": 4500,
+      "sold": false,
+      "printed_identifier": "序号20",
+      "date_as_printed": "2E+07"
+    },
+    "21": {
+      "section": "F3",
+      "row": "20",
+      "seat_as_printed": "2X",
+      "price": 3500,
+      "sold": false,
+      "printed_identifier": "序号21",
+      "date_as_printed": "2E+07"
+    },
+    "22": {
+      "section": "F3",
+      "row": "22",
+      "seat_as_printed": "2X",
+      "price": 3500,
+      "sold": false,
+      "printed_identifier": "序号22",
+      "date_as_printed": "2E+07"
+    },
+    "23": {
+      "section": "F4",
+      "row": "13",
+      "seat_as_printed": "1X",
+      "price": 5500,
+      "sold": false,
+      "printed_identifier": "序号23",
+      "date_as_printed": "2E+07"
+    },
+    "24": {
+      "section": "F6",
+      "row": "11",
+      "seat_as_printed": "2X",
+      "price": 4200,
+      "sold": false,
+      "printed_identifier": "序号24",
+      "date_as_printed": "2E+07"
+    },
+    "25": {
+      "section": "F7",
+      "row": "15",
+      "seat_as_printed": "X",
+      "price": 3500,
+      "sold": false,
+      "printed_identifier": "序号25",
+      "date_as_printed": "2E+07"
+    },
+    "26": {
+      "section": "F10",
+      "row": "17",
+      "seat_as_printed": "1X",
+      "price": 3500,
+      "sold": false,
+      "printed_identifier": "序号26",
+      "date_as_printed": "2E+07"
+    },
+    "27": {
+      "section": "F11",
+      "row": "12",
+      "seat_as_printed": "X",
+      "price": 6000,
+      "sold": false,
+      "printed_identifier": "序号27",
+      "date_as_printed": "2E+07"
+    },
+    "28": {
+      "section": "F12",
+      "row": "12",
+      "seat_as_printed": "1X",
+      "price": 7500,
+      "sold": false,
+      "printed_identifier": "序号28",
+      "date_as_printed": "2E+07"
+    },
+    "29": {
+      "section": "F13",
+      "row": "12",
+      "seat_as_printed": "X",
+      "price": 7500,
+      "sold": false,
+      "printed_identifier": "序号29",
+      "date_as_printed": "2E+07"
+    },
+    "30": {
+      "section": "F13",
+      "row": "17",
+      "seat_as_printed": "2X",
+      "price": 4800,
+      "sold": false,
+      "printed_identifier": "序号30",
+      "date_as_printed": "2E+07"
+    },
+    "31": {
+      "section": "F13",
+      "row": "20",
+      "seat_as_printed": "X",
+      "price": 4500,
+      "sold": false,
+      "printed_identifier": "序号31",
+      "date_as_printed": "2E+07"
+    },
+    "32": {
+      "section": "F14",
+      "row": "16",
+      "seat_as_printed": "1X",
+      "price": 3500,
+      "sold": false,
+      "printed_identifier": "序号32",
+      "date_as_printed": "2E+07"
+    }
+  },
+  "8": {
+    "4": {
+      "row": "I"
+    }
+  }
+}

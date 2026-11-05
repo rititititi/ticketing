@@ -1,0 +1,87 @@
+[
+  {
+    "screenshot": 1,
+    "filename": "12651793849966_.pic.jpg",
+    "sha256": "f6f3c4beb1f1cd158c4178351aa2264ef56f808accb83d91da374cdd6d99825c",
+    "source_index": 123,
+    "physical_option_rows": 9,
+    "sold_rows": 0,
+    "unresolved_dates": 0,
+    "unresolved_prices": 8,
+    "status": "All physical ticket rows represented; supplier confirmation required"
+  },
+  {
+    "screenshot": 2,
+    "filename": "12611793809455_.pic.jpg",
+    "sha256": "ed0912dc9c47b08f07f1396c1b0056b1232eaad4a442f275c4fc873e353952fe",
+    "source_index": 124,
+    "physical_option_rows": 85,
+    "sold_rows": 51,
+    "unresolved_dates": 85,
+    "unresolved_prices": 0,
+    "status": "All physical ticket rows represented; supplier confirmation required"
+  },
+  {
+    "screenshot": 3,
+    "filename": "12671793852047_.pic.jpg",
+    "sha256": "c5e560fc816e1c2405ee8815729efeff920450a4e3ca1d05a05f5032a39db98c",
+    "source_index": 125,
+    "physical_option_rows": 6,
+    "sold_rows": 0,
+    "unresolved_dates": 0,
+    "unresolved_prices": 0,
+    "status": "All physical ticket rows represented; supplier confirmation required"
+  },
+  {
+    "screenshot": 4,
+    "filename": "12661793850086_.pic.jpg",
+    "sha256": "837d80fb4790174b0f43d262bf5de994cb2b41b4e48a7f58bbea7bade53a012d",
+    "source_index": 126,
+    "physical_option_rows": 40,
+    "sold_rows": 2,
+    "unresolved_dates": 40,
+    "unresolved_prices": 0,
+    "status": "All physical ticket rows represented; supplier confirmation required"
+  },
+  {
+    "screenshot": 5,
+    "filename": "12641793849962_.pic_hd.jpg",
+    "sha256": "bcca884997d7c9980cea60aae82eb460a590a1a3a058b1c7413c6c5482abe6d4",
+    "source_index": 127,
+    "physical_option_rows": 21,
+    "sold_rows": 0,
+    "unresolved_dates": 0,
+    "unresolved_prices": 0,
+    "status": "All physical ticket rows represented; supplier confirmation required"
+  },
+  {
+    "screenshot": 6,
+    "filename": "12591793808459_.pic.jpg",
+    "sha256": "1669ee8f36960df5001a51d7dbaee511e2cb6540a85877d2d44c5b562f9a4a5b",
+    "source_index": 128,
+    "physical_option_rows": 32,
+    "sold_rows": 0,
+    "unresolved_dates": 32,
+    "unresolved_prices": 0,
+    "status": "All physical ticket rows represented; supplier confirmation required"
+  },
+  {
+    "screenshot": 7,
+    "filename": "12601793809424_.pic.jpg",
+    "sha256": "2ef1d00611cfdc6e9517d7fb407c6abeb2a4c4568e9649846c6d100058048d9b",
+    "source_index": null,
+    "physical_option_rows": 0,
+    "status": "Excluded: unrelated bilingual vocabulary screenshot; no concert ticket table"
+  },
+  {
+    "screenshot": 8,
+    "filename": "12631793849928_.pic_hd.jpg",
+    "sha256": "6a4a83c6db1ae27f45ee44f96eb4af65bfa5ed4e34baa53a40431b5d4945f305",
+    "source_index": 129,
+    "physical_option_rows": 18,
+    "sold_rows": 0,
+    "unresolved_dates": 18,
+    "unresolved_prices": 0,
+    "status": "All physical ticket rows represented; supplier confirmation required"
+  }
+]

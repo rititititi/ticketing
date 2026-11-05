@@ -44,6 +44,8 @@ def export_demo():
             z.write(ROOT/'data/draft2'/name,'uu-scout/reports/'+name)
         z.write(ROOT/'static/nov4-coverage.csv','uu-scout/reports/nov4-coverage.csv')
         z.write(ROOT/'data/nov4/REPORT.md','uu-scout/reports/NOV4-REPORT.md')
+        z.write(ROOT/'data/nov5/coverage.csv','uu-scout/reports/nov5-coverage.csv')
+        z.write(ROOT/'data/nov5/REPORT.md','uu-scout/reports/NOV5-REPORT.md')
         z.write(ROOT/'data/draft2/REPORT.md','uu-scout/reports/REPORT.md')
         for p in sorted((ROOT/'static/sources').iterdir()):
             if p.suffix.lower() not in ['.jpg','.jpeg','.png']:continue

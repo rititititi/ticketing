@@ -1,0 +1,9 @@
+﻿screenshot,filename,sha256,source_index,physical_option_rows,sold_rows,unresolved_dates,unresolved_prices,status
+1,12651793849966_.pic.jpg,f6f3c4beb1f1cd158c4178351aa2264ef56f808accb83d91da374cdd6d99825c,123,9,0,0,8,All physical ticket rows represented; supplier confirmation required
+2,12611793809455_.pic.jpg,ed0912dc9c47b08f07f1396c1b0056b1232eaad4a442f275c4fc873e353952fe,124,85,51,85,0,All physical ticket rows represented; supplier confirmation required
+3,12671793852047_.pic.jpg,c5e560fc816e1c2405ee8815729efeff920450a4e3ca1d05a05f5032a39db98c,125,6,0,0,0,All physical ticket rows represented; supplier confirmation required
+4,12661793850086_.pic.jpg,837d80fb4790174b0f43d262bf5de994cb2b41b4e48a7f58bbea7bade53a012d,126,40,2,40,0,All physical ticket rows represented; supplier confirmation required
+5,12641793849962_.pic_hd.jpg,bcca884997d7c9980cea60aae82eb460a590a1a3a058b1c7413c6c5482abe6d4,127,21,0,0,0,All physical ticket rows represented; supplier confirmation required
+6,12591793808459_.pic.jpg,1669ee8f36960df5001a51d7dbaee511e2cb6540a85877d2d44c5b562f9a4a5b,128,32,0,32,0,All physical ticket rows represented; supplier confirmation required
+7,12601793809424_.pic.jpg,2ef1d00611cfdc6e9517d7fb407c6abeb2a4c4568e9649846c6d100058048d9b,,0,,,,Excluded: unrelated bilingual vocabulary screenshot; no concert ticket table
+8,12631793849928_.pic_hd.jpg,6a4a83c6db1ae27f45ee44f96eb4af65bfa5ed4e34baa53a40431b5d4945f305,129,18,0,18,0,All physical ticket rows represented; supplier confirmation required

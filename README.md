@@ -11,7 +11,7 @@ Fans can use the **Email alerts** tab to choose a date, section, numeric row (±
 
 ## November 4 update
 
-The latest site contains **4,770 option rows across 122 screenshots**, including preserved historical versions. The 45-file update is fully accounted for: 42 new images, one previously uploaded image, and two duplicate files. It adds **1,158 rows**. [Batch coverage and limitations](data/nov4/REPORT.md) · [Coverage CSV](data/nov4/coverage.csv).
+The latest site contains **4,981 option rows across 129 screenshots**, including preserved historical versions. The November 5 batch adds **211 rows from seven ticket screenshots**; one unrelated vocabulary image is excluded. [November 5 coverage and limitations](data/nov5/REPORT.md). The 45-file update is fully accounted for: 42 new images, one previously uploaded image, and two duplicate files. It adds **1,158 rows**. [Batch coverage and limitations](data/nov4/REPORT.md) · [Coverage CSV](data/nov4/coverage.csv).
 
 Use **Below comparable median** to find lower comparable quotes, or open a ticket for **Compare similar tickets**. Matching uses the same performance, section and seat prefix with rows within ±3. The **New updates** tab shows price-drop and cheaper-comparable alerts with read/unread state and source evidence. Email signup and matching delivery are implemented behind a private service; live sending requires [notification setup](docs/NOTIFICATIONS.md). Telegram is not enabled.
 
